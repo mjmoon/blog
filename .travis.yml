@@ -1,38 +1,15 @@
 language: ruby
-rvm:
-    - 2.5.0
-
-# test script
-before_script:
-    - chmod +x ./script/cibuild
-script: ./script/cibuild
-
-# branch whitelist, only for GitHub Pages
+# only run CI-builds on master branch
 branches:
   only:
-  - gh-pages     # test the gh-pages branch
-  - /pages-(.*)/ # test every branch which starts with "pages-"
-
-
-# speeds up installation of html-proofer
-env:
-  global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-
-# route your build to the container-based infrastructure for a faster build
+  - master
+rvm:
+- 2.5.0
+# set execution permission on our build script
+before_script:
+- chmod +x ./script/cibuild
+# path to our build script.
+# Travis will run `bundle install` by default before running our script
+script: ./script/cibuild
+exclude: [vendor]
 sudo: false
-
-# deploy to g-pages
-install:
-- bundle install
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: _site
-  email: michael.jongho.moon@gmail.com
-  name: Travis-CI
-  verbose: true
-  # fqdn: https://micbon.blog.com
-  on:
-    branch: master
