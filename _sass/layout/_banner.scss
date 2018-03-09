@@ -17,7 +17,7 @@
 		.content {
 			@include vendor('flex-grow', '1');
 			@include vendor('flex-shrink', '1');
-			width: 70%;
+			width: 65%;
 		}
 
 		.image {
@@ -25,7 +25,7 @@
 			@include vendor('flex-shrink', '0');
 			display: block;
 			margin: 0 0 _size(element-margin) (_size(element-margin) * 2);
-			width: 30%;
+			width: 35%;
 
 			img {
 				height: 100%;

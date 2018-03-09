@@ -7,13 +7,18 @@ pagination:
 <section id="banner">
     <div class="content">
         <header>
-            <h1>Hi, I’m Editorial<br />
-            by HTML5 UP</h1>
-            <p>A free and fully responsive site template</p>
+            <h1>Hi, I’m <br />
+            Michael J. Moon</h1>
+            <p>and this is my personal blog.</p>
         </header>
-        <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+        <p>
+            This is my personal space for sharing my latest interests.
+            I am a data enthusiasist and a web development hobbyist.
+            If you find the blog interesting or have any feedbacks,
+            feel free to connect with me!
+        </p>
         <ul class="actions">
-            <li><a href="{{ '/about' | absolute_url }}" class="button big">Learn More</a></li>
+            <li><a href="{{ '/about' | absolute_url }}" class="button big">About me</a></li>
         </ul>
     </div>
     <span class="image object">
@@ -34,18 +39,15 @@ pagination:
                 <img src="{{ post.image | prepend: '/images/' | absolute_url }}" alt="" />
             </a>
             {% endif %}
-            <h3>{{ post.title }}</h3>
+            <h3><a href="{{ post.url | absolute_url }}" class="image">{{ post.title }}</a></h3>
             <h6>{{ post.date | date: '%b %d, %Y' }}</h6>
-            <p>{{ post.excerpt }}</p>
-            <ul class="actions">
-                <li><a href="{{ post.url | absolute_url }}" class="button">More</a></li>
-            </ul>
+            <p>{{ post.excerpt | truncate: 300 }}</p>
         </article>
         {% endfor %}
     </div>
 
     <!-- paginator -->
-    {% if paginator.next_page_path %}
+    {% if paginator.next_page %}
     <div class="pagination">
         <a class='button next' href="{{ paginator.next_page_path | absolute_url }}">Load more</a>
     </div>
