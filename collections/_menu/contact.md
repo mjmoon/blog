@@ -5,7 +5,7 @@ author: 'Michael J. Moon'
 ---
 <div class="row">
     <div class="4u 12u$(small)">
-        If you have any feedbacks, please feel free to contact me using the contact form. You can also find me on social networks.
+        If you have any feedbacks, please feel free to contact me using the contact form. You can also find me on social media.
     </div>
     <div class="6u$ 12u$(small)">
         <ul class="icons square">

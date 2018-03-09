@@ -19,6 +19,7 @@
 		{% include scripts.html %}
         <!-- Infinite scroll -->
         <script src="{{ '/assets/js/jquery.jscroll.min.js' | absolute_url }}"></script>
+        {% if paginator.next_page %}
         <script type="text/javascript">
         $('.jscroll').jscroll({
             loadingHtml: '<div class="infinite-spinner"></div>',
@@ -30,6 +31,6 @@
             debug: false
         });
         </script>
-
+        {% endif %}
 	</body>
 </html>
