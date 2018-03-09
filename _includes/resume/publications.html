@@ -1,0 +1,29 @@
+<section id="publications">
+    <header class="major">
+        <h2>
+          <a href="#publications">Publications</a>
+        </h2>
+    </header>
+    <div>
+        {% for publication in site.publications reversed %}
+        <div>
+            <header class="main">
+                <h2>{{ publication.title }}</h2>
+            </header>
+            <p>
+              {% for author in publication.authors %}
+              {{ author.name | upcase }}{% if author.affiliation %}<sup>{{ author.affiliation }}</sup>{% endif %}{% unless forloop.last %}, {% endunless %}
+              {% endfor %}
+              {% if publication.publisher %} | {{ publication.publisher }}{% endif%}
+              {% if publication.location %} | {{ publication.location }}{% endif%}
+              {% if publication.date_ %} | {{ publication.date_ | date: "%b %d, %Y" }}{% endif%}
+            </p>
+            <p>
+              {% for affiliation in publication.affiliations %}
+              {% if affiliation.number %}<sup>{{ affiliation.number }}</sup>{% endif %}{{ affiliation.name }}{% unless forloop.last %} | {% endunless %}
+              {% endfor %}
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+</section>

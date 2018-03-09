@@ -22,6 +22,10 @@
 			text-transform: uppercase;
 		}
 
+        h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+            border-bottom: none;
+        }
+
 		&.major {
 			> :last-child {
 				border-bottom: solid 3px _palette(accent);

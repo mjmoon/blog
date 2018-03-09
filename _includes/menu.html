@@ -7,18 +7,14 @@
         {% for page in site.menu %}
         <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
         {% endfor %}
-        <li>
-            <span class="opener">Submenu</span>
+        <!-- <li>
+            <span class="opener">Archives</span>
             <ul>
                 <li><a href="{{ '/' | absolute_url }}">Home</a></li>
                 {% for page in site.menu %}
                 <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
                 {% endfor %}
             </ul>
-        </li>
-        <li><a href="{{ '/' | absolute_url }}">Home</a></li>
-        {% for page in site.menu %}
-        <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
-        {% endfor %}
+        </li> -->
     </ul>
 </nav>

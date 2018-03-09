@@ -1,0 +1,34 @@
+<section id="teaching">
+    <header class="major">
+        <h2>
+          <a href="#teaching">Teaching Experience</a>
+        </h2>
+    </header>
+    <div>
+        {% for teaching in site.teachings reversed %}
+        <header class="main">
+            <h3>{{ teaching.school }}</h3>
+        </header>
+        <div class="row">
+            <div class="4u 12u$(small)">
+                <strong>{{ teaching.position }}</strong>
+                <p>{{ teaching.location }}</p>
+            </div>
+            <div class="8u 12u$(small)">
+                <div class="posts">
+                    {% for period in teaching.periods %}
+                    <article>
+                        <strong>{{ period.start | date: "%b %Y" }} to {{ period.end | date: "%b %Y" }}</strong>
+                        <ul>
+                        {% for course in period.courses %}
+                            <li>{{ course.code }}: {{ course.name }}</li>
+                        {% endfor %}
+                        </ul>
+                    </article>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

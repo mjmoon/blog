@@ -1,0 +1,30 @@
+<section id="projects">
+    <header class="major">
+        <h2>
+          <a href="#projects">Projects</a>
+        </h2>
+    </header>
+    <div class="posts">
+        {% for project in site.projects reversed %}
+        <article>
+            <h3>{{ project.title }}</h3>
+            <p>
+              {% if project.independent %}Independent Research, {{ project.affiliation }} | {% endif %}
+              {% if project.authors.size > 1 %}
+              {% for author in project.authors %}
+              {{ author.name | upcase }}{% if forloop.last %} | {% else %}, {% endif %}
+              {% endfor %}
+              {% endif %}
+              {% if project.supervisors.size > 0 %}
+              Supervised by
+              {% for supervisor in project.supervisors %}
+              {% unless forloop.first %} | {% endunless %} {{ supervisor.name }}, {{ supervisor.affiliation }}{% if forloop.last %} | {% endif %}
+              {% endfor %}
+              {% endif %}
+              {{ project.start | date: "%b %Y"}} to {{ project.end | date: "%b %Y"}}
+            </p>
+            <p>{{ project.description }}</p>
+        </article>
+        {% endfor %}
+    </div>
+</section>

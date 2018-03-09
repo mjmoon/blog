@@ -1,0 +1,31 @@
+<section id="education">
+    <header class="major">
+        <h2>
+          <a href="#education">Education</a>
+        </h2>
+    </header>
+    <div>
+        {% for education in site.educations reversed %}
+        <div class="row">
+            <div class="4u 12u$(small)">
+                <header class="main">
+                    <h3>{{ education.school }}</h3>
+                </header>
+                <p>{{ education.degree }}<br/>
+                {{ education.location }}</p>
+                <p>
+                  {{ education.conferreddate | date: "%B %Y"}} {% if education.misc %} | {{ education.misc }} {% endif %}
+                </p>
+            </div>
+            <div class="8u 12u$(small)">
+                <p><strong>Major Courses</strong></p>
+                <ul class="alt">
+                    {% for course in education.courses %}
+                    <li>{{ course.name }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

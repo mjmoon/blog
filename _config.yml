@@ -9,7 +9,7 @@
 title: "micbon"
 description: "Michael J. Moon's personal blog"
 url: "https://mjmoon.github.io"
-baseurl: "/jekyll-html5up-editorial"
+baseurl: "/blog"
 author: "Michael J. Moon"
 
 # Use collections dir
@@ -18,6 +18,22 @@ collections:
     menu:
         permalink: /:name
         output: true
+    awards:
+        ouput: false
+    educations:
+        ouput: false
+    employments:
+        ouput: false
+    projects:
+        ouput: false
+    publications:
+        ouput: false
+    presentations:
+        ouput: false
+    teachings:
+        ouput: false
+    skills:
+        ouput: false
 
 # Sass
 sass:
