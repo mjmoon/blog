@@ -22,7 +22,7 @@ pagination:
         </ul>
     </div>
     <span class="image object">
-        <img src="{{ '/assets/img/ms-icon-310x310.png' | absolute_url }}" alt="" />
+        <img src="{{ '/assets/img/ms-icon-310x310.png' | absolute_url }}" alt="micbon" />
     </span>
 </section>
 
@@ -36,7 +36,7 @@ pagination:
         <article>
             {% if post.image %}
             <a href="{{ post.url | absolute_url }}" class="image">
-                <img src="{{ post.image | prepend: '/images/' | absolute_url }}" alt="" />
+                <img src="{{ post.image | prepend: '/images/' | absolute_url }}" alt="{{ post.title }}" />
             </a>
             {% endif %}
             <h3><a href="{{ post.url | absolute_url }}" class="image">{{ post.title }}</a></h3>

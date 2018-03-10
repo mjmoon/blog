@@ -6,7 +6,7 @@ layout: default
         <h1>{{ page.title }}</h1>
     </header>
     {% if page.image %}
-    <span class="image main"><img src="{{ site.url }}{{ site.baseurl }}/images/{{ page.image }}" alt="" /></span>
+    <span class="image main"><img src="{{ site.url }}{{ site.baseurl }}/images/{{ page.image }}" alt="{{ page.title }}" /></span>
     {% endif %}
     {{ content }}
 </section>
