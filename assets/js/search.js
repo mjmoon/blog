@@ -1,5 +1,3 @@
----
----
 // Direct to search result page
 jQuery(function() {
 	$('#search').submit(function(e) {
@@ -10,6 +8,6 @@ jQuery(function() {
 		document.location.href=
             location.protocol
             + "//" + location.host
-            + '{{ site.baseurl }}/search?q='+$("#search-box").val();
+            + '/blog/search?q='+$("#search-box").val();
 	});
 });
