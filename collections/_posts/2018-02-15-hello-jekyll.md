@@ -50,7 +50,7 @@ Jekyll uses [Liquid](https://shopify.github.io/liquid/basics/introduction/) temp
 
 As an example, in Wordpress, I wrote the About page in raw `html` of ~300 lines and editing the page every now and then was always tedious. I could have probably streamlined the work by creating a customer page template in Wordpress; however, the need just never seemed to justify the effort.
 
- On the other hand, Liquid made templating much simpler and I was able to create the template for the [About]({{ site.baseurl }}/menu/about) page from scratch within a few hours of reading and typing. The template made it simple to add and edit items using `yaml front matter`.
+ On the other hand, Liquid made templating much simpler and I was able to create the template for the [About]({{ '/about' | absolute_url }}) page from scratch within a few hours of reading and typing. The template made it simple to add and edit items using `yaml front matter`.
 
 ##### HTML vs. Liquid
 ```html
