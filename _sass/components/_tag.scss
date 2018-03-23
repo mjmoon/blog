@@ -10,9 +10,12 @@
 }
 
 #tagcloud{
+
+    max-height: 150px;
+    overflow-y: scroll;
+
     .tags .tag{
         margin: 0.05em;
         line-height: 2.5em;
     }
-
 }
