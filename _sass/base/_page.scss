@@ -32,7 +32,7 @@
 			&.is-resizing {
 				*, *:before, *:after {
 					@include vendor('animation', 'none !important');
-					// @include vendor('transition', 'none !important');
+					@include vendor('transition', 'none !important');
 				}
 			}
 
