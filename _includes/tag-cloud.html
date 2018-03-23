@@ -8,7 +8,7 @@
 
 <div id="tagcloud" class="box">
     <ul class="tags">
-        {% for tag in sortedtags limit 30 %}
+        {% for tag in sortedtags limit 10 %}
         {% assign tagitems = tag | split: '#' %}
         <a class="button tag" href="{{ tagitems[1] | prepend: '/tag/' | absolute_url }}/">{{ tagitems[1] }}</a>
         {% endfor %}

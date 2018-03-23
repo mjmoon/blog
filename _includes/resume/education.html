@@ -18,12 +18,15 @@
                 </p>
             </div>
             <div class="8u 12u$(small)">
+              {% if education.courses %}
                 <p><strong>Major Courses</strong></p>
                 <ul class="alt">
                     {% for course in education.courses %}
                     <li>{{ course.name }}</li>
                     {% endfor %}
                 </ul>
+                {% endif %}
+                <p>{{ education.content }}</p>
             </div>
         </div>
         {% endfor %}

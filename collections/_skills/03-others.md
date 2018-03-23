@@ -1,6 +1,6 @@
 ---
 group: 'Others'
-icon: fa-chevron-circle-down
+icon: fa-list-ul
 skills:
   - name: 'SDLC'
   - name: 'Agile methodology'
