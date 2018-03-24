@@ -25,12 +25,12 @@
 		// Disable animations/transitions ...
 
 			// ... until the page has loaded.
-				$body.addClass('is-loading');
 
 				$window.on('load', function() {
 					setTimeout(function() {
-						$body.removeClass('is-loading');
-					}, 100);
+						// $body.removeClass('is-loading');
+						$('#loader').remove();
+					}, 10);
 				});
 
 			// ... when resizing.
