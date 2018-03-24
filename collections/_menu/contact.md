@@ -4,10 +4,10 @@ title: Contact
 author: 'Michael J. Moon'
 ---
 <div class="row">
-    <div class="4u 12u$(small)">
+    <div class="4u 6u(medium) 12u$(small)">
         If you have any feedbacks, please feel free to contact me using the contact form. You can also find me on social media.
     </div>
-    <div class="6u$ 12u$(small)">
+    <div class="4u$ 6u$(medium) 12u$(small)">
         <ul class="icons square">
             {% for social in site.data.settings.social %}
             {% unless social.label == 'Feed' %}
@@ -16,7 +16,7 @@ author: 'Michael J. Moon'
             {% endfor %}
         </ul>
     </div>
-    <div class="7u 12u$(medium)">
+    <div class="8u 12u$(medium)">
         {% include contact-form.html %}
     </div>
 </div>
