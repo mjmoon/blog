@@ -4,9 +4,15 @@
           <a href="#projects">Projects</a>
         </h2>
     </header>
-    <div class="posts">
+    <div class="row">
+        <article class="3u 12u$(small) special">
+            <p>
+                <button class="prev-project" onclick="iterProject(-1)">&#10094;</button>
+                <button class="next-project" onclick="iterProject(1)">&#10095;</button>
+            </p>
+        </article>
         {% for project in site.projects reversed %}
-        <article>
+        <div class="9u$ 12u$(small) project">
             <h3>{{ project.title }}</h3>
             <p>
               {% if project.independent %}Independent Research, {{ project.affiliation }} | {% endif %}
@@ -24,7 +30,7 @@
               {{ project.start | date: "%b %Y"}} to {{ project.end | date: "%b %Y"}}
             </p>
             <p>{{ project.description }}</p>
-        </article>
+        </div>
         {% endfor %}
     </div>
 </section>
