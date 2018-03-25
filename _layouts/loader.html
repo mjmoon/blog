@@ -2,6 +2,9 @@
 <html>
     {% include head.html %}
     <body>
+        <div id="loader">
+            <div class="infinite-spinner"></div>
+        </div>
 		<!-- Wrapper -->
 		<div id="wrapper">
             <!-- Sidebar -->
@@ -11,14 +14,12 @@
 				<div class="inner">
 					<!-- Header -->
 					{% include header.html %}
-                    {{ content }}
+					{{ content }}
 				</div>
 			</div>
             {% include scroll-to-top.html %}
         </div>
         <!-- Scripts -->
 		{% include scripts.html %}
-        <script src="https://unpkg.com/lunr/lunr.js"></script>
-        <script src="{{ '/assets/js/search.result.js' | absolute_url }}"></script>
 	</body>
 </html>
