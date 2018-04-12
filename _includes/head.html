@@ -1,11 +1,5 @@
 <head>
-    <title>
-    {% if page.title %}
-      {{ page.title }} | {{ site.title }} | {{ site.description }}
-    {% else %}
-      {{ site.title }} | {{ site.description }}
-    {% endif %}
-    </title>
+    <title>{% if page.url == '/index.html' %}{{ site.title | escape | downcase }} | {{ site.description | escape | downcase }}{% elsif page.title %}{{ page.title | escape | downcase }} | {{ site.title | escape | downcase }} | {{ site.description | escape | downcase }}{% else %}{{ site.title | escape | downcase }} | {{ site.description | escape | downcase }}{% endif %}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
