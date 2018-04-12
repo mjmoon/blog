@@ -9,7 +9,7 @@
 title: "micbon"
 description: "Michael J. Moon's personal blog"
 url: "https://mjmoon.github.io"
-baseurl: "/blog"
+baseurl: "/"
 author: "Michael J. Moon"
 
 # Use collections dir
