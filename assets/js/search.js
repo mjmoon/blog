@@ -8,6 +8,6 @@ jQuery(function() {
 		document.location.href=
             location.protocol
             + "//" + location.host
-            + '/blog/search?q='+$("#search-box").val();
+            + '//search?q='+$("#search-box").val();
 	});
 });
