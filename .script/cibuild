@@ -18,7 +18,7 @@ git clone https://${GITHUB_TOKEN}@github.com/mjmoon/blog.git --branch gh-pages _
 
 # build with Jekyll into "_site"
 bundle exec jekyll build
-bundle exec htmlproofer ./_site --disable-external
+bundle exec htmlproofer ./_site --disable-external --allow-hash-href true
 
 # push
 cd _site
