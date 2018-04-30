@@ -4,7 +4,7 @@
     <title>about | micbon | michael j. moon&#39;s personal blog</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="description" content="                                                LinkedIn                                                GitHub                                               ...">
+    <meta name="description" content="                        {% for social in site.data.settings.social %}            {% unless social.label == 'Feed' %}            {{ social.label }}           ...">
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="/assets/css/main.css" />
     <link rel="stylesheet" href="/assets/css/syntax.css" />
@@ -12,21 +12,22 @@
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     <link rel="canonical" href="https://blog.micbon.com/about">
     <link rel="shortcut icon" href="/favicon.ico?v=1.1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Begin Jekyll SEO tag v2.4.0 -->
 <title>About | micbon</title>
-<meta name="generator" content="Jekyll v3.7.3" />
+<meta name="generator" content="Jekyll v3.8.0" />
 <meta property="og:title" content="About" />
 <meta name="author" content="Michael J. Moon" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="LinkedIn GitHub Instagram Twitter If you are here to see my educational and professional background, please find my curriculum vitae below. CV I am a data enthusiasts and a web development hobbyist. I am now working with my friends to start a blog using data visualizations. I have become familiar and interested in web development using jekyll + travis-ci, and some css + javascript while setting up this blog. I will be starting my pursuit of PhD in statistics at the University of Toronto this Fall. yay! In general, I like breaking things understanding how things work, making new things using those broken pieces understanding, and making things look beautifulsubject to my own not-so-sophisticated taste - related to data. Contents Skills Education Publications Presentations Teaching Awards Projects Employments" />
-<meta property="og:description" content="LinkedIn GitHub Instagram Twitter If you are here to see my educational and professional background, please find my curriculum vitae below. CV I am a data enthusiasts and a web development hobbyist. I am now working with my friends to start a blog using data visualizations. I have become familiar and interested in web development using jekyll + travis-ci, and some css + javascript while setting up this blog. I will be starting my pursuit of PhD in statistics at the University of Toronto this Fall. yay! In general, I like breaking things understanding how things work, making new things using those broken pieces understanding, and making things look beautifulsubject to my own not-so-sophisticated taste - related to data. Contents Skills Education Publications Presentations Teaching Awards Projects Employments" />
+<meta name="description" content="{% for social in site.data.settings.social %} {% unless social.label == &#39;Feed&#39; %} {{ social.label }} {% endunless %} {% endfor %} If you are here to see my educational and professional background, please find my curriculum vitae below. CV I am a data enthusiasts and a web development hobbyist. I am now working with my friends to start a blog using data visualizations. I have become familiar and interested in web development using jekyll + travis-ci, and some css + javascript while setting up this blog. I will be starting my pursuit of PhD in statistics at the University of Toronto this Fall. yay! In general, I like breaking things understanding how things work, making new things using those broken pieces understanding, and making things look beautifulsubject to my own not-so-sophisticated taste - related to data. Contents Skills Education Publications Presentations Teaching Awards Projects Employments" />
+<meta property="og:description" content="{% for social in site.data.settings.social %} {% unless social.label == &#39;Feed&#39; %} {{ social.label }} {% endunless %} {% endfor %} If you are here to see my educational and professional background, please find my curriculum vitae below. CV I am a data enthusiasts and a web development hobbyist. I am now working with my friends to start a blog using data visualizations. I have become familiar and interested in web development using jekyll + travis-ci, and some css + javascript while setting up this blog. I will be starting my pursuit of PhD in statistics at the University of Toronto this Fall. yay! In general, I like breaking things understanding how things work, making new things using those broken pieces understanding, and making things look beautifulsubject to my own not-so-sophisticated taste - related to data. Contents Skills Education Publications Presentations Teaching Awards Projects Employments" />
 <link rel="canonical" href="https://blog.micbon.com/about" />
 <meta property="og:url" content="https://blog.micbon.com/about" />
 <meta property="og:site_name" content="micbon" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-04-12T20:17:24+00:00" />
+<meta property="article:published_time" content="2018-04-30T17:21:31+00:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"https://blog.micbon.com/about","author":{"@type":"Person","name":"Michael J. Moon"},"headline":"About","dateModified":"2018-04-12T20:17:24+00:00","datePublished":"2018-04-12T20:17:24+00:00","description":"LinkedIn GitHub Instagram Twitter If you are here to see my educational and professional background, please find my curriculum vitae below. CV I am a data enthusiasts and a web development hobbyist. I am now working with my friends to start a blog using data visualizations. I have become familiar and interested in web development using jekyll + travis-ci, and some css + javascript while setting up this blog. I will be starting my pursuit of PhD in statistics at the University of Toronto this Fall. yay! In general, I like breaking things understanding how things work, making new things using those broken pieces understanding, and making things look beautifulsubject to my own not-so-sophisticated taste - related to data. Contents Skills Education Publications Presentations Teaching Awards Projects Employments","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.micbon.com/about"},"@context":"http://schema.org"}</script>
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.micbon.com/about"},"url":"https://blog.micbon.com/about","headline":"About","dateModified":"2018-04-30T17:21:31+00:00","datePublished":"2018-04-30T17:21:31+00:00","description":"{% for social in site.data.settings.social %} {% unless social.label == &#39;Feed&#39; %} {{ social.label }} {% endunless %} {% endfor %} If you are here to see my educational and professional background, please find my curriculum vitae below. CV I am a data enthusiasts and a web development hobbyist. I am now working with my friends to start a blog using data visualizations. I have become familiar and interested in web development using jekyll + travis-ci, and some css + javascript while setting up this blog. I will be starting my pursuit of PhD in statistics at the University of Toronto this Fall. yay! In general, I like breaking things understanding how things work, making new things using those broken pieces understanding, and making things look beautifulsubject to my own not-so-sophisticated taste - related to data. Contents Skills Education Publications Presentations Teaching Awards Projects Employments","author":{"@type":"Person","name":"Michael J. Moon"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- Use Atom -->
@@ -1013,8 +1014,7 @@
 
         </div>
         <!-- Scripts -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/assets/js/skel.min.js"></script>
+        <script src="/assets/js/skel.min.js"></script>
 <script src="/assets/js/util.js"></script>
 <!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="/assets/js/main.js"></script>

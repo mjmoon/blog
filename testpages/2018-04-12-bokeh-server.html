@@ -1,31 +1,33 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-    <title>tag: pandas | micbon | michael j. moon&#39;s personal blog</title>
+    <title>plotting up-to-date stock data with a bokeh server app | micbon | michael j. moon&#39;s personal blog</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="description" content="Michael J. Moon's personal blog">
+    <meta name="description" content=" Github repository.">
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="/assets/css/main.css" />
     <link rel="stylesheet" href="/assets/css/syntax.css" />
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-    <link rel="canonical" href="https://blog.micbon.com/tag/pandas/">
+    <link rel="canonical" href="https://blog.micbon.com/testpages/2018-04-12-bokeh-server.html">
     <link rel="shortcut icon" href="/favicon.ico?v=1.1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Begin Jekyll SEO tag v2.4.0 -->
-<title>Tag: pandas | micbon</title>
+<title>Plotting up-to-date stock data with a bokeh server app | micbon</title>
 <meta name="generator" content="Jekyll v3.8.0" />
-<meta property="og:title" content="Tag: pandas" />
+<meta property="og:title" content="Plotting up-to-date stock data with a bokeh server app" />
 <meta name="author" content="Michael J. Moon" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Michael J. Moon’s personal blog" />
-<meta property="og:description" content="Michael J. Moon’s personal blog" />
-<link rel="canonical" href="https://blog.micbon.com/tag/pandas/" />
-<meta property="og:url" content="https://blog.micbon.com/tag/pandas/" />
+<meta name="description" content="Github repository." />
+<meta property="og:description" content="Github repository." />
+<link rel="canonical" href="https://blog.micbon.com/testpages/2018-04-12-bokeh-server.html" />
+<meta property="og:url" content="https://blog.micbon.com/testpages/2018-04-12-bokeh-server.html" />
 <meta property="og:site_name" content="micbon" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-04-12T05:00:00+00:00" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"https://blog.micbon.com/tag/pandas/","headline":"Tag: pandas","description":"Michael J. Moon’s personal blog","author":{"@type":"Person","name":"Michael J. Moon"},"@context":"http://schema.org"}</script>
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.micbon.com/testpages/2018-04-12-bokeh-server.html"},"url":"https://blog.micbon.com/testpages/2018-04-12-bokeh-server.html","headline":"Plotting up-to-date stock data with a bokeh server app","dateModified":"2018-04-12T05:00:00+00:00","datePublished":"2018-04-12T05:00:00+00:00","description":"Github repository.","author":{"@type":"Person","name":"Michael J. Moon"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- Use Atom -->
@@ -36,6 +38,9 @@
 </head>
 
     <body>
+        <div id="loader">
+            <div class="infinite-spinner"></div>
+        </div>
 		<!-- Wrapper -->
 		<div id="wrapper">
             <!-- Sidebar -->
@@ -212,12 +217,122 @@
 
 					<section>
     <header class="main">
-        <h1>Tag: pandas</h1>
+        <h1>Plotting up-to-date stock data with a bokeh server app</h1>
     </header>
-    <div class="jscroll">
-        <div class="posts">
+    
+    <p><a href="https://github.com/mjmoon/plot-stocks-bokeh" class="icon fa-github"> Github repository.</a></p>
+
+<link rel="stylesheet" href="/assets/css/slides.css" />
+
+<link rel="stylesheet" href="/assets/css/plot/2018-04-12-plot-01.css" />
+
+<div class="slides-container">
+    <div class="slides fade">
+        <div class="slides-title">Script embed</div>
+        <script src="https://mm-plot-stocks.herokuapp.com/app/autoload.js?bokeh-autoload-element=21904a68-8624-4eea-b517-285e18c24435&amp;bokeh-app-path=/app&amp;bokeh-absolute-url=https://mm-plot-stocks.herokuapp.com/app" id="21904a68-8624-4eea-b517-285e18c24435" data-bokeh-model-id="" data-bokeh-doc-id=""></script>
+        <!-- <script
+            src="http://localhost:5006/app/autoload.js?bokeh-autoload-element=226bb58e-5d0d-41e6-988f-81a707419236&bokeh-app-path=/app&bokeh-absolute-url=http://localhost:5006/app"
+            id="226bb58e-5d0d-41e6-988f-81a707419236"
+            data-bokeh-model-id=""
+            data-bokeh-doc-id=""
+        ></script> -->
+    </div>
+    <div class="slides fade">
+        <div class="slides-title">iFrame embed</div>
+        <iframe id="mm-plot-stocks" src="https://mm-plot-stocks.herokuapp.com/" seamless="seamless"></iframe>
+    </div>
+</div>
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)" title="Script embed"></span>
+    <span class="dot" onclick="currentSlide(2)" title="iFrame embed"></span>
+</div>
+<!-- Slider -->
+<script src="/assets/js/slides.js"></script>
+
+<p>Using the <code class="highlighter-rouge">bokeh</code> library’s ,</p>
+
+<ul>
+  <li>Data sources: <a href="https://pypi.python.org/pypi/pandas-datareader"><code class="highlighter-rouge">datareader</code></a> and <a href="https://github.com/RomelTorres/alpha_vantage"><code class="highlighter-rouge">alpha_vantage</code></a></li>
+  <li>App: <a href="https://bokeh.pydata.org/en/latest/docs/user_guide/server.html"><code class="highlighter-rouge">bokeh.server</code></a></li>
+  <li>Hosting: <a href="https://www.heroku.com/"><code class="highlighter-rouge">heroku</code></a></li>
+  <li>Portability: <a href="https://www.docker.com/"><code class="highlighter-rouge">docker</code></a></li>
+</ul>
+
+</section>
+<section>
+    <div class="row">
+        <div class="5u 12u$(medium)">
+            <h2>Tags</h2>
+<ul class="tags">
+    
+    <a class="button tag" href="https://blog.micbon.com/tag/bokeh/">bokeh</a>
+    
+    <a class="button tag" href="https://blog.micbon.com/tag/python/">python</a>
+    
+    <a class="button tag" href="https://blog.micbon.com/tag/data-visualization/">data-visualization</a>
+    
+    <a class="button tag" href="https://blog.micbon.com/tag/heroku/">heroku</a>
+    
+    <a class="button tag" href="https://blog.micbon.com/tag/docker/">docker</a>
+    
+</ul>
+
+        </div>
+        <div class="4u 6u(medium)">
+            <h2>Share</h2>
+<ul class="icons square">
+    <li><a class="icon fa-facebook-square" label="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.micbon.com/testpages/2018-04-12-bokeh-server.html&amp;title=Plotting up-to-date stock data with a bokeh server app" target="_blank"></a></li>
+    <li><a class="icon fa-twitter-square" label="twitter" href="https://twitter.com/intent/tweet?text=Plotting up-to-date stock data with a bokeh server app&amp;url=https://blog.micbon.com/testpages/2018-04-12-bokeh-server.html" target="_blank"></a></li>
+    <li><a class="icon fa-google-plus-square" label="google-plus" href="https://plus.google.com/share?url=https://blog.micbon.com/testpages/2018-04-12-bokeh-server.html" target="_blank"></a></li>
+    <li><a class="icon fa-linkedin-square" label="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://blog.micbon.com/testpages/2018-04-12-bokeh-server.html&title=Plotting up-to-date stock data with a bokeh server app&source=micbon"></a></li>
+</ul>
+
+        </div>
+        <div class="3u$ 6u$(medium)">
+            <ul class="alt">
+                <li>Written on: Apr 12, 2018</li>
+                <li>Written by: Michael J. Moon</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="disqus">
+    <div id="disqus_thread"></div>
+    <script>
+
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+    var disqus_config = function () {
+    this.page.url = "https://blog.micbon.com/testpages/2018-04-12-bokeh-server.html";  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = "https-blog-micbon-com-testpages-2018-04-12-bokeh-server-html"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://micbon-blog.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+    
+</section>
+
+<header class="major">
+    <h2>Related posts</h2>
+</header>
+<section>
+    <div class="posts">
+    
+    
+        
             
             <article>
+                
                 <h3><a href="https://blog.micbon.com/post/age-imputation.html">Random imputation by group using pandas library</a></h3>
                 <h6>Feb 12, 2018</h6>
                 <p><p>Kaggle’s introductory competition - <a href="https://www.kaggle.com/c/titanic" target="_blank">Titanic: Machine learning from disaster competition</a> - provides datasets of passengers who were on board of the RMS Titanic. One of the features <code class="highlighter-rouge">age</code> is missing a good chunk of data - <code class="highlighter-rouge">177</code> values out of <code class="highlighter-rouge">891</code> rows in the training data. Below is an attempt to fill those gaps using random imputation based on logical groups.</p>
@@ -240,7 +355,11 @@
                 </ul>
             </article>
             
+            
+        
+            
             <article>
+                
                 <h3><a href="https://blog.micbon.com/post/linked-bokeh-plot.html">Creating linked plots using Python's bokeh library</a></h3>
                 <h6>Oct 06, 2017</h6>
                 <p><p>In this post, I am going to create interlinked, interactive scatter plots using the <a href="https://bokeh.pydata.org/en/latest/" title="Bokeh homepage" target="_blank"><strong>Bokeh</strong></a> library. Below is the description of the library from the homepage.</p>
@@ -259,17 +378,59 @@
                 </ul>
             </article>
             
-        </div>
-        <!-- paginator -->
+            
         
+    
+        
+            
+        
+            
+            <article>
+                
+                <h3><a href="https://blog.micbon.com/post/env-set-up.html">Setting up a collaborative Python project environment</a></h3>
+                <h6>Jan 19, 2018</h6>
+                <p><p>Recently, I have convinced two of my friends to form a study group on data science. We are planning to follow courses from different online educational platforms such as <a href="https://www.datacamp.com/" target="_blank">DataCamp</a> and <a href="https://www.edx.org/" target="_blank">edX</a> while completing projects using data from <a href="https://www.kaggle.com/" target="_blank">Kaggle</a>. Before we start our first project with <a href="https://www.kaggle.com/c/titanic" target="_blank">Kaggle’s introductory competition</a>, we walked through the following steps to set up common, collaborative project environments.</p>
+
+</p>
+                <ul class="tags">
+                    
+                    <a class="button tag" href="https://blog.micbon.com/tag/python/">python</a>
+                    
+                    <a class="button tag" href="https://blog.micbon.com/tag/git/">git</a>
+                    
+                    <a class="button tag" href="https://blog.micbon.com/tag/anaconda/">anaconda</a>
+                    
+                    <a class="button tag" href="https://blog.micbon.com/tag/cookiecutter/">cookiecutter</a>
+                    
+                </ul>
+            </article>
+            
+            
+        
+            
+        
+    
+        
+            
+        
+            
+        
+    
+        
+    
+        
+    
     </div>
 </section>
+
+
 
 				</div>
 			</div>
             <button class="special icon fa-chevron-up" onclick="topFunction()" id="scroll-to-top" title="Go to top">Top</button>
 
         </div>
+        <!-- Scripts -->
 		<script src="/assets/js/skel.min.js"></script>
 <script src="/assets/js/util.js"></script>
 <!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
@@ -279,8 +440,5 @@
 <!-- Scroll to top -->
 <script src="/assets/js/scrolltop.js"></script>
 
-        <!-- Infinite scroll -->
-        <script src="/assets/js/jquery.jscroll.min.js"></script>
-        
 	</body>
 </html>

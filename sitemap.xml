@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://blog.micbon.com/about</loc>
-<lastmod>2018-04-12T20:17:24+00:00</lastmod>
+<lastmod>2018-04-30T17:21:31+00:00</lastmod>
 </url>
 <url>
 <loc>https://blog.micbon.com/archives</loc>
-<lastmod>2018-04-12T20:17:24+00:00</lastmod>
+<lastmod>2018-04-30T17:21:31+00:00</lastmod>
 </url>
 <url>
 <loc>https://blog.micbon.com/contact</loc>
-<lastmod>2018-04-12T20:17:24+00:00</lastmod>
+<lastmod>2018-04-30T17:21:31+00:00</lastmod>
 </url>
 <url>
 <loc>https://blog.micbon.com/post/linked-bokeh-plot.html</loc>
@@ -29,8 +29,8 @@
 <lastmod>2018-02-15T05:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>https://blog.micbon.com/testpages/00-test-bokeh-embed.html</loc>
-<lastmod>2018-04-12T20:17:24+00:00</lastmod>
+<loc>https://blog.micbon.com/testpages/2018-04-12-bokeh-server.html</loc>
+<lastmod>2018-04-12T05:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>https://blog.micbon.com/search.html</loc>
@@ -73,5 +73,11 @@
 </url>
 <url>
 <loc>https://blog.micbon.com/tag/wordpress/</loc>
+</url>
+<url>
+<loc>https://blog.micbon.com/tag/heroku/</loc>
+</url>
+<url>
+<loc>https://blog.micbon.com/tag/docker/</loc>
 </url>
 </urlset>
