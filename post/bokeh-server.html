@@ -1,33 +1,33 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-    <title>plotting up-to-date stock data with a bokeh server app | micbon | michael j. moon&#39;s personal blog</title>
+    <title>a bokeh server app for up-to-date stock prices | micbon | michael j. moon&#39;s personal blog</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="description" content=" Github repository.">
+    <meta name="description" content="The python bokeh library lets you build data visualization applications on the web and run them on a server. Below is plot that uses bokeh.server along with ...">
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="/assets/css/main.css" />
     <link rel="stylesheet" href="/assets/css/syntax.css" />
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-    <link rel="canonical" href="https://blog.micbon.com/testpages/2018-04-12-bokeh-server.html">
+    <link rel="canonical" href="https://blog.micbon.com/post/bokeh-server.html">
     <link rel="shortcut icon" href="/favicon.ico?v=1.1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Begin Jekyll SEO tag v2.4.0 -->
-<title>Plotting up-to-date stock data with a bokeh server app | micbon</title>
+<title>A bokeh server app for up-to-date stock prices | micbon</title>
 <meta name="generator" content="Jekyll v3.8.0" />
-<meta property="og:title" content="Plotting up-to-date stock data with a bokeh server app" />
+<meta property="og:title" content="A bokeh server app for up-to-date stock prices" />
 <meta name="author" content="Michael J. Moon" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Github repository." />
-<meta property="og:description" content="Github repository." />
-<link rel="canonical" href="https://blog.micbon.com/testpages/2018-04-12-bokeh-server.html" />
-<meta property="og:url" content="https://blog.micbon.com/testpages/2018-04-12-bokeh-server.html" />
+<meta name="description" content="The python bokeh library lets you build data visualization applications on the web and run them on a server. Below is plot that uses bokeh.server along with other python libraries to display up-to-date (mostly U.S.) stock market closing prices." />
+<meta property="og:description" content="The python bokeh library lets you build data visualization applications on the web and run them on a server. Below is plot that uses bokeh.server along with other python libraries to display up-to-date (mostly U.S.) stock market closing prices." />
+<link rel="canonical" href="https://blog.micbon.com/post/bokeh-server.html" />
+<meta property="og:url" content="https://blog.micbon.com/post/bokeh-server.html" />
 <meta property="og:site_name" content="micbon" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-04-12T05:00:00+00:00" />
+<meta property="article:published_time" content="2018-04-30T05:00:00+00:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.micbon.com/testpages/2018-04-12-bokeh-server.html"},"url":"https://blog.micbon.com/testpages/2018-04-12-bokeh-server.html","headline":"Plotting up-to-date stock data with a bokeh server app","dateModified":"2018-04-12T05:00:00+00:00","datePublished":"2018-04-12T05:00:00+00:00","description":"Github repository.","author":{"@type":"Person","name":"Michael J. Moon"},"@context":"http://schema.org"}</script>
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.micbon.com/post/bokeh-server.html"},"url":"https://blog.micbon.com/post/bokeh-server.html","headline":"A bokeh server app for up-to-date stock prices","dateModified":"2018-04-30T05:00:00+00:00","datePublished":"2018-04-30T05:00:00+00:00","description":"The python bokeh library lets you build data visualization applications on the web and run them on a server. Below is plot that uses bokeh.server along with other python libraries to display up-to-date (mostly U.S.) stock market closing prices.","author":{"@type":"Person","name":"Michael J. Moon"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- Use Atom -->
@@ -38,9 +38,6 @@
 </head>
 
     <body>
-        <div id="loader">
-            <div class="infinite-spinner"></div>
-        </div>
 		<!-- Wrapper -->
 		<div id="wrapper">
             <!-- Sidebar -->
@@ -100,10 +97,6 @@
     </a>
         
         
-        <a class="button tag" href="https://blog.micbon.com/tag/pandas/">pandas
-    </a>
-        
-        
         <a class="button tag" href="https://blog.micbon.com/tag/data-visualization/">data-visualization
     </a>
         
@@ -112,10 +105,12 @@
     </a>
         
         
+        <a class="button tag" href="https://blog.micbon.com/tag/pandas/">pandas
+    </a>
+        
+        
         <a class="button tag" href="https://blog.micbon.com/tag/wordpress/">wordpress
-    
-  
-</a>
+    </a>
         
         
         <a class="button tag" href="https://blog.micbon.com/tag/kaggle/">kaggle
@@ -130,6 +125,10 @@
     </a>
         
         
+        <a class="button tag" href="https://blog.micbon.com/tag/heroku/">heroku
+    </a>
+        
+        
         <a class="button tag" href="https://blog.micbon.com/tag/github/">github
     </a>
         
@@ -138,7 +137,17 @@
     </a>
         
         
+        <a class="button tag" href="https://blog.micbon.com/tag/docker/">docker
+    
+  
+</a>
+        
+        
         <a class="button tag" href="https://blog.micbon.com/tag/cookiecutter/">cookiecutter
+    </a>
+        
+        
+        <a class="button tag" href="https://blog.micbon.com/tag/bokeh-server/">bokeh-server
     </a>
         
         
@@ -217,14 +226,14 @@
 
 					<section>
     <header class="main">
-        <h1>Plotting up-to-date stock data with a bokeh server app</h1>
+        <h1>A bokeh server app for up-to-date stock prices</h1>
     </header>
     
-    <p><a href="https://github.com/mjmoon/plot-stocks-bokeh" class="icon fa-github"> Github repository.</a></p>
+    <p>The python <code class="highlighter-rouge">bokeh</code> library lets you build data visualization applications on the web and run them on a server. Below is plot that uses <a href="https://bokeh.pydata.org/en/latest/docs/user_guide/server.html"><code class="highlighter-rouge">bokeh.server</code></a> along with other python libraries to display up-to-date (mostly U.S.) stock market closing prices.</p>
 
 <link rel="stylesheet" href="/assets/css/slides.css" />
 
-<link rel="stylesheet" href="/assets/css/plot/2018-04-12-plot-01.css" />
+<link rel="stylesheet" href="/assets/css/plot/2018-04-30-plot-01.css" />
 
 <div class="slides-container">
     <div class="slides fade">
@@ -240,22 +249,56 @@
     <div class="slides fade">
         <div class="slides-title">iFrame embed</div>
         <iframe id="mm-plot-stocks" src="https://mm-plot-stocks.herokuapp.com/" seamless="seamless"></iframe>
+        <!-- <iframe id="mm-plot-stocks" src="http://localhost:5006/app" seamless="seamless"></iframe> -->
     </div>
 </div>
-<div style="text-align:center">
+<div class="slides-dots">
     <span class="dot" onclick="currentSlide(1)" title="Script embed"></span>
     <span class="dot" onclick="currentSlide(2)" title="iFrame embed"></span>
 </div>
 <!-- Slider -->
 <script src="/assets/js/slides.js"></script>
 
-<p>Using the <code class="highlighter-rouge">bokeh</code> library’s ,</p>
+<div class="row">
+<div class="4u 12u$(small)">
+<h4>Data sources</h4>
+<p>I used <a href="https://pandas-datareader.readthedocs.io/en/latest/" target="_blank"><code class="highlighter-rouge">pandas-datareader</code></a> and <a href="https://github.com/RomelTorres/alpha_vantage" target="_blank"><code class="highlighter-rouge">alpha_vantage</code></a> python libraries to access free data providers. The former library lets you access stock market data from <i>Morningstar</i> among other providers. <i>Alpha Vantage</i> provides similar data with minimal time delay (1 minute).</p>
+</div>
+<div class="4u 12u$(small)">
+<h4>Application</h4>
+<p>Using <code class="highlighter-rouge">bokeh.server</code>, I was able to plot, add widgets - a button group for period selection and an auto-complete text input box for ticker selection.</p>
+<p>You can find the source code for the plot here <a href="https://github.com/mjmoon/plot-stocks-bokeh" class="icon fa-github"></a>.</p>
+</div>
+<div class="4u 12u$(small)">
+<h4>Deployment</h4>
+<p>I used <a href="https://www.heroku.com" target="_blank"><code class="highlighter-rouge">heroku</code></a>'s free tier service to host the app online. It's easy to use if you are used to using `git`. The free-tier comes with usage limits, most of which are sufficient for my purpose. The only noticeable limit is the fact that the machine goes to sleep after 30 minutes of inactivity. Hence, you likely waited a while until the plot showed up.</p>
+<p>I also used <a href="https://www.docker.com/" target="_blank"><code class="highlighter-rouge">docker</code></a> to make the app portable to other platforms if necessary (and to get myself familiarized with <code class="highlighter-rouge">docker</code>).</p>
+</div>
+</div>
 
+<hr />
+
+<h4 id="notes">Notes</h4>
 <ul>
-  <li>Data sources: <a href="https://pypi.python.org/pypi/pandas-datareader"><code class="highlighter-rouge">datareader</code></a> and <a href="https://github.com/RomelTorres/alpha_vantage"><code class="highlighter-rouge">alpha_vantage</code></a></li>
-  <li>App: <a href="https://bokeh.pydata.org/en/latest/docs/user_guide/server.html"><code class="highlighter-rouge">bokeh.server</code></a></li>
-  <li>Hosting: <a href="https://www.heroku.com/"><code class="highlighter-rouge">heroku</code></a></li>
-  <li>Portability: <a href="https://www.docker.com/"><code class="highlighter-rouge">docker</code></a></li>
+  <li>
+    <p><strong>–allow-websocket-origin</strong></p>
+
+    <blockquote>
+      <p>By default, cross site connections to the Bokeh server websocket are not allowed. You can enable websocket connections originating from additional hosts by specifying them with the –allow-websocket-origin option.</p>
+    </blockquote>
+
+    <p>Not really understanding how servers work, I fumbled with this for quite a bit. I added <code class="highlighter-rouge">--allow-websocket-origin=blog.micbon.com</code> as well as <code class="highlighter-rouge">--allow-websocket-origin=mm-plot-stocks.herokuapp.com</code> to allow access from this page and the <code class="highlighter-rouge">heroku</code> page. I embedded the plots using both <code class="highlighter-rouge">&lt;script&gt;</code> and <code class="highlighter-rouge">&lt;iframe&gt;</code> tags to see the difference.</p>
+  </li>
+  <li>
+    <p><strong>not so responsive</strong></p>
+
+    <p>I found it difficult to make the application responsive (resize along with the display size). It may be possible if I fumbled a little longer but since the plot itself wouldn’t be able to show much when it’s too small I decided to leave it at a fixed size.</p>
+  </li>
+  <li>
+    <p><strong>another plotting library</strong></p>
+
+    <p>I also created the same plot using <code class="highlighter-rouge">plotly</code>’s <code class="highlighter-rouge">dash</code> module. You can see the app <a href="https://mm-plot-stock-dash.herokuapp.com/" target="_blank">here</a> and the source codes here <a href="https://github.com/mjmoon/plot-stocks" class="icon fa-github" target="_blank"></a>. It was actually easier to use in my opinion. The only trouble I have is making it work with <code class="highlighter-rouge">Docker</code>. I still have not figured out how… :(</p>
+  </li>
 </ul>
 
 </section>
@@ -266,6 +309,8 @@
 <ul class="tags">
     
     <a class="button tag" href="https://blog.micbon.com/tag/bokeh/">bokeh</a>
+    
+    <a class="button tag" href="https://blog.micbon.com/tag/bokeh-server/">bokeh-server</a>
     
     <a class="button tag" href="https://blog.micbon.com/tag/python/">python</a>
     
@@ -281,16 +326,16 @@
         <div class="4u 6u(medium)">
             <h2>Share</h2>
 <ul class="icons square">
-    <li><a class="icon fa-facebook-square" label="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.micbon.com/testpages/2018-04-12-bokeh-server.html&amp;title=Plotting up-to-date stock data with a bokeh server app" target="_blank"></a></li>
-    <li><a class="icon fa-twitter-square" label="twitter" href="https://twitter.com/intent/tweet?text=Plotting up-to-date stock data with a bokeh server app&amp;url=https://blog.micbon.com/testpages/2018-04-12-bokeh-server.html" target="_blank"></a></li>
-    <li><a class="icon fa-google-plus-square" label="google-plus" href="https://plus.google.com/share?url=https://blog.micbon.com/testpages/2018-04-12-bokeh-server.html" target="_blank"></a></li>
-    <li><a class="icon fa-linkedin-square" label="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://blog.micbon.com/testpages/2018-04-12-bokeh-server.html&title=Plotting up-to-date stock data with a bokeh server app&source=micbon"></a></li>
+    <li><a class="icon fa-facebook-square" label="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://blog.micbon.com/post/bokeh-server.html&amp;title=A bokeh server app for up-to-date stock prices" target="_blank"></a></li>
+    <li><a class="icon fa-twitter-square" label="twitter" href="https://twitter.com/intent/tweet?text=A bokeh server app for up-to-date stock prices&amp;url=https://blog.micbon.com/post/bokeh-server.html" target="_blank"></a></li>
+    <li><a class="icon fa-google-plus-square" label="google-plus" href="https://plus.google.com/share?url=https://blog.micbon.com/post/bokeh-server.html" target="_blank"></a></li>
+    <li><a class="icon fa-linkedin-square" label="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://blog.micbon.com/post/bokeh-server.html&title=A bokeh server app for up-to-date stock prices&source=micbon"></a></li>
 </ul>
 
         </div>
         <div class="3u$ 6u$(medium)">
             <ul class="alt">
-                <li>Written on: Apr 12, 2018</li>
+                <li>Written on: Apr 30, 2018</li>
                 <li>Written by: Michael J. Moon</li>
             </ul>
         </div>
@@ -305,8 +350,8 @@
     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
     var disqus_config = function () {
-    this.page.url = "https://blog.micbon.com/testpages/2018-04-12-bokeh-server.html";  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = "https-blog-micbon-com-testpages-2018-04-12-bokeh-server-html"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    this.page.url = "https://blog.micbon.com/post/bokeh-server.html";  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = "https-blog-micbon-com-post-bokeh-server-html"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
 
     (function() { // DON'T EDIT BELOW THIS LINE
@@ -329,6 +374,8 @@
     <div class="posts">
     
     
+        
+            
         
             
             <article>
@@ -384,6 +431,12 @@
         
             
         
+    
+        
+            
+        
+            
+        
             
             <article>
                 
@@ -415,9 +468,15 @@
         
             
         
-    
+            
         
     
+        
+            
+        
+    
+        
+            
         
     
     </div>
