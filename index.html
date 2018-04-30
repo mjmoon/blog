@@ -41,7 +41,7 @@ pagination:
             {% endif %}
             <h3><a href="{{ post.url | absolute_url }}" class="image">{{ post.title }}</a></h3>
             <h6>{{ post.date | date: '%b %d, %Y' }}</h6>
-            <p>{{ post.excerpt | truncate: 300 }}</p>
+            <p>{{ post.excerpt | strip_html | truncate: 300 }}</p>
         </article>
         {% endfor %}
     </div>
