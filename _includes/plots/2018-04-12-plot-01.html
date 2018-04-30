@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="{{ '/assets/css/slides.css' | relative_url }}" />
+<link rel="stylesheet" href="{{ '/assets/css/plot/2018-04-12-plot-01.css' | relative_url }}" />
+<div class="slides-container">
+    <div class="slides fade">
+        <div class="slides-title">Script embed</div>
+        <script
+            src="https://mm-plot-stocks.herokuapp.com/app/autoload.js?bokeh-autoload-element=21904a68-8624-4eea-b517-285e18c24435&bokeh-app-path=/app&bokeh-absolute-url=https://mm-plot-stocks.herokuapp.com/app"
+            id="21904a68-8624-4eea-b517-285e18c24435"
+            data-bokeh-model-id=""
+            data-bokeh-doc-id=""
+        ></script>
+        <!-- <script
+            src="http://localhost:5006/app/autoload.js?bokeh-autoload-element=226bb58e-5d0d-41e6-988f-81a707419236&bokeh-app-path=/app&bokeh-absolute-url=http://localhost:5006/app"
+            id="226bb58e-5d0d-41e6-988f-81a707419236"
+            data-bokeh-model-id=""
+            data-bokeh-doc-id=""
+        ></script> -->
+    </div>
+    <div class="slides fade">
+        <div class="slides-title">iFrame embed</div>
+        <iframe id="mm-plot-stocks" src="https://mm-plot-stocks.herokuapp.com/" seamless="seamless"></iframe>
+    </div>
+</div>
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)" title="Script embed"></span>
+    <span class="dot" onclick="currentSlide(2)" title="iFrame embed"></span>
+</div>
+<!-- Slider -->
+<script src="/assets/js/slides.js"></script>
