@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="{{ '/assets/css/plot/2018-07-30-peace-map.css' | relative_url }}" />
+<div id="content" class="plot">
+    <div id="peace-map">
+        <div class="row">
+            <img src="{{ '/images/2018-07-30-iep-logo.png' | absolute_url }}" alt="institute for economic and peace">
+            <div class="3u 4u$(medium) 12u$(small)">
+                <div class="widget">
+                    <h4>Year</h4>
+                    <input type="text" value="2018" id="year-value" disabled>
+                    <input type="range" min="2008" max="2018" value="2018" class="year-slider" step="1" id="year-slider" name="year-slider" onchange="changeYear(this.value)">
+                    <button id="prev-year" onclick="prevYear()"><i class="icon fa-caret-left"></i></button>
+                    <button id="next-year" onclick="nextYear()" disabled><i class="icon fa-caret-right"></i></button>
+                </div>
+                <div class="widget">
+                    <h4>Options</h4>
+                </div>
+                <div class="widget">
+                    <label class="switch">
+                        <input type="checkbox" name="diff-toggle" id="diff-toggle" onclick="toggleDisplay()">
+                        <span class="check-slider"></span>
+                    </label>
+                    <label for="diff-toggle">Show Change from 2008</label>
+                </div>
+                <div class="widget">
+                    <label class="switch">
+                        <input type="checkbox" name="region-toggle" id="region-toggle" onclick="toggleDisplay()">
+                        <span class="check-slider"></span>
+                    </label>
+                    <label for="region-toggle">Group by Regions</label>
+                </div>
+            </div>
+            <div class="6u$ 12u$(medium)">
+                <h1>Global Peace Index 2018</h1>
+                <p>The Global Peace Index (GPI) is produced annually by <a href="//economicsandpeace.org" target="_blank">the Institute for Economic and Peace</a>. The Index measures the level of peacefulness for 163 independent states and territories using
+                    23 individual indicators.</p>
+                <p>Check the interactive map below for the results from 2008 to 2018. Click for details on each country.</p>
+                <p class="source"><b>Source</b>: Institute for Economics and Peace. Learn more at <a href="//economicsandpeace.org" target="_blank">economicsandpeace.org</a> and <a href="//visionofhumanity.org" target="_blank">visionofhumanity.org</a></p>
+            </div>
+        </div>
+        <div class="map-container">
+            <div class="details">
+                <div class="close-button" onclick="hideDetail()">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <style>
+                            /* <![CDATA[ */
+
+                            line {
+                                stroke-width: 8px;
+                                stroke: #ccc;
+                            }
+                            /* ]]> */
+                        </style>
+                        <line x1="15" y1="15" x2="85" y2="85" />
+                        <line x1="85" y1="15" x2="15" y2="85" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+    <script src="/assets/js/plot/2018-07-30-peace-map.js"></script>
+</div>
