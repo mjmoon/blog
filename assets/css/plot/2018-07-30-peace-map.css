@@ -1,0 +1,287 @@
+#peace-map {
+    position: relative;
+    cursor: default;
+    margin: 0;
+    padding: 0;
+}
+
+#peace-map .svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#peace-map .map-container {
+    width: 100%;
+    padding-bottom: 45%;
+    vertical-align: top;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+}
+
+#peace-map .map {
+    stroke: #ffffff;
+}
+
+#peace-map .map-labels {
+    font-size: 15px;
+    fill: #444;
+    stroke: #444;
+}
+
+#peace-map .details {
+    color: #ccc;
+    fill: #ffffff;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 8px;
+    overflow: scroll;
+    text-align: center;
+}
+
+#peace-map .details h1 {
+    padding: 15px 0 0 0;
+    margin: 0;
+    text-align: center;
+    color: #ccc;
+}
+
+#peace-map .details p {
+    margin: 0;
+    padding: 0 0 40px 0;
+    text-align: center;
+    background: none;
+    font-size: 0.8em;
+}
+
+#peace-map .details .title {
+    font-size: 1.2em;
+}
+
+#peace-map .ocean {
+    opacity: 0;
+}
+
+#peace-map .mini-plot .arrow,
+#peace-map .mini-plot .line {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 2.5px;
+}
+
+#peace-map .mini-plot.ref .line {
+    stroke-dasharray: 4;
+}
+
+#peace-map .mini-plot.sub-line .line {
+    stroke-dasharray: 4;
+}
+
+#peace-map .mini-plot .circle {
+    r: 4px;
+}
+
+#peace-map .mini-plot.ref .circle {
+    r: 2px;
+}
+
+#peace-map .legend .mini-plot .label {
+    font-size: 10px;
+    fill: #ffffff;
+    text-anchor: start;
+    alignment-baseline: middle;
+}
+
+#peace-map .mini-plot line.description {
+    stroke: #ccc;
+    stroke-dasharray: 3;
+    stroke-width: 2px;
+}
+
+#peace-map .mini-plot text.description {
+    fill: #ccc;
+    text-anchor: start;
+    font-size: 16px;
+}
+
+#peace-map .mini-plot .description tspan {
+    alignment-baseline: hanging;
+}
+
+#peace-map .mini-plot tspan.rank {
+    font-size: 52px;
+}
+
+#peace-map .countries {
+    stroke-linejoin: round;
+    stroke-width: 1px;
+}
+
+#peace-map .mini-plot .axis text {
+    fill: #ffffff;
+    font-size: 10px;
+    text-anchor: middle;
+}
+
+#peace-map .y.axis text {
+    text-anchor: end;
+}
+
+#peace-map .hidden {
+    opacity: 0;
+}
+
+#peace-map .mini-plot .bar {
+    opacity: 0.3;
+}
+
+#peace-map .mini-plot .axis line,
+#peace-map .mini-plot .axis path {
+    stroke: #ffffff;
+    stroke-width: 1px;
+}
+
+#peace-map .legend .axis line,
+#peace-map .legend .axis path {
+    opacity: 0;
+}
+
+#peace-map .subtext {
+    font-size: 0.6em;
+}
+
+#peace-map .close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    margin: 0;
+}
+
+#peace-map .widget {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#peace-map .widget label {
+    font-size: 1em;
+    display: inline-block;
+    margin: 0;
+}
+
+#peace-map .widget button {
+    box-shadow: none;
+    padding: 0 5px;
+    font-size: 17px;
+    height: 1.2em;
+    line-height: 1em;
+    margin: 5px 0;
+    color: #444 !important;
+    vertical-align: middle;
+    width: 10%;
+}
+
+#peace-map input[type="text"] {
+    height: 2em;
+}
+
+#peace-map .year-slider {
+    vertical-align: middle;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 70%;
+    height: 4px;
+    opacity: 0.7;
+    border-radius: 2px;
+    background: #ccc;
+    -webkit-transition: 0.5s;
+    transition: opacity 0.5s;
+}
+
+#peace-map .year-slider:hover {
+    opacity: 1;
+}
+
+#peace-map .year-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 5px;
+    width: 10px;
+    height: 10px;
+    background: #444;
+    cursor: pointer;
+}
+
+#peace-map .year-slider::-moz-range-thumb {
+    border-radius: 5px;
+    width: 10px;
+    height: 10px;
+    background: #444;
+    cursor: pointer;
+}
+
+#peace-map .switch {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 12px;
+}
+
+#peace-map .switch input {
+    display: none;
+}
+
+#peace-map .check-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+#peace-map .check-slider:before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+#peace-map input:checked + .check-slider {
+    background-color: #2196f3;
+}
+
+#peace-map input:focus + .check-slider {
+    box-shadow: 0 0 1px #2196f3;
+}
+
+#peace-map input:checked + .check-slider:before {
+    -webkit-transform: translateX(8px);
+    -ms-transform: translateX(8px);
+    transform: translateX(8px);
+}
+
+#peace-map p {
+    margin-bottom: 1em;
+}
+
+#peace-map .source {
+    padding: 0;
+    margin: 0 0 15px 0;
+    opacity: 0.8;
+    font-size: 0.9em;
+}

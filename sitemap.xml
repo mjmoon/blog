@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://blog.micbon.com/about</loc>
-<lastmod>2018-04-30T21:13:55+00:00</lastmod>
+<lastmod>2018-07-30T20:30:45+00:00</lastmod>
 </url>
 <url>
 <loc>https://blog.micbon.com/archives</loc>
-<lastmod>2018-04-30T21:13:55+00:00</lastmod>
+<lastmod>2018-07-30T20:30:45+00:00</lastmod>
 </url>
 <url>
 <loc>https://blog.micbon.com/contact</loc>
-<lastmod>2018-04-30T21:13:55+00:00</lastmod>
+<lastmod>2018-07-30T20:30:45+00:00</lastmod>
 </url>
 <url>
 <loc>https://blog.micbon.com/post/linked-bokeh-plot.html</loc>
@@ -31,6 +31,10 @@
 <url>
 <loc>https://blog.micbon.com/post/bokeh-server.html</loc>
 <lastmod>2018-04-30T05:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>https://blog.micbon.com/post/peace-map.html</loc>
+<lastmod>2018-07-30T05:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>https://blog.micbon.com/search.html</loc>
@@ -82,5 +86,14 @@
 </url>
 <url>
 <loc>https://blog.micbon.com/tag/docker/</loc>
+</url>
+<url>
+<loc>https://blog.micbon.com/tag/d3js/</loc>
+</url>
+<url>
+<loc>https://blog.micbon.com/tag/javascript/</loc>
+</url>
+<url>
+<loc>https://blog.micbon.com/tag/map/</loc>
 </url>
 </urlset>
