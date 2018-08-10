@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="{{ '/assets/css/plot/2018-08-09-kor-map.css' | relative_url }}" />
+<div id="k-map" class="row">
+    <div class="6u 12u$(small)">
+        <div id="main-map" class="map-container">
+            <div id="tooltip">
+            </div>
+        </div>
+    </div>
+    <div class="6u$ 12u$(small)">
+        <div class="meta">
+            <div>
+                <h1>대한민국 법정구역 지도</h1>
+                <h2>Map of Republic of Korea</h2>
+            </div>
+            <div class="widget">
+                <label class="switch">
+                    <input type="checkbox" name="theme-toggle" id="theme-toggle" onclick="toggleTheme()">
+                    <span class="check-slider"></span>
+                </label>
+                <label for="theme-toggle" class="switch-label">Dark Theme</label>
+            </div>
+            <div id="ctprvn-nm" class="display"></div>
+            <div id="sig-nm" class="display"></div>
+            <div id="emd-nm" class="display"></div>
+        </div>
+    </div>
+</div>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="/assets/js/plot/2018-08-09-kor-map.js"></script>

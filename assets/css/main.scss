@@ -6,7 +6,13 @@
 @import 'libs/skel';
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700');
-
+/* use 미생 font */
+@font-face {
+    font-family: SDMisaeng;
+    src: local(SDMisaeng), url(SDMisaeng.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
 /*
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
