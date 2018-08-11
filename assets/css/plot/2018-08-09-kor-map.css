@@ -2,8 +2,8 @@
     height: 100%;
     position: relative;
     cursor: default;
-    font-family: SDMisaeng, dotum, "Lucida Grande", sans-serif;
-    font-size: 24px;
+    font-family: SDMiSeang, "Nanum Pen Script", "Lucida Grande", sans-serif;
+    font-size: 20px;
     text-align: center;
     margin: 0;
     line-height: 1.2em;
@@ -20,7 +20,7 @@
 }
 #k-map h1,
 #k-map h2 {
-    font-family: SDMisaeng, dotum, "Lucida Grande", sans-serif;
+    font-family: SDMiSeang, "Nanum Pen Script", "Lucida Grande", sans-serif;
     margin: 1em 0 0.2em 0;
     line-height: 0.8em;
 }
@@ -30,7 +30,7 @@
 }
 #k-map .display {
     display: block;
-    font-size: 1.5em;
+    font-size: 1.2em;
     width: 100%;
     padding-bottom: 0.7em;
 }
@@ -48,8 +48,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
 }
 #k-map .ocean {
     fill: #ffffff;
@@ -85,8 +83,11 @@
     fill: #ffffff;
 }
 /* tooltip */
-#k-map #tooltip {
-    font-size: 0.8em;
+#tooltip {
+    font-family: SDMisaeng, dotum, "Lucida Grande", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.2em;
     display: block;
     position: absolute;
     color: #ffffff;
@@ -96,7 +97,7 @@
     border-radius: 8px;
     pointer-events: none;
 }
-#k-map.dark #tooltip {
+#tooltip.dark {
     color: #292929;
     background-color: rgba(215, 215, 215, 0.8);
 }
