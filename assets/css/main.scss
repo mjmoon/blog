@@ -5,13 +5,15 @@
 @import 'libs/mixins';
 @import 'libs/skel';
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700|Nanum+Pen+Script:400,600');
 /* use 미생 font */
 @font-face {
-    font-family: SDMisaeng;
-    src: local(SDMisaeng), url(SDMisaeng.ttf);
-    font-style: normal;
-    font-weight: normal;
+    font-family:SDMiSeang;
+    font-style:normal;
+    font-weight:normal;
+    src:url(./font/SDMiSeang.eot?iefix) format('opentype');/* ie6,7,8 */
+    src:url(./font/SDMiSeang.woff2) format('woff2'),
+        url(./font/SDMiSeang.woff) format('woff');
 }
 /*
 	Editorial by HTML5 UP
