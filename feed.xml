@@ -1,4 +1,84 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="https://blog.micbon.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.micbon.com/" rel="alternate" type="text/html" /><updated>2018-08-11T03:28:21+00:00</updated><id>https://blog.micbon.com/</id><title type="html">micbon</title><subtitle>Michael J. Moon's personal blog</subtitle><author><name>Michael J. Moon</name></author><entry><title type="html">Map of Global Peace Index</title><link href="https://blog.micbon.com/post/peace-map.html" rel="alternate" type="text/html" title="Map of Global Peace Index" /><published>2018-07-30T05:00:00+00:00</published><updated>2018-07-30T05:00:00+00:00</updated><id>https://blog.micbon.com/post/peace-map</id><content type="html" xml:base="https://blog.micbon.com/post/peace-map.html">&lt;p&gt;The interactive map below shows data from a recent &lt;a href=&quot;https://www.olgatsubiks.com/data-for-a-cause&quot; target=&quot;_blank&quot;&gt;Data for a Cause Challenge&lt;/a&gt;. The Challenge requests participants to create data visualizations for non-profit organizations. This particular challenge was about presenting the global peace trends.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="https://blog.micbon.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.micbon.com/" rel="alternate" type="text/html" /><updated>2018-08-14T19:12:12+00:00</updated><id>https://blog.micbon.com/</id><title type="html">micbon</title><subtitle>Michael J. Moon's personal blog</subtitle><author><name>Michael J. Moon</name></author><entry><title type="html">대한민국 법정구역 지도</title><link href="https://blog.micbon.com/post/kor-map.html" rel="alternate" type="text/html" title="대한민국 법정구역 지도" /><published>2018-08-14T05:00:00+00:00</published><updated>2018-08-14T05:00:00+00:00</updated><id>https://blog.micbon.com/post/kor-map</id><content type="html" xml:base="https://blog.micbon.com/post/kor-map.html">&lt;p&gt;최근 &lt;code class=&quot;highlighter-rouge&quot;&gt;d3js&lt;/code&gt;를 이용하여 지도 그리는 법을 익혀보는 중입니다. 지난 &lt;a href=&quot;https://blog.micbon.com/post/peace-map.html&quot; target=&quot;_blank&quot;&gt;글&lt;/a&gt;에서는 세계지도에 Global Peace Index를 표기해보았는데 이번에는 한국 지도를 한/영 지역명과 함께 아래와 같이 그려 보았습니다. 지도상에 색으로 표시된 지역을 클릭하면 세부지도를 3단계&lt;sub&gt;(시도»시군구»읍면동)&lt;/sub&gt;까지 볼 수 있습니다.&lt;/p&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/plot/2018-08-09-kor-map.css&quot; /&gt;
+
+&lt;div id=&quot;k-map&quot; class=&quot;row&quot;&gt;
+    &lt;div class=&quot;6u 12u$(small)&quot;&gt;
+        &lt;div id=&quot;main-map&quot; class=&quot;map-container&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;6u$ 12u$(small)&quot;&gt;
+        &lt;div class=&quot;meta&quot;&gt;
+            &lt;div&gt;
+                &lt;!-- &lt;h1&gt;대한민국 법정구역 지도&lt;/h1&gt;
+                &lt;h2&gt;Map of Republic of Korea&lt;/h2&gt; --&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;widget&quot;&gt;
+                &lt;label class=&quot;switch&quot;&gt;
+                    &lt;input type=&quot;checkbox&quot; name=&quot;theme-toggle&quot; id=&quot;theme-toggle&quot; onclick=&quot;toggleTheme()&quot; /&gt;
+                    &lt;span class=&quot;check-slider&quot;&gt;&lt;/span&gt;
+                &lt;/label&gt;
+                &lt;label for=&quot;theme-toggle&quot; class=&quot;switch-label&quot;&gt;Dark Theme&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;ctprvn-nm&quot; class=&quot;display&quot;&gt;&lt;/div&gt;
+            &lt;div id=&quot;sig-nm&quot; class=&quot;display&quot;&gt;&lt;/div&gt;
+            &lt;div id=&quot;emd-nm&quot; class=&quot;display&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;script src=&quot;https://d3js.org/d3.v5.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;http://d3js.org/topojson.v1.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;/assets/js/plot/2018-08-09-kor-map.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/mjmoon/kor-map&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;icon fa-github&quot;&gt;&lt;/i&gt; Github Repository&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;1-공간정보-받아오기&quot;&gt;1. 공간정보 받아오기&lt;/h2&gt;
+
+&lt;p&gt;지도를 표시하기 위해서는 시도, 시군구 및 읍면동 정보를 포함한 한국 지역 공간정보가 필요했습니다. 구글 검색을 통해서 &lt;a href=&quot;http://www.gisdeveloper.co.kr/?p=2332&quot;&gt;지오서비스&lt;/a&gt;에서 해당 정보가 포함된 &lt;em&gt;shapefile&lt;/em&gt; 데이터를 받을 수 있었습니다. 사용한 자료는 2018년 4월 업데이트 공간정보입니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-주소코드정보-받아오기&quot;&gt;2. 주소코드정보 받아오기&lt;/h2&gt;
+
+&lt;p&gt;위에서 받아온 공간정보 자료는 시도, 시군구, 읍면동(법정동) 구분하여 자료마다 단계별 지역 정보만 포함이 되어있었습니다. 세 단계의 지역 정보를 이어주기 위한 - 예를 들어서 이촌동(읍면동)을 용산구(시군구)와 잇고 다시 서울특별시(시도)와 잇기 위한 주소정보가 필요하였습니다. 해당 정보는 &lt;a href=&quot;http://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000052&amp;amp;nttId=62603&quot; target=&quot;_blank&quot;&gt;행정안전부 사이트&lt;/a&gt;에서 엑셀 파일으로 구할 수 있었습니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;3-영문-정보-조합하기&quot;&gt;3. 영문 정보 조합하기&lt;/h2&gt;
+
+&lt;p&gt;2번 단계에서 구한 엑셀 파일은 &lt;em&gt;csv&lt;/em&gt; 유형으로 저장한 후에 &lt;code class=&quot;highlighter-rouge&quot;&gt;python&lt;/code&gt; 을 사용해서 시도 및 시군구 지역명 영문화 작업을 하였습니다. 1번 단계에서 구한 자료들에 영문명들도 포함되어 있었는데 &lt;em&gt;shapefile&lt;/em&gt;  에서 데이터를 뽑아내는데 익숙지 않아 결국 구글+위키피디아를 뒤져가며 노가다로 메꾸었습니다. 다시 찾아보니 &lt;a href=&quot;https://github.com/mbloch/mapshaper/wiki/Command-Reference&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;mapshaper&lt;/em&gt;&lt;/a&gt;에 &lt;code class=&quot;highlighter-rouge&quot;&gt;cut-table&lt;/code&gt;이라는 기능이 있는듯 합니다. &lt;del&gt;무식해서 몸이 고생한다는 말을 몸소 실현&lt;/del&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3-웹-데이터-파일-준비하기&quot;&gt;3. 웹 데이터 파일 준비하기&lt;/h2&gt;
+
+&lt;p&gt;위에서 준비한 자료들을 &lt;code class=&quot;highlighter-rouge&quot;&gt;d3js&lt;/code&gt;로 읽기 위해 &lt;code class=&quot;highlighter-rouge&quot;&gt;mapshaper&lt;/code&gt;를 사용하여 &lt;em&gt;topojson&lt;/em&gt; 파일으로 준비하였습니다. 각 지역 단계별로 아래와 같이 콘솔에서 실행하였습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 읍면동 데이터 준비 코드&lt;/span&gt;
+mapshaper &lt;span class=&quot;nv&quot;&gt;encoding&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;euc-kr &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.shp &lt;span class=&quot;se&quot;&gt;\ &lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# euc-kr로 인코딩된 shapefile을 읽어옵니다.&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-simplify&lt;/span&gt; keep-shapes 3% &lt;span class=&quot;se&quot;&gt;\ &lt;/span&gt;     &lt;span class=&quot;c&quot;&gt;# 공간정보를 3%까지 단순화 시킵니다.&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-proj&lt;/span&gt; latlong &lt;span class=&quot;se&quot;&gt;\ &lt;/span&gt;                &lt;span class=&quot;c&quot;&gt;# d3js가 읽는 투영법으로 바꾸어 줍니다.&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-join&lt;/span&gt; kor_admin_3_ref_w_en.csv &lt;span class=&quot;nv&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;EMD_CD,LVL_3_CD &lt;span class=&quot;se&quot;&gt;\ &lt;/span&gt;&lt;span class=&quot;c&quot;&gt;# csv 파일을 조합합니다.&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;topojson kor_admin_3.topojson &lt;span class=&quot;c&quot;&gt;# topojson 파일로 저장합니다.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;4-데이터-시각화하기&quot;&gt;4. 데이터 시각화하기&lt;/h2&gt;
+
+&lt;p&gt;위에서 준비한 데이터 파일들을 &lt;code class=&quot;highlighter-rouge&quot;&gt;d3js&lt;/code&gt;로 읽어 시각화 해주었습니다. 시각화 코드는 &lt;a href=&quot;https://github.com/mjmoon/kor-map/blob/master/js/kor-map.js&quot; target=&quot;_blank&quot;&gt;Github&lt;/a&gt;에섯 확인할 수 있습니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;느낀점-몇-가지&quot;&gt;느낀점 몇 가지&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;한국 지도를 그리려고 준비하면서 한국 공간정보 구하기가 생각보다 어려웠습니다.&lt;/strong&gt; 무료로 읍면동까지 세부정보를 찾을 수 있는 곳이 지오서비스 사이트 외에는 보이지 않았고 위에서 처럼 지역 단계별 정보가 조합된 파일은 찾아볼 수 없었습니다. 또 시각화하였을 때 읍면동까지 표시하게 되면 지도상에 겹치거나 비어있는 공간들이 보입니다. 공간정보를 많이 사용해보지 않아 중간에 단순화 작업 때문에 그런 것인지 무료로 구하려 보니 그런 것인지는 잘 모르겠습니다. &lt;a href=&quot;http://www.naturalearthdata.com/&quot; target=&quot;_blank&quot;&gt;Natural Earth&lt;/a&gt; 세계지도용 자료와 비교해서는 데이터 질이 어쩔 수 없이 부족한 거 같아 아쉬웠습니다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;이번에 처음 알게 되었는데 한국에는 두 종류의 동 이름이 있다고 합니다.&lt;/strong&gt; 행정동은 법정동보다 자주 바뀌는 편이어서 공간정보자료에는 법정동이 표시되어 있다고 합니다.&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;법정동 이름은 지적도와 주소 등 모든 법적 업무에 사용하는 행정구역 공식 명칭이다. 하지만 행정동은 행정기관들이 주민 수, 면적 등을 고려해 단순히 행정 편의를 위해 설정한 행정구역이다. 통상 동사무소로 불리는 행정기관은 이 행정동마다 1곳씩 설치돼 있다. &lt;a href=&quot;http://www.yonhapnews.co.kr/bulletin/2018/05/21/0200000000AKR20180521134900061.HTML&quot; target=&quot;_blank&quot;&gt;출처:연합뉴스 - ‘한 동네, 두 이름’…헷갈리는 행정동·법정동&lt;/a&gt;&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;del&gt;&lt;strong&gt;0개국어 능력자 같으니…&lt;/strong&gt; 한글로 몇 년 만에 이런 긴 글을 써보았는데 페북이나 문자에나 쓰던 한글을 길게 쓰려니 어색하고 외국인 같고 어렵습니다. 근데 영어로 쓴 글을 읽어도 어색하고 외국인 같고…&lt;/del&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Michael J. Moon</name></author><category term="d3js" /><category term="javascript" /><category term="map" /><category term="mapshaper" /><category term="topojson" /><category term="한국지도" /><summary type="html">최근 d3js를 이용하여 지도 그리는 법을 익혀보는 중입니다. 지난 글에서는 세계지도에 Global Peace Index를 표기해보았는데 이번에는 한국 지도를 한/영 지역명과 함께 아래와 같이 그려 보았습니다. 지도상에 색으로 표시된 지역을 클릭하면 세부지도를 3단계(시도»시군구»읍면동)까지 볼 수 있습니다.</summary></entry><entry><title type="html">Map of Global Peace Index</title><link href="https://blog.micbon.com/post/peace-map.html" rel="alternate" type="text/html" title="Map of Global Peace Index" /><published>2018-07-30T05:00:00+00:00</published><updated>2018-07-30T05:00:00+00:00</updated><id>https://blog.micbon.com/post/peace-map</id><content type="html" xml:base="https://blog.micbon.com/post/peace-map.html">&lt;p&gt;The interactive map below shows data from a recent &lt;a href=&quot;https://www.olgatsubiks.com/data-for-a-cause&quot; target=&quot;_blank&quot;&gt;Data for a Cause Challenge&lt;/a&gt;. The Challenge requests participants to create data visualizations for non-profit organizations. This particular challenge was about presenting the global peace trends.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;In this Data for a Cause challenge we are taking a closer look at these troubling signs by visualizing global peace trends.&lt;br /&gt;
