@@ -2,7 +2,8 @@
 school:   'University of Toronto'
 location: 'Toronto, Ontario, Canada'
 degree:   'Candidate for PhD in Statistics'
+courses:
+  - name: 'Methods of applied statistics'
+  - name: 'Probability theory'
+  - name: 'Advanced theory of statistics'
 ---
-<div class="special">
-<h3>Will start in Fall 2018 <i class="icon fa-smile-o"></i></h3>
-</div>

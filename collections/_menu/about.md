@@ -29,10 +29,11 @@ author: 'Michael J. Moon'
         </div>
       </div>
       <p>
-        I am a data enthusiasts and a web development hobbyist. I am now working with my friends to start a blog using data visualizations. I have become familiar and interested in web development using <code>jekyll</code> + <code>travis-ci</code>, and some <code>css</code> + <code>javascript</code> while setting up this blog.
+        I am a statistics student and a web development hobbyist. I am a PhD student in Statistics at the University of Toronto.
+        I have become familiar and interested in web development using <code>jekyll</code> + <code>travis-ci</code>, and some <code>css</code> + <code>javascript</code> while setting up this blog <del>and other numerous previous versions</del>.
       </p>
       <p>
-        I will be starting my pursuit of PhD in statistics at the University of Toronto this Fall. <sup>yay!</sup> In general, I like <del>breaking things</del> understanding how things work, making new things using those <del>broken pieces</del> understanding, and making things look beautiful<sup>subject to my own not-so-sophisticated taste</sup> - related to <strong>data</strong>.
+        In general, I like understanding inner-workings of complex systems <del>by breaking and tearing apart the system</del> and making new things out of the understanding <del>by trying to put the broken pieces in different order</del>.
       </p>
     </div>
 </div>

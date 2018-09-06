@@ -5,10 +5,8 @@ skills:
   - name: 'R'
   - name: 'Python'
   - name: 'SQL'
-  - name: 'SAS'
   - name: 'ggplot2'
 interests:
-  - name: 'bokeh'
-  - name: 'plotly'
+  - name: 'd3js'
   - name: 'Hive'
 ---

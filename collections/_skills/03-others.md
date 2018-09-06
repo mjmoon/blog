@@ -6,7 +6,6 @@ skills:
   - name: 'Agile methodology'
 interests:
   - name: 'Web development'
-  - name: 'Mobile development'
   - name: 'Javascript'
   - name: 'HTML'
   - name: 'CSS'
