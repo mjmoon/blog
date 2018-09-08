@@ -30,7 +30,7 @@ author: 'Michael J. Moon'
       </div>
       <p>
         I am a statistics student and a web development hobbyist. I am a PhD student in Statistics at the University of Toronto.
-        I have become familiar and interested in web development using <code>jekyll</code> + <code>travis-ci</code>, and some <code>css</code> + <code>javascript</code> while setting up this blog <del>and other numerous previous versions</del>.
+        I have become familiar and interested in web development using <code>jekyll</code> + <code>travis-ci</code>, and some <code>css</code> + <code>javascript</code> while setting up this blog.
       </p>
       <p>
         In general, I like understanding inner-workings of complex systems <del>by breaking and tearing apart the system</del> and making new things out of the understanding <del>by trying to put the broken pieces in different order</del>.
