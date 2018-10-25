@@ -7,14 +7,15 @@
         {% for page in site.menu %}
         <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
         {% endfor %}
-        <!-- <li>
-            <span class="opener">Archives</span>
+        <li>
+            <span class="opener">Study Notes</span>
             <ul>
-                <li><a href="{{ '/' | absolute_url }}">Home</a></li>
-                {% for page in site.menu %}
-                <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
+                {% for course in site.courses %}
+                <li>
+                    <a href="{{ course.url | absolute_url }}">{{ course.title }}</a>
+                </li>
                 {% endfor %}
             </ul>
-        </li> -->
+        </li>
     </ul>
 </nav>

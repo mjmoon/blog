@@ -1,0 +1,85 @@
+<head>
+    <title>{% if page.url == '/index.html' %}{{ site.title | escape | downcase }} | {{ site.description | escape | downcase }}{% elsif page.title %}{{ page.title | escape | downcase }} | {{ site.title | escape | downcase }} | {{ site.description | escape | downcase
+        }}{% else %}{{ site.title | escape | downcase }} | {{ site.description | escape | downcase }}{% endif %}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/syntax.css' | relative_url }}" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <link rel="canonical" href="{{ page.url | replace:'index.html', '' | absolute_url }}">
+    <link rel="shortcut icon" href="{{ '/favicon.ico?v=1.1' | relative_url }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    {% seo %}
+    <!-- Use Atom -->
+    {% feed_meta %} {% if site.data.settings.disqus.comments %}
+    <script id="dsq-count-scr" src="//micbon-blog.disqus.com/count.js" async></script>
+    {% endif %}
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                processEscapes: true
+            },
+            "HTML-CSS": { fonts: ["TeX"] },
+            TeX: {
+                Macros: {
+                    // matched symbols
+                    abs: ["\\left\\vert {#1} \\right\\rvert", 1],
+                    set: ["\\left\\{ {#1} \\right\\}", 1],
+                    brackets: ["\\left[ {#1} \\right]", 1],
+                    parens: ["\\left( {#1} \\right)", 1],
+                    floor: ["\\left\\lfloor {#1} \\right\\rfloor", 1],
+                    ceil: ["\\left\\lceil {#1} \\right\\rceil", 1],
+                    norm: ["\\left\\lVert {#1} \\right\\rVert", 1],
+                    tuple: ["\\left\\langle {#1} \\right\\rangle", 1],
+                    ip: ["\\tuple{#1,#2}", 2],
+                    // probability symbols
+                    Pr: "\\mathbb{P}",
+                    EE: "\\mathbb{E}",
+                    Prr: ["\\underset{#1}\\Pr", 1],
+                    EEE: ["\\underset{#1}\\EE", 1],
+                    var: "\\operatorname{var}",
+                    sign: "\\operatorname{sign}",
+                    // number sets
+                    Nats: "\\mathbb{N}",
+                    Ints: "\\mathbb{Z}",
+                    Rats: "\\mathbb{Q}",
+                    Reals: "\\mathbb{R}",
+                    NNInts: "\\Ints_+",
+                    NNReals: "\\Reals_+",
+                    // UML
+                    loss: "\\ell",
+                    Domain: "\\mathcal{X}",
+                    LabelSet: "\\mathcal{Y}",
+                    Dist: "\\mathcal{D}",
+                    HS: "\\mathcal{H}",
+                    Data: "S",
+                    Risk: ["{L_{#1}(#2)}", 2],
+                    EmpRisk: ["\\Risk{\\Data\\sim\\Dist^m}{#1}", 1],
+                    TrueRisk: ["\\Risk{\\Dist}{#1}", 1],
+                    // misc
+                    Vector: ["mathbf{#1}", 1],
+                    Card: ["\\left\\lvert {#1} \\right\\rvert", 1],
+                    defas: "\\overset{\\mathrm{def}}{=}",
+                    Indicator: "\\unicode{x1D7D9}",
+                    Emptyset: "\\text{\\o}",
+                    VCdim: "\\operatorname{VCdim}",
+                    Radem: "\\mathfrak{R}",
+                    vsig: "\\boldsymbol{\\sigma}",
+                    BigO: ["\\mathcal{O}\\left({#1}\\right)", 1],
+                    argmax: "\\operatorname{\\arg\\!\\max}",
+                    argmin: "\\operatorname{\\arg\\!\\min}"
+                }
+            }
+        });
+    </script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</head>

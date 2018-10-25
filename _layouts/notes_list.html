@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<section>
+    <header class="main">
+        <h1>{{ page.title }}</h1>
+    </header>
+    <div class="posts">
+        {% for note in site.notes %}
+        {% if note.categories contains page.course_code %}
+        <article>
+            <h3><a href="{{ note.url | absolute_url }}">{{ note.title }}</a></h3>
+            <ul class="tags">
+                {% for tag in note.tags %}
+                <a class="button tag" href="{{ tag | prepend: '/tag/' | absolute_url }}/">{{ tag }}</a>
+                {% endfor %}
+            </ul>
+        </article>
+        {% endif %}
+        {% endfor %}
+    </div>
+</section>
