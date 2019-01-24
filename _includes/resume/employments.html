@@ -4,23 +4,31 @@
           <a href="#employment">Employments</a>
         </h2>
     </header>
-    <div>
+    <article class="10u$ 12u$(medium) special">
+        <p>
+            <button class="prev-employment" onclick="iterEmployment(-1)">&#10094;</button>
+            <button class="next-employment" onclick="iterEmployment(1)">&#10095;</button>
+        </p>
+    </article>
+    <div class="row">
         {% for employment in site.employments reversed %}
-        <header class="main">
-            <h3>{{ employment.company }}</h3>
-        </header>
-        <div class="row">
-            <div class="4u 12u$(small)">
-                <strong>{{ employment.position }}</strong>
-                <p>{{ employment.start | date: "%B %Y"}} to {% if employment.end %}{{ employment.end | date: "%B %Y" }}{% else %} Present{% endif %} | {{ employment.location }}</p>
-            </div>
-            <div class="8u 12u$(small)">
-                <strong>Responsibilities</strong>
-                <ul>
-                    {% for item in employment.responsibilities %}
-                    <li>{{ item.item }}</li>
-                    {% endfor %}
-                </ul>
+        <div class="10u$ 12u$(medium) employment">
+            <header class="main">
+                <h3>{{ employment.company }}</h3>
+            </header>
+            <div class="row">
+                <div class="4u 12u$(small)">
+                    <strong>{{ employment.position }}</strong>
+                    <p>{{ employment.start | date: "%B %Y"}} to {% if employment.end %}{{ employment.end | date: "%B %Y" }}{% else %} Present{% endif %} | {{ employment.location }}</p>
+                </div>
+                <div class="8u 12u$(small)">
+                    <strong>Responsibilities</strong>
+                    <ul>
+                        {% for item in employment.responsibilities %}
+                        <li>{{ item.item }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
         </div>
         {% endfor %}
