@@ -15,7 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Begin Jekyll SEO tag v2.5.0 -->
 <title>Random imputation by group using pandas library | micbon</title>
-<meta name="generator" content="Jekyll v3.8.3" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="Random imputation by group using pandas library" />
 <meta name="author" content="Michael J. Moon" />
 <meta property="og:locale" content="en_US" />
@@ -27,7 +27,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-02-12T05:00:00+00:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.micbon.com/post/age-imputation.html"},"@type":"BlogPosting","author":{"@type":"Person","name":"Michael J. Moon"},"url":"https://blog.micbon.com/post/age-imputation.html","headline":"Random imputation by group using pandas library","dateModified":"2018-02-12T05:00:00+00:00","datePublished":"2018-02-12T05:00:00+00:00","description":"Kaggle’s introductory competition - Titanic: Machine learning from disaster competition - provides datasets of passengers who were on board of the RMS Titanic. One of the features age is missing a good chunk of data - 177 values out of 891 rows in the training data. Below is an attempt to fill those gaps using random imputation based on logical groups.","@context":"http://schema.org"}</script>
+{"author":{"@type":"Person","name":"Michael J. Moon"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.micbon.com/post/age-imputation.html"},"@type":"BlogPosting","url":"https://blog.micbon.com/post/age-imputation.html","headline":"Random imputation by group using pandas library","dateModified":"2018-02-12T05:00:00+00:00","datePublished":"2018-02-12T05:00:00+00:00","description":"Kaggle’s introductory competition - Titanic: Machine learning from disaster competition - provides datasets of passengers who were on board of the RMS Titanic. One of the features age is missing a good chunk of data - 177 values out of 891 rows in the training data. Below is an attempt to fill those gaps using random imputation based on logical groups.","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- Use Atom -->
@@ -65,15 +65,16 @@
         <li><a href="https://blog.micbon.com/contact">Contact</a></li>
         
         <!-- <li>
-            <span class="opener">Archives</span>
+            <span class="opener">Study Notes</span>
             <ul>
-                <li><a href="https://blog.micbon.com/">Home</a></li>
                 
-                <li><a href="https://blog.micbon.com/about">About</a></li>
+                <li>
+                    <a href="https://blog.micbon.com/sta2111">Graduate Probability</a>
+                </li>
                 
-                <li><a href="https://blog.micbon.com/archives">Archives</a></li>
-                
-                <li><a href="https://blog.micbon.com/contact">Contact</a></li>
+                <li>
+                    <a href="https://blog.micbon.com/sta3000">Advanced Theory of Statistics</a>
+                </li>
                 
             </ul>
         </li> -->
@@ -261,8 +262,8 @@
 
 <span class="n">train</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'../data/raw/train.csv'</span><span class="p">)</span>
 <span class="n">train</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">train</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
-<span class="c"># identify rows with no age</span>
-<span class="n">train</span><span class="p">[</span><span class="s">'missingage'</span><span class="p">]</span> <span class="o">=</span>\
+<span class="c1"># identify rows with no age
+</span><span class="n">train</span><span class="p">[</span><span class="s">'missingage'</span><span class="p">]</span> <span class="o">=</span>\
     <span class="p">[</span><span class="n">pd</span><span class="o">.</span><span class="n">isnull</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">train</span><span class="p">[</span><span class="s">'age'</span><span class="p">]]</span>
 <span class="n">train</span><span class="p">[</span><span class="s">'missingage'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </code></pre></div></div>
@@ -282,8 +283,8 @@ Name: missingage, dtype: int64
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">getTitle</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="n">title</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s">'([A-Za-z]+)</span><span class="err">\</span><span class="s">.'</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
-    <span class="c"># check if title exists</span>
-    <span class="k">if</span> <span class="n">title</span><span class="p">:</span>
+    <span class="c1"># check if title exists
+</span>    <span class="k">if</span> <span class="n">title</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">title</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
     <span class="k">return</span> <span class="s">''</span>
 
@@ -382,12 +383,12 @@ Name: missingage, dtype: int64
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">train</span><span class="p">[</span><span class="s">'title'</span><span class="p">]</span> <span class="o">=</span> <span class="n">train</span><span class="p">[</span><span class="s">'title'</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span>
     <span class="p">{</span>
-        <span class="c"># group non-common titles as 'other'</span>
-        <span class="s">r'^(?:(?!Mlle|Miss|Ms|Mme|Mr|Mrs|Master).)*$'</span><span class="p">:</span> <span class="s">'Other'</span><span class="p">,</span>
-        <span class="c"># replace Mlle and Miss with Ms</span>
-        <span class="s">r'^(Mlle|Miss)'</span><span class="p">:</span> <span class="s">'Ms'</span><span class="p">,</span>
-        <span class="c"># replace Mme with Mrs</span>
-        <span class="s">'Mme'</span><span class="p">:</span> <span class="s">'Mrs'</span>
+        <span class="c1"># group non-common titles as 'other'
+</span>        <span class="s">r'^(?:(?!Mlle|Miss|Ms|Mme|Mr|Mrs|Master).)*$'</span><span class="p">:</span> <span class="s">'Other'</span><span class="p">,</span>
+        <span class="c1"># replace Mlle and Miss with Ms
+</span>        <span class="s">r'^(Mlle|Miss)'</span><span class="p">:</span> <span class="s">'Ms'</span><span class="p">,</span>
+        <span class="c1"># replace Mme with Mrs
+</span>        <span class="s">'Mme'</span><span class="p">:</span> <span class="s">'Mrs'</span>
     <span class="p">},</span> <span class="n">regex</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">train</span><span class="p">[</span><span class="s">'sex'</span><span class="p">],</span> <span class="n">train</span><span class="p">[</span><span class="s">'title'</span><span class="p">])</span>
 </code></pre></div></div>
@@ -437,9 +438,9 @@ Name: missingage, dtype: int64
 
 <p>We will use the extracted feature <code class="highlighter-rouge">title</code> to impute missing <code class="highlighter-rouge">age</code> values in groups. Before we perform the imputation, we examine their relationship with the following scatterplots over box plots.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># load necessary plotting libraries and</span>
-<span class="c"># function from src.visualization</span>
-<span class="kn">import</span> <span class="nn">os</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># load necessary plotting libraries and
+# function from src.visualization
+</span><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">sys</span>
 <span class="n">src_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">(),</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="s">'src'</span><span class="p">)</span>
 <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">src_dir</span><span class="p">)</span>
@@ -448,8 +449,8 @@ Name: missingage, dtype: int64
 <span class="kn">from</span> <span class="nn">bokeh.io</span> <span class="kn">import</span> <span class="n">output_notebook</span><span class="p">,</span> <span class="n">output_file</span>
 <span class="n">output_notebook</span><span class="p">()</span>
 <span class="n">output_file</span><span class="p">(</span><span class="s">'../blog/plots/0.2-mm-age-by-title.html'</span><span class="p">)</span>
-<span class="c"># create the plot</span>
-<span class="n">viz</span><span class="o">.</span><span class="n">plotAgeByTitleSex</span><span class="p">(</span><span class="n">train</span><span class="p">,</span> <span class="n">Set2</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+<span class="c1"># create the plot
+</span><span class="n">viz</span><span class="o">.</span><span class="n">plotAgeByTitleSex</span><span class="p">(</span><span class="n">train</span><span class="p">,</span> <span class="n">Set2</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
 </code></pre></div></div>
 
 <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.13.min.css" type="text/css" />
@@ -550,8 +551,8 @@ The plot shows that passengers with other titles are all adults. These included 
         <span class="n">grps</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">grp</span><span class="p">,</span> <span class="p">(</span><span class="s">'age'</span><span class="p">,</span> <span class="s">'mean'</span><span class="p">)]</span> <span class="o">+</span> <span class="n">grps</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">grp</span><span class="p">,</span> <span class="p">(</span><span class="s">'age'</span><span class="p">,</span> <span class="s">'std'</span><span class="p">)],</span>
         <span class="nb">sum</span><span class="p">(</span><span class="n">missing_x</span><span class="p">)</span>
     <span class="p">)</span>
-<span class="c"># ensure age is not negative</span>
-<span class="n">ageImputed</span><span class="o">.</span><span class="nb">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span>
+<span class="c1"># ensure age is not negative
+</span><span class="n">ageImputed</span><span class="o">.</span><span class="nb">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">x</span><span class="p">))</span>
 <span class="n">train</span><span class="p">[</span><span class="s">'ageImputed'</span><span class="p">]</span> <span class="o">=</span> <span class="n">ageImputed</span>
 </code></pre></div></div>
 

@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://blog.micbon.com/sta2111</loc>
+<lastmod>2019-01-24T02:07:41+00:00</lastmod>
+</url>
+<url>
+<loc>https://blog.micbon.com/sta3000</loc>
+<lastmod>2019-01-24T02:07:41+00:00</lastmod>
+</url>
+<url>
 <loc>https://blog.micbon.com/about</loc>
-<lastmod>2018-09-08T17:18:14+00:00</lastmod>
+<lastmod>2019-01-24T02:07:41+00:00</lastmod>
 </url>
 <url>
 <loc>https://blog.micbon.com/archives</loc>
-<lastmod>2018-09-08T17:18:14+00:00</lastmod>
+<lastmod>2019-01-24T02:07:41+00:00</lastmod>
 </url>
 <url>
 <loc>https://blog.micbon.com/contact</loc>
-<lastmod>2018-09-08T17:18:14+00:00</lastmod>
+<lastmod>2019-01-24T02:07:41+00:00</lastmod>
+</url>
+<url>
+<loc>https://blog.micbon.com/sta3000/STA3000-01</loc>
+<lastmod>2018-08-14T05:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>https://blog.micbon.com/post/linked-bokeh-plot.html</loc>
@@ -45,6 +57,9 @@
 </url>
 <url>
 <loc>https://blog.micbon.com/</loc>
+</url>
+<url>
+<loc>https://blog.micbon.com/page2/</loc>
 </url>
 <url>
 <loc>https://blog.micbon.com/tag/bokeh/</loc>
@@ -111,5 +126,11 @@
 </url>
 <url>
 <loc>https://blog.micbon.com/tag/%ED%95%9C%EA%B5%AD%EC%A7%80%EB%8F%84/</loc>
+</url>
+<url>
+<loc>https://blog.micbon.com/tag/sta3000/</loc>
+</url>
+<url>
+<loc>https://blog.micbon.com/tag/uml/</loc>
 </url>
 </urlset>
