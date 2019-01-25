@@ -1,0 +1,22 @@
+{% if page.tags.size > 0 %}
+<section id="related-posts" class="animated fadeInUp">
+    <div class="row"><h1>Related posts</h1></div>
+    <div class="post-list">
+    {% assign listed_posts_urls = page.url | split: ' ' %}
+    {% for tag in page.tags %}
+        {% for mypost in site.tags[tag] %}
+            {% unless listed_posts_urls contains mypost.url %}
+            <ul>
+                <li class="wow fadeInLeft" data-wow-duration="1.0s">
+                    <a class="zoombtn" href="{{ mypost.url }}">{{ mypost.title }}</a>
+                    <p>{{ mypost.excerpt }}</p>
+                    <a href="{{ mypost.url }}" class="btn zoombtn">Read More</a>
+                </li>
+            </ul>
+            {% assign listed_posts_urls = listed_posts_urls | push: mypost.url %}
+            {% endunless %}
+        {% endfor %}
+    {% endfor %}
+    </div>
+</section>
+{% endif %}
