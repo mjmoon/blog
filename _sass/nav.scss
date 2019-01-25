@@ -83,7 +83,7 @@
 		i {
 			// display: inline-block;
 		}
-		a {
+		form, a {
 			display: block;
 			position: relative;
 			padding: 10px 20px;
@@ -93,6 +93,13 @@
 			color: $white;
 			outline: none;
 			text-decoration: none;
+
+			input {
+				width: 100%;
+				background-color: $color_tuatara;
+				border-color: $color_shark;
+				color: $color_alabaster;
+			}
 		}
 		&.dl-back > a {
 			padding-left: 30px;
