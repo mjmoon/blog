@@ -1,8 +1,7 @@
 source "https://rubygems.org"
 gem "rake", "~> 12"
 gem "jekyll", "~> 3.7"
-# gem "bundler", "~> 1.16"
-gem "bundler", "~> 2.0"
+gem "bundler"
 
 # Optional: Add any custom plugins here.
 # Some useful examples are listed below
