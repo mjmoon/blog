@@ -5,7 +5,7 @@
             {% for education in site.educations reversed %}
             <li>
                 <h3>{{ education.degree }}, {{ education.school }}</h3>
-                <div class="content">
+                <div>
                     {{ education.location }}
                     {% if education.conferreddate %}
                     | {{ education.conferreddate | date: "%B %Y"}}
