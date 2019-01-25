@@ -129,8 +129,59 @@ li .highlight pre {
 }
 
 // table
-table {
+.table-wrapper,
+.tablecontainer {
+		-webkit-overflow-scrolling: touch;
+		overflow-x: auto;
+	}
+
+table,
+table.dataframe {
+	border-collapse:collapse;
+	margin: 0 0 0.2rem 0;
 	width: 100%;
+
+	tbody {
+		tr {
+			border: solid 1px $color_gray;
+			border-left: 0;
+			border-right: 0;
+			padding: 0 0.5em 0.2em 0.5em;
+
+			&:hover {
+				background-color: $color_gray;
+				color: $color_tuatara;
+			}
+
+			&:nth-child(2n + 1) {
+				background-color: $color_gallery;
+				&:hover {
+					background-color: $color_bon_jour;
+					color: $color_tuatara;
+				}
+			}
+		}
+	}
+
+	td {
+		padding: 0.75em 0.75em;
+	}
+
+	th {
+		padding: 0 0.5em 0.2em 0.5em;
+		color: $color_tuatara;
+		font-size: 0.9em;
+		font-weight: 700;
+		text-align: left;
+	}
+
+	thead {
+		border-bottom: solid 2px $color_celeste;
+	}
+
+	tfoot {
+		border-top: solid 2px $color_celeste;
+	}
 }
 
 // notice
