@@ -1,0 +1,17 @@
+.plot-container {
+    position: relative;
+    .plot{
+        width: 100%;
+    }
+
+    &.oversized {
+        background-color: $white;
+        left: -20%;
+        width: 140%;
+        border-radius: 7rem;
+
+        .plot {
+            padding: 2rem;
+        }
+    }
+}

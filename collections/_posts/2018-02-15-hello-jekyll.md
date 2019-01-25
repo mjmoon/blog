@@ -5,6 +5,7 @@ author: "Michael J. Moon"
 categories: post
 tags: [blogging, jekyll, github, wordpress]
 date: 2018-02-15 00:00:00 -0500
+comments: true
 ---
 
 I had previously my blog hosted using **Wordpress** on a shared hosting server. The hosted Wordpress worked out nicely for me especially with its [multisite](http://www.wpbeginner.com/glossary/multisite/) feature. I was able to host multiple sites including a single page responsive site for my wedding. There is a plenty of free themes and plugins available to configure and customize a Wordpress site with ease. However, I switched the hosting mechanism to **Jekyll** on **GitHub Pages** after finding about it recently. Below are 4 reasons why I switched to Jekyll.

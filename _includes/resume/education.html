@@ -1,34 +1,21 @@
-<section id="education">
-    <header class="major">
-        <h2>
-          <a href="#education">Education</a>
-        </h2>
-    </header>
-    <div>
-        {% for education in site.educations reversed %}
-        <div class="row">
-            <div class="4u 12u$(small)">
-                <header class="main">
-                    <h3>{{ education.school }}</h3>
-                </header>
-                <p>{{ education.degree }}<br/>
-                {{ education.location }}</p>
-                <p>
-                  {{ education.conferreddate | date: "%B %Y"}} {% if education.misc %} | {{ education.misc }} {% endif %}
-                </p>
-            </div>
-            <div class="8u 12u$(small)">
-              {% if education.courses %}
-                <p><strong>Major Courses</strong></p>
-                <ul class="alt">
-                    {% for course in education.courses %}
-                    <li>{{ course.name }}</li>
-                    {% endfor %}
-                </ul>
-                {% endif %}
-                <p>{{ education.content }}</p>
-            </div>
-        </div>
-        {% endfor %}
+<section id="education" class="resume">
+    <h2><a href="#education">Education</a></h2>
+    <div class="row">
+        <ul class="alt">
+            {% for education in site.educations reversed %}
+            <li>
+                <h3>{{ education.degree }}, {{ education.school }}</h3>
+                <div class="content">
+                    {{ education.location }}
+                    {% if education.conferreddate %}
+                    | {{ education.conferreddate | date: "%B %Y"}}
+                    {% endif %}
+                    {% if education.misc %}
+                    | {{ education.misc }}
+                    {% endif %}
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
     </div>
 </section>

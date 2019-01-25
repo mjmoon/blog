@@ -1,22 +1,20 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site infor for SEO tag
-title: "micbon"
-description: "Michael J. Moon's personal blog"
-url: "https://blog.micbon.com"
-baseurl: "/"
-author: "Michael J. Moon"
+# Site
+title:              micbon blog
+bio:                'personal space for sharing my latest interests.'
+description:        "this blog is my personal space for sharing my latest interests."
+reading_time:       true
+words_per_minute:   200
+logo:               'assets/img/logo.png'
+# background:         'assets/img/placeholder-big.jpg'
+tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
+locale:             en_CA
+# url:                https://blog.micbon.com/
+url:                http://localhost:4000/
+author:             "Michael J. Moon"
 
 # Use collections dir
 collections_dir: collections
 collections:
-    # testpages:
-    #     output: true
     menu:
         permalink: /:name
         output: true
@@ -43,59 +41,79 @@ collections:
     skills:
         ouput: false
 
-# Sass
+# Jekyll
+permalink:          /:categories/:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+mathjax:            true
 sass:
-    sass_dir: _sass
-    style: compressed
+  sass_dir:         _sass
+  style:            compressed
 
-# Build settings
-markdown: kramdown
-highlighter: rouge
-permalink: none
+# Comments
+disqus_shortname:   micbon-blog
+
+# Social
+# if you don't have any of social below, comment the line.
+#google:
+  #plus:            #username
+  #analytics:
+  #verify:
+  #ad-client:
+  #ad-slot:
+#bing-verify:
+email:              micbon.site@gmail.com
+github-url:         mjmoon
+linkedin:           mjmoon
+instagram:          micbonmoon
+# twitter:            mjhmoon
+# facebook:           username
+#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
+#xing:              username
+#lastfm:            username
+#tumblr:            username
+#medium:            '@username'
+#pinterest:         username
+#foursquare:        username
+# steam:              username
+#dribbble:          username
+#youtube:           username
+#youtube-channel:   channel
+#soundcloud:        username
+#weibo:             username
+#flickr:            username
+#codepen:           username
+#keybase:           username
+#xmpp:              username@server.com
+#hackernews:        username
+
+# Gems
 plugins:
     - jekyll-paginate-v2
-    - jekyll-sitemap
+    - jekyll-mentions
     - jekyll-feed
-    - jekyll-seo-tag
-    - jekyll/tagging
+    - jekyll-sitemap
+    - jekyll-gist
 
-# Pagination - posts
-pagination:
-    # Site-wide kill switch, disabled here it doesn't run at all
-    enabled: true
-    # How many objects per paginated page, used to be `paginate` (default: 0, means all)
-    per_page: 6
-    # Sort to display recent post first
-    sort_reverse: true
+jekyll-mentions:
+    base_url: https://github.com
 
-# Pagination - tags
-autopages:
-    # Site-wide kill switch, disable here and it doesn't run at all
-    enabled: true
-    # Tag pages, omit to disable
-    tags:
-        # Optional, the list of layouts that should be processed for every tag found in the site
-        layouts:
-            - 'tag_page.html'
-        title: 'Tag: :tag' # :tag is replaced by the tag name
-        permalink: '/tag/:tag'
-    # disable others
-    categories:
-        enabled: false
-    collections:
-        enabled: false
-
-# tagging
-tag_page_layout: tag_page
-tag_page_dir: tag
-tag_page_data:
-    sitemap: false
-
-# for travis ci
+# Exclude list
 exclude:
-    - vendor
+    - README.md
     - Gemfile
     - Gemfile.lock
+    - node_modules
+    - gulpfile.js
+    - package.json
+    - _site
+    - src
+    - vendor
     - LICENSE
-    - README.md
     - Rakefile

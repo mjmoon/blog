@@ -1,0 +1,41 @@
+    <script type="text/javascript">
+        function prevSlide(item) {
+            var $curr = $('.'+item+ '.active'),
+                ind = $curr.index();
+            $curr.removeClass('active');
+            $curr[0].style.display = 'none';
+            $curr.prev().addClass('active');
+            $curr.prev()[0].style.display = 'block';
+            controlSlide(item, ind - 1);
+        };
+
+        function nextSlide(item) {
+            var $curr = $('.'+item+ '.active'),
+                ind = $curr.index() + 1;
+            $curr.removeClass('active');
+            $curr[0].style.display = 'none';
+            $curr.next().addClass('active');
+            $curr.next()[0].style.display = 'block';
+            controlSlide(item, ind + 1);
+        };
+
+        function controlSlide(item, ind) {
+          var $items = $('.' + item),
+              $next = $('.next-' + item),
+              $prev = $('.prev-' + item);
+          if (ind == $items.length) {
+              $next.addClass('disabled');
+              $next.attr({'disabled': true})
+          } else if ($next.hasClass('disabled')) {
+              $next.removeClass('disabled');
+              $next.attr({'disabled': false});
+          }
+          if (ind == 0) {
+              $prev.addClass('disabled');
+              $prev.attr({'disabled': true});
+          } else if ($prev.hasClass('disabled')) {
+              $prev.removeClass('disabled');
+              $prev.attr({'disabled': false});
+          }
+        };
+    </script>

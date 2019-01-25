@@ -1,0 +1,33 @@
+//@extend-elements
+.resume {
+    &.dl-menuwrapper {
+    	width: 100%;
+    	position: relative;
+    	z-index: 999;
+    	@media #{$notsmall} {
+            opacity: 0.7;
+    		position: fixed;
+    		top: 50%;
+    	}
+        // Menu Color
+        button:hover,
+        button.dl-active,
+        ul {
+        	background: $white;
+            li a {
+                color: $comp-color ;
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+    }
+
+    > h2 {
+        padding-top: 1em;
+        text-align: center;
+        a {
+            text-decoration: none;
+        }
+    }
+}

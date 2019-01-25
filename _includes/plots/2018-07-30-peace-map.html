@@ -1,15 +1,17 @@
 <link rel="stylesheet" href="{{ '/assets/css/plot/2018-07-30-peace-map.css' | relative_url }}" />
 <div id="content" class="plot">
     <div id="peace-map">
-        <div class="row">
+        <div class="row flex">
             <img src="{{ '/images/2018-07-30-iep-logo.png' | absolute_url }}" alt="institute for economic and peace">
-            <div class="3u 4u$(medium) 12u$(small)">
+            <div class="3u 4u$(medium) 12u$(small)" style="flex-grow:3">
                 <div class="widget">
                     <h4>Year</h4>
-                    <input type="text" value="2018" id="year-value" disabled>
-                    <input type="range" min="2008" max="2018" value="2018" class="year-slider" step="1" id="year-slider" name="year-slider" onchange="changeYear(this.value)">
-                    <button id="prev-year" onclick="prevYear()"><i class="icon fa-caret-left"></i></button>
-                    <button id="next-year" onclick="nextYear()" disabled><i class="icon fa-caret-right"></i></button>
+                    <div>
+                        <input type="text" value="2018" id="year-value" style="max-width:4em" disabled>
+                        <input type="range" min="2008" max="2018" value="2018" class="year-slider" step="1" id="year-slider" name="year-slider" onchange="changeYear(this.value)" style="max-width:100px;">
+                        <button class="btn" id="prev-year" onclick="prevYear()"><i class="fa fa-caret-left"></i></button>
+                        <button class="btn" id="next-year" onclick="nextYear()" disabled><i class="fa fa-caret-right"></i></button>
+                    </div>
                 </div>
                 <div class="widget">
                     <h4>Options</h4>

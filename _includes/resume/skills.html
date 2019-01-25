@@ -1,19 +1,17 @@
-<section id="skills">
-    <header class="major">
-        <h2>
-          <a href="#skills">Skills and Interests</a>
-        </h2>
-    </header>
-    <div class="features">
+<section id="skills" class="resume">
+    <h2><a href="#skills">Skills and Interests</a></h2>
+    <div class="row">
         {% for skill in site.skills %}
         <article>
-            <span class="icon {{ skill.icon }}"></span>
+            <div>
+                <h3>
+                    <span class="fa {{ skill.icon }} icon"></span>
+                    {{ skill.group }}
+                </h3>
+            </div>
             <div class="content">
-                <h3>{{ skill.group }}</h3>
-                <p>
-                    Skills include {{ skill.skills | map: 'name' | join: ', ' | downcase }}
-                    {% if skill.interests.size > 0 %} with interests in {{ skill.interests | map: 'name' | join: ', ' | downcase }}{% endif %}.
-                </p>
+                Skills include {{ skill.skills | map: 'name' | join: ', ' | downcase }}
+                {% if skill.interests.size > 0 %} with interests in {{ skill.interests | map: 'name' | join: ', ' | downcase }}{% endif %}.
             </div>
         </article>
         {% endfor %}

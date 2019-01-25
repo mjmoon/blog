@@ -1,32 +1,52 @@
 ---
-layout: default
+layout: compress
 ---
-<section>
-    <header class="main">
-        <h1>{{ page.title }}</h1>
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
+<head>
+    {% include head.html %}
+    {% if site.mathjax == true %}
+    <!-- MathJax -->
+    {% include head-math.html %}
+    {% endif %}
+</head>
+<body>
+    {% include nav.html %}
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="wrapper animated fadeIn">
+            <div class="content">
+                <div class="post-title {% if page.feature %} feature {% endif %}">
+                    <h1>{{ page.title }}</h1>
+                    <h4>{{ page.date | date_to_string }}</h4>
+                    {% if site.reading_time %}
+                    <p class="reading-time">
+                      <i class="fa fa-clock-o"></i>
+                      {% include read-time.html %}
+                    </p><!-- /.entry-reading-time -->
+                    {% endif %}
+                    {% if page.project %}
+                    <a class="btn zoombtn" href="{{site.url}}/projects/">
+                    {% else %}
+                    <a class="btn zoombtn" href="{{site.url}}/posts/">
+                    {% endif %}
+                        <i class="fa fa-chevron-left"></i>
+                    </a>
+                </div>
+                {{ content }}
+                <div class="entry-meta">
+                {% include meta.html %}
+                </div>
+            </div>
+        </div>
+        {% if page.comments and site.disqus_shortname %}
+        <section id="disqus_thread" class="animated fadeInUp"></section><!-- /#disqus_thread -->
+        {% endif %}
+        {% include footer.html %}
     </header>
-    {% if page.image %}
-    <span class="image main"><img src="{{ site.url }}{{ site.baseurl }}/images/{{ page.image }}" alt="{{ page.title }}" /></span>
-    {% endif %}
-    {{ content }}
-</section>
-<section>
-    <div class="row">
-        <div class="5u 12u$(medium)">
-            {% include tags.html %}
-        </div>
-        <div class="4u 6u(medium)">
-            {% include social-sharing.html %}
-        </div>
-        <div class="3u$ 6u$(medium)">
-            <ul class="alt">
-                <li>Written on: {{ page.date | date: '%b %d, %Y' }}</li>
-                <li>Written by: {{ page.author }}</li>
-            </ul>
-        </div>
-    </div>
-    {% if site.data.settings.disqus.comments %}
-    {% include disqus.html %}
-    {% endif %}
-</section>
-{% include related-posts.html %}
+    {% include scripts.html %}
+</body>
+</html>

@@ -1,30 +1,24 @@
-<link rel="stylesheet" href="{{ '/assets/css/slides.css' | relative_url }}" />
+<!-- <link rel="stylesheet" href="{{ '/assets/css/slides.css' | relative_url }}" /> -->
 <link rel="stylesheet" href="{{ '/assets/css/plot/2018-04-30-plot-01.css' | relative_url }}" />
-<div class="slides-container">
-    <div class="slides fade">
-        <div class="slides-title">Script embed</div>
-        <script
-            src="https://mm-plot-stocks.herokuapp.com/app/autoload.js?bokeh-autoload-element=21904a68-8624-4eea-b517-285e18c24435&bokeh-app-path=/app&bokeh-absolute-url=https://mm-plot-stocks.herokuapp.com/app"
-            id="21904a68-8624-4eea-b517-285e18c24435"
-            data-bokeh-model-id=""
-            data-bokeh-doc-id=""
-        ></script>
-        <!-- <script
-            src="http://localhost:5006/app/autoload.js?bokeh-autoload-element=226bb58e-5d0d-41e6-988f-81a707419236&bokeh-app-path=/app&bokeh-absolute-url=http://localhost:5006/app"
-            id="226bb58e-5d0d-41e6-988f-81a707419236"
-            data-bokeh-model-id=""
-            data-bokeh-doc-id=""
-        ></script> -->
-    </div>
-    <div class="slides fade">
-        <div class="slides-title">iFrame embed</div>
-        <iframe id="mm-plot-stocks" src="https://mm-plot-stocks.herokuapp.com/" seamless="seamless"></iframe>
-        <!-- <iframe id="mm-plot-stocks" src="http://localhost:5006/app" seamless="seamless"></iframe> -->
+<!-- <div class="slides-container"> -->
+<div class="plot-container" style="height:1000px;">
+    <center>
+        <button class="prev-plot btn disabled" onclick="prevSlide('plot')" disabled>&#10094;</button>
+        <button class="next-plot btn" onclick="nextSlide('plot')">&#10095;</button>
+    </center>
+    <div>
+        <div class="plot active">
+            <script
+                src="https://mm-plot-stocks.herokuapp.com/app/autoload.js?bokeh-autoload-element=21904a68-8624-4eea-b517-285e18c24435&bokeh-app-path=/app&bokeh-absolute-url=https://mm-plot-stocks.herokuapp.com/app"
+                id="21904a68-8624-4eea-b517-285e18c24435"
+                data-bokeh-model-id=""
+                data-bokeh-doc-id=""
+            ></script>
+            <center><h5>Script embed</h5></center>
+        </div>
+        <div class="plot" style="display:none">
+            <iframe width="100%" height="820px" id="mm-plot-stocks" src="https://mm-plot-stocks.herokuapp.com/" seamless="seamless" frameborder="0"></iframe>
+            <center><h5>iFrame embed</h5></center>
+        </div>
     </div>
 </div>
-<div class="slides-dots">
-    <span class="dot" onclick="currentSlide(1)" title="Script embed"></span>
-    <span class="dot" onclick="currentSlide(2)" title="iFrame embed"></span>
-</div>
-<!-- Slider -->
-<script src="/assets/js/slides.js"></script>

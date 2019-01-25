@@ -8,4 +8,11 @@ periods:
     courses:
       - code: 'STA410'
         name: 'Statistical Computation'
+  - start:  'September 2018'
+    end:  'December 2018'
+    courses:
+      - code: 'JSC270'
+        name: 'Data Science I'
+      - code: 'STA261'
+        name: 'Probability and Statistics II'
 ---

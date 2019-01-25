@@ -1,15 +1,10 @@
-<section id="presentations">
-    <header class="major">
-        <h2>
-          <a href="#presentations">Presentations</a>
-        </h2>
-    </header>
-    <div>
+<section id="presentations" class="resume">
+    <h2><a href="#presentations">Presentations</a></h2>
+    <div class="row">
         {% for presentation in site.presentations reversed %}
-        <div>
-            <header class="main">
-                <h2>{{ presentation.title }}</h2>
-            </header>
+        <article>
+            <div class="title"><h3>{{ presentation.title }}</h3></div>
+            <div class="content">
             <p>
                 {% for author in presentation.authors %}
                 {{ author.name | upcase }}{% if author.affiliation %}<sup>{{ author.affiliation }}</sup>{% endif %}{% unless forloop.last %}, {% endunless %}
@@ -23,7 +18,8 @@
                 {% if affiliation.number %}<sup>{{ affiliation.number }}</sup>{% endif %}{{ affiliation.name }}{% unless forloop.last %} | {% endunless %}
                 {% endfor %}
             </p>
-        </div>
+            </div>
+        </article>
         {% endfor %}
     </div>
 </section>

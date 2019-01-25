@@ -1,34 +1,20 @@
-<section id="teaching">
-    <header class="major">
-        <h2>
-          <a href="#teaching">Teaching Experience</a>
-        </h2>
-    </header>
+<section id="teaching" class="resume">
+    <h2><a href="#teaching">Teaching</a></h2>
     <div>
         {% for teaching in site.teachings reversed %}
-        <header class="main">
-            <h3>{{ teaching.school }}</h3>
-        </header>
-        <div class="row">
-            <div class="4u 12u$(small)">
-                <strong>{{ teaching.position }}</strong>
-                <p>{{ teaching.location }}</p>
+        <h3>{{ teaching.position }}, {{ teaching.school }} | {{ teaching.location }}</h3>
+        <article>
+            {% for period in teaching.periods %}
+            <div class="content">
+                <h4>{{ period.start | date: "%b %Y" }} to {{ period.end | date: "%b %Y" }}</h4>
+                <ul class="alt">
+                {% for course in period.courses %}
+                    <li>{{ course.code }}: {{ course.name }}</li>
+                {% endfor %}
+                </ul>
             </div>
-            <div class="8u 12u$(small)">
-                <div class="posts">
-                    {% for period in teaching.periods %}
-                    <article>
-                        <strong>{{ period.start | date: "%b %Y" }} to {{ period.end | date: "%b %Y" }}</strong>
-                        <ul>
-                        {% for course in period.courses %}
-                            <li>{{ course.code }}: {{ course.name }}</li>
-                        {% endfor %}
-                        </ul>
-                    </article>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
+            {% endfor %}
+        </article>
         {% endfor %}
     </div>
 </section>

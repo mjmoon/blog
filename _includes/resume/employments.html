@@ -1,36 +1,31 @@
-<section id="employment">
-    <header class="major">
-        <h2>
-          <a href="#employment">Employments</a>
-        </h2>
-    </header>
-    <article class="10u$ 12u$(medium) special">
-        <p>
-            <button class="prev-employment" onclick="iterEmployment(-1)">&#10094;</button>
-            <button class="next-employment" onclick="iterEmployment(1)">&#10095;</button>
-        </p>
-    </article>
+<section id="employment" class="resume">
+    <h2><a href="#employment">Employments</a></h2>
     <div class="row">
-        {% for employment in site.employments reversed %}
-        <div class="10u$ 12u$(medium) employment">
-            <header class="main">
-                <h3>{{ employment.company }}</h3>
-            </header>
-            <div class="row">
-                <div class="4u 12u$(small)">
-                    <strong>{{ employment.position }}</strong>
-                    <p>{{ employment.start | date: "%B %Y"}} to {% if employment.end %}{{ employment.end | date: "%B %Y" }}{% else %} Present{% endif %} | {{ employment.location }}</p>
+        <div>
+        <p>
+            <button class="prev-employment btn disabled" onclick="prevSlide('employment')" disabled>&#10094;</button>
+            <button class="next-employment btn" onclick="nextSlide('employment')">&#10095;</button>
+        </p>
+        </div>
+        <div>
+            {% for employment in site.employments reversed %}
+            {% if forloop.first == true %}
+            <div class="employment active">
+            {% else %}
+            <div class="employment" style="display:none;">
+            {% endif %}
+                <div class="title">
+                    <h3>{{ employment.company }} | {{ employment.position }} | {{ employment.start | date: "%B %Y"}} to {% if employment.end %}{{ employment.end | date: "%B %Y" }}{% else %} Present{% endif %} | {{ employment.location }}</h3>
                 </div>
-                <div class="8u 12u$(small)">
-                    <strong>Responsibilities</strong>
-                    <ul>
+                <div class="content">
+                    <ul class="alt-lined">
                         {% for item in employment.responsibilities %}
                         <li>{{ item.item }}</li>
                         {% endfor %}
                     </ul>
                 </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </section>

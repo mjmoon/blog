@@ -1,22 +1,3 @@
-<head>
-    <title>{% if page.url == '/index.html' %}{{ site.title | escape | downcase }} | {{ site.description | escape | downcase }}{% elsif page.title %}{{ page.title | escape | downcase }} | {{ site.title | escape | downcase }} | {{ site.description | escape | downcase
-        }}{% else %}{{ site.title | escape | downcase }} | {{ site.description | escape | downcase }}{% endif %}</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
-    <link rel="stylesheet" href="{{ '/assets/css/syntax.css' | relative_url }}" />
-    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-    <link rel="canonical" href="{{ page.url | replace:'index.html', '' | absolute_url }}">
-    <link rel="shortcut icon" href="{{ '/favicon.ico?v=1.1' | relative_url }}">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    {% seo %}
-    <!-- Use Atom -->
-    {% feed_meta %} {% if site.data.settings.disqus.comments %}
-    <script id="dsq-count-scr" src="//micbon-blog.disqus.com/count.js" async></script>
-    {% endif %}
     <!-- MathJax -->
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
@@ -80,6 +61,6 @@
             }
         });
     </script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script> -->
     </script>
-</head>
