@@ -132,6 +132,9 @@ body {
 	    box-shadow: none;
 	}
 }
+.outer-container {
+	width: 100%;
+}
 // entry meta
 .entry-meta {
 	@include font-rem(12);

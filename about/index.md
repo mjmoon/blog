@@ -8,8 +8,11 @@ slides: true
 ---
 
 <div class="row">
-    I am a PhD student in Statistical Sciences <br />
-    at the University of Toronto. <br />
+    <h3>michael jongho moon</h3>
+    <p>
+        I am a PhD student in Statistical Sciences <br />
+        at the University of Toronto.
+    </p>
 </div>
 
 <div class="resume dl-menuwrapper" role="navigation">
