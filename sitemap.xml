@@ -2,11 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://blog.micbon.com//sta2111</loc>
-<lastmod>2019-01-25T06:47:14+00:00</lastmod>
+<lastmod>2019-01-28T14:23:22+00:00</lastmod>
 </url>
 <url>
 <loc>https://blog.micbon.com//sta3000</loc>
-<lastmod>2019-01-25T06:47:14+00:00</lastmod>
+<lastmod>2019-01-28T14:23:22+00:00</lastmod>
 </url>
 <url>
 <loc>https://blog.micbon.com//post/linked-bokeh-plot/</loc>
@@ -46,5 +46,8 @@
 </url>
 <url>
 <loc>https://blog.micbon.com//about/</loc>
+</url>
+<url>
+<loc>https://blog.micbon.com//search/</loc>
 </url>
 </urlset>
