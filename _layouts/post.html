@@ -8,8 +8,9 @@ layout: compress
 <!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
 <head>
     {% include head.html %}
-    {% if site.mathjax == true %}
+    {% if site.mathjax == true and page.math == true %}
     <!-- MathJax -->
+    <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     {% include head-math.html %}
     {% endif %}
 </head>

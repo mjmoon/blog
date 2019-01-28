@@ -83,7 +83,8 @@
 		i {
 			// display: inline-block;
 		}
-		form, a {
+		#search,
+		a {
 			display: block;
 			position: relative;
 			padding: 10px 20px;
@@ -96,9 +97,9 @@
 
 			input {
 				width: 100%;
-				background-color: $color_tuatara;
-				border-color: $color_shark;
-				color: $color_alabaster;
+				background-color: inherit;
+				border-color: $color_tuatara;
+				color: inherit;
 			}
 		}
 		&.dl-back > a {

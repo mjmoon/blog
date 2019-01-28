@@ -1,10 +1,13 @@
     <!-- JS -->
-    <script src="/assets/js/jquery-1.12.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="/assets/js/jquery-1.12.0.min.js"></script> -->
     <script src="/assets/js/jquery.dlmenu.min.js"></script>
     <script src="/assets/js/jquery.goup.min.js"></script>
     <script src="/assets/js/jquery.magnific-popup.min.js"></script>
     <script src="/assets/js/jquery.fitvid.min.js"></script>
     <script src="/assets/js/scripts.js"></script>
+    <!-- lunr Search -->
+    <script src="/assets/js/search.js"></script>
     {% if site.google.analytics %}
     <!-- Asynchronous Google Analytics snippet -->
     <script>
@@ -17,7 +20,7 @@
       ga('send', 'pageview');
     </script>
     {% endif %}
-    {% if page.comments != false %}
+    {% if page.comments == true %}
         {% include disqus_comments.html %}
     {% endif %}
     {% if page.slides == true %}

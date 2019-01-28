@@ -1,5 +1,7 @@
 ---
 layout: compress
+comments: false
+slides: false
 ---
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -8,11 +10,6 @@ layout: compress
 <!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
 <head>
     {% include head.html %}
-    {% if site.mathjax == true and page.math == true %}
-    <!-- MathJax -->
-    <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    {% include head-math.html %}
-    {% endif %}
 </head>
 <body>
     {% include nav.html %}
@@ -20,18 +17,26 @@ layout: compress
     <header class="header" role="banner">
         <div class="wrapper animated fadeIn">
             <div class="content">
-                <div class="post-title {% if page.feature %} feature {% endif %}">
+                <div class="post-title">
                     <h1>{{ page.title }}</h1>
                     <a class="btn zoombtn" href="{{site.url}}">
-                        <i class="fa fa-chevron-left"></i>
+                        <i class="fa fa-home"></i>
                     </a>
                 </div>
-                {{ content }}
+                <div class="post-list">
+                    <ul id="search-results" style="display:none;">
+                    </ul>
+                </div>
             </div>
         </div>
-        {% if page.comments and site.disqus_shortname %}<section id="disqus_thread" class="animated fadeInUp"></section><!-- /#disqus_thread -->{% endif %}
         {% include footer.html %}
     </header>
     {% include scripts.html %}
+    <script src="/assets/js/wow.min.js"></script>
+    <script type="text/javascript">(new WOW).init();</script>
+    <!--  lunr search -->
+    <!-- <script src="https://unpkg.com/lunr/lunr.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.5/lunr.min.js"></script>
+    <script src="/assets/js/search.result.js"></script>
 </body>
 </html>
