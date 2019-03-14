@@ -15,9 +15,6 @@ author:             "Michael J. Moon"
 # Use collections dir
 collections_dir: collections
 collections:
-    menu:
-        permalink: /:name
-        output: true
     notes:
         permalink: /:categories/:title
         output: true
@@ -95,7 +92,6 @@ instagram:          micbonmoon
 
 # Gems
 plugins:
-    - jekyll-paginate-v2
     - jekyll-mentions
     - jekyll-feed
     - jekyll-sitemap
