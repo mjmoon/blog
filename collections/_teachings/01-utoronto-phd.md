@@ -3,6 +3,15 @@ school:   'University of Toronto'
 location: 'Toronto, Ontario, Canada'
 position: 'Teaching Assistant'
 periods:
+  - start:  'May 2019'
+    end:  'August 2019'
+    courses:
+      - code: 'STAC67'
+        name: 'Regression Analysis (Scarborough)'
+      - code: 'STA257'
+        name: 'Probability and Statistics I (May-June)'
+      - code: 'STA255'
+        name: 'Statistical Theory (July-August)'
   - start:  'January 2019'
     end:  'April 2019'
     courses:
