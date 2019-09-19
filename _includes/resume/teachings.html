@@ -11,7 +11,7 @@
                 <h4>{{ period.start | date: "%b %Y" }} to {{ period.end | date: "%b %Y" }}</h4>
                 <ul class="alt">
                 {% for course in period.courses %}
-                    <li>{{ course.code }}: {{ course.name }}</li>
+                    <li>{{ course.code }}: {{ course.name }}{% if course.desc %} - <i>{{ course.desc }}</i>{% endif %}</li>
                 {% endfor %}
                 </ul>
             </div>
