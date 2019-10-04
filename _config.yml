@@ -15,9 +15,6 @@ author:             "Michael J. Moon"
 # Use collections dir
 collections_dir: collections
 collections:
-    notes:
-        permalink: /:categories/:title
-        output: true
     courses:
         permalink: /:name
         output: true
