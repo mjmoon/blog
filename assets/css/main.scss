@@ -20,13 +20,11 @@ sitemap: false
 @import "elements";
 @import "syntax";
 @import "nav";
+@import "paginate";
 @import "resume";
 @import "vendor/fonts";
-// @import "vendor/font-awesome";
 @import "vendor/animate";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 @import "plot";
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-// version 5...don't match version 4.7 names...
-// @import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');

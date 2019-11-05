@@ -3,7 +3,7 @@ layout: post
 title: "Hello Jekyll!"
 author: "Michael J. Moon"
 categories: post
-tags: [blogging, jekyll, github, wordpress]
+tags: [blogging]
 date: 2018-02-15 00:00:00 -0500
 comments: true
 ---

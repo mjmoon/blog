@@ -1,0 +1,37 @@
+---
+layout: page
+title: Archive
+description: "Archive of posts sorted by date."
+comments: false
+pagination:
+  enabled: true
+  per_page: 10
+---
+<div class="row">
+    <div class="posts">
+      {% assign curYear='0000' %}
+      <ul>
+        {% for post in paginator.posts %}
+        {% capture newYear %}
+        {{ post.date | date: "%Y" }}
+        {% endcapture %}
+        <li>
+            {% unless curYear==newYear %}
+            <h3 class="title">{{ newYear }}</h3>
+            {% assign curYear=newYear %}
+            {% endunless %}
+            <a href="{{ post.url }}"> {{ post.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% if paginator.page_trail %}
+      <ul class="paginate">
+        {% for trail in paginator.page_trail %}
+        <li {% if page.url == trail.path %}class="selected"{% endif %}>
+          <a href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}"><span class="dot"></span></a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+</div>

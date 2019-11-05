@@ -1,53 +1,62 @@
 ---
 layout: compress
 ---
+
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
-<head>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
     {% include head.html %}
-</head>
-<body>
+  </head>
+  <body>
     {% include nav.html %}
-    <!-- Header -->
-    <header class="header flex" role="banner">
-        <div class="outer-container">
-            <div class="container animated fadeIn">
-                <div class="row">
-                        <a href="/">
-                            <img src="{{ site.logo }}" class="img-circle zoombtn animated rotateIn" alt="micbon blog">
-                        </a>
-                        <h3 class="title">
-                            <a class="zoombtn" href="/">
-                            	<p style="font-size:1.2rem;font-weight:300">{{ site.title }}</p>
-    			            </a>
-                        </h3>
-                        <hr class="hr-line">
-                        <h3 class="title">
-                            <a href="/">
-                            	<p style="font-size:1rem;font-weight:300">{{ site.bio }}</p>
-    			            </a>
-                        </h3>
-                        {% include social-links.html %}
-                      <hr class="hr-line">
-                      <h3 class="title">
-                             <a class="btn zoombtn" href="/about">
-                             About
-                             </a>
-                             <a class="btn zoombtn" href="/posts">
-                             Posts
-                             </a>
-                             <!-- <a class="btn zoombtn" href="/projects">
-                             Projects
-                             </a> -->
-                     </h3>
-                </div>
-            </div>
-            {% include footer.html %}
+    <div class="wrapper animated fadeIn">
+      <div class="row">
+        <div>
+          <h3 class="title" style="font-size:1.2rem;font-weight:300">
+            <a class="zoombtn" href="/">
+              <img
+                src="/{{ site.logo }}"
+                class="img-circle zoombtn animated rotateIn"
+                alt="micbon blog logo"
+              />{{ site.title }}
+            </a>
+          </h3>
+          <small class="plain">
+            <a href="/about">
+              <p>{{ site.bio }}</p>
+            </a>
+          </small>
+          {% include social-links.html %}
         </div>
-    </header>
-    {% include scripts.html %}
-</body>
+        <div class="posts">
+          <hr class="hr-line" />
+          <h3 class="title">
+            <a class="zoombtn" href="/about">
+              <p style="font-size:1.2rem;font-weight:300">Posts</p>
+            </a>
+          </h3>
+          <ul>
+            {% for post in paginator.posts %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+          </ul>
+          {% if paginator.page_trail %}
+          <ul class="paginate">
+            {% for trail in paginator.page_trail %}
+            <li {% if page.url == trail.path %}class="selected"{% endif %}>
+              <a href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}"><span class="dot"></span></a>
+            </li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% include footer.html %} {% include scripts.html %}
+  </body>
 </html>

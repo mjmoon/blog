@@ -13,8 +13,9 @@
 	}
 }
 .social-btn {
-	padding: 10px;
-	margin: 10px;
+	padding: 0px;
+	margin: 0px;
+	border: none;
 	@extend %btnextend;
 }
 .btn {
@@ -92,7 +93,9 @@
         @include font-rem(14);
     }
 }
-
+.social-btn-list {
+	//
+}
 // hr break
 hr {
 	border: 0;
@@ -114,7 +117,12 @@ hr {
 		background-image: -o-linear-gradient(left, $color_gallery, $color_stack, $color_gallery);
 	}
 }
-
+// plain text link
+.plain {
+	> a {
+	  text-decoration: none;
+	}
+}
 // images and figures
 img {
     display: block;
@@ -131,8 +139,9 @@ img {
 .img-circle {
 	border-radius: 50%;
 	border: 3px solid $white;
-	height: 150px;
-	width: 150px;
+	height: 50px;
+	width: 50px;
+	display: inline-block;
 }
 .author-photo {
     background-color: $white;
@@ -221,7 +230,7 @@ kbd {
 // footer
 .footer {
 	@include font(10);
-	color: $color_bon_jour;
+	color: $color_stack ;
 	@media #{$small} {
 		color: $comp-color;
 	}

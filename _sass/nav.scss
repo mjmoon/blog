@@ -19,7 +19,7 @@
 	button {
 		top: 0;
 		left: 0;
-		background: $comp-color;
+		background: $color_stack;
 		border: none;
 		width: 48px;
 		height: 45px;
@@ -37,7 +37,7 @@
 	button:hover,
 	button.dl-active,
 	ul {
-		background: #aaa;
+		background: $color_bon_jour;
 	}
 	button:after {
 		content: '';
@@ -66,22 +66,19 @@
 		h4 {
 			margin:0;
 			padding: 15px 20px 0;
-			color: rgba($white,0.9);
+			color: $color_shark;
 		}
 		p {
 			margin: 0;
 			padding: 15px 20px;
 			@include font-rem(14);
-			color: rgba($white,0.8);
+			color: $color_fuscous_gray;
 			font-weight: 300;
 			a {
 				display: inline;
 				padding: 0;
 				@include font-rem(14);
 			}
-		}
-		i {
-			// display: inline-block;
 		}
 		#search,
 		a {
@@ -91,20 +88,19 @@
 			@include font-rem(14);
 			line-height: 20px;
 			font-weight: 400;
-			color: $white;
+			color: $color_tundora;
 			outline: none;
 			text-decoration: none;
-
 			input {
 				width: 100%;
-				background-color: inherit;
-				border-color: $color_tuatara;
+				background-color: $white;
+				border-color: $white;
 				color: inherit;
 			}
 		}
 		&.dl-back > a {
 			padding-left: 30px;
-			background: rgba(0,0,0,0.2);
+			color: $white;
 		}
 		&.dl-back:after,
 		> a:not(:only-child):after {
@@ -112,33 +108,30 @@
 			top: 0;
 			line-height: 40px;
 			font-family: 'fontawesome';
-			color: $white;
+			color: $color_tundora;
 			speak: none;
 			-webkit-font-smoothing: antialiased;
 			content: "\f105";
 		}
 		&.dl-back:after {
 			left: 10px;
-			color: rgba(212,204,198,0.5);
+			color: $white;
 			-webkit-transform: rotate(180deg);
 			-moz-transform: rotate(180deg);
 			transform: rotate(180deg);
 		}
 		> a:after {
 			right: 10px;
-			color: rgba(0,0,0,0.15);
+			color: $white;
 		}
 	}
 	.dl-menu {
 		margin: 0;
 		position: absolute;
 		width: 100%;
-		// max-width: 400px;
 		overflow-y: auto;
-		// max-height: 600px;
 		opacity: 0;
 		pointer-events: none;
-		box-shadow: 0 12px 24px rgba($black,0.4);
 		-webkit-transform: translateY(10px);
 		-moz-transform: translateY(10px);
 		transform: translateY(10px);
@@ -164,7 +157,6 @@
 	}
 	.dl-submenu {
 		@include rounded(3px);
-		box-shadow: 0 12px 24px rgba($black,0.4);
 		.btn {
 			margin-bottom: 0;
 		}
@@ -364,12 +356,7 @@ All this is done for any sub-level being entered.
 		display: block;
 	}
 }
-// Menu Color
-.dl-menuwrapper button:hover,
-.dl-menuwrapper button.dl-active,
-.dl-menuwrapper ul {
-	background: $comp-color;
-}
+
 // Fix for IE
 .dl-menu li {
 	display: none

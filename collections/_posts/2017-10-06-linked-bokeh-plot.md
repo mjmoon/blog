@@ -3,7 +3,7 @@ layout: post
 title: "Creating linked plots using Python's bokeh library"
 author: "Michael J. Moon"
 categories: post
-tags: [bokeh, python, data-visualization, pandas]
+tags: [python, datavis]
 date: 2017-10-06 00:00:00 -0500
 comments: true
 ---

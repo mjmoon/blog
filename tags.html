@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Tag Archive
-description: "An archive of posts sorted by tag."
+title: Tags
+description: "Archive of posts sorted by tag."
+permalink: tags
 comments: false
 ---
 
@@ -17,12 +18,14 @@ comments: false
 
 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
   {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
-	<article>
-	<h2 id="{{ this_word }}" class="tag-heading">{{ this_word }}</h2>
-		<ul>
-    {% for post in site.tags[this_word] %}{% if post.title != null %}
-      <li class="entry-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-    {% endif %}{% endfor %}
-		</ul>
-	</article><!-- /.hentry -->
+  <div class="row">
+      <div class="posts">
+          <h3 id="{{ this_word }}" class="tag-heading">{{ this_word }}</h3>
+      		<ul>
+          {% for post in site.tags[this_word] %}{% if post.title != null %}
+            <li class="entry-title"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+          {% endif %}{% endfor %}
+      		</ul>
+      </div>
+  </div>
 {% endunless %}{% endfor %}

@@ -3,7 +3,7 @@ layout: post
 title: "A bokeh server app for up-to-date stock prices"
 author: "Michael J. Moon"
 categories: post
-tags: [bokeh, bokeh-server, python, data-visualization, heroku, docker]
+tags: [python, datavis]
 date: 2018-04-30 00:00:00 -0500
 comments: true
 slides: true

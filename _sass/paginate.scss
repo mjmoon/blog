@@ -1,0 +1,52 @@
+.posts {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    @media #{$small} {
+      width: 80%;
+    }
+    @media #{$medium} {
+      width: 75%;
+    }
+    @media #{$notsmall} {
+      width: 50%;
+    }
+    > ul {
+        list-style: none;
+        text-align: right;
+        margin: 0;
+        padding: 0;
+        li{
+            a {
+                text-decoration: none;
+            }
+            margin-top: 1rem;
+            &:first-child {
+              margin-top: 0;
+            }
+        }
+    }
+}
+
+ul.paginate {
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+    li {
+        display: inline-block;
+        &.selected .dot{
+            background-color: $comp-color;
+        }
+    }
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  background-color: $color_stack;
+  border-radius: 50%;
+  display: inline-block;
+}
