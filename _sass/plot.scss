@@ -6,9 +6,10 @@
 
     &.oversized {
         background-color: $white;
+        border-right: solid 1px rgba($color_shark,0.3);
         left: -20%;
         width: 140%;
-        border-radius: 7rem;
+        border-radius: 5rem;
 
         .plot {
             padding: 2rem;

@@ -3,6 +3,15 @@ school:   'University of Toronto'
 location: 'Toronto, Ontario, Canada'
 position: 'Teaching Assistant'
 periods:
+  - start: 'January 2020'
+    end: 'April 2020'
+    courses:
+      - code: 'STA247'
+        name: 'Probability with Computer Applications'
+      - code: 'JSC270'
+        name: 'Data Science I'
+      - code: 'JSC370'
+        name: 'Data Science II'
   - start: 'September 2019'
     end: 'December 2019'
     courses:
