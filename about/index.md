@@ -18,7 +18,7 @@ slides: true
 <div class="resume dl-menuwrapper" role="navigation">
   <ul class>
     <li><a href="#research">Research</a></li>
-    <li><a href="#skills">Skills</a></li>
+    <!-- <li><a href="#skills">Skills</a></li> -->
     <li><a href="#education">Education</a></li>
     <li><a href="#publications">Publications</a></li>
     <li><a href="#presentations">Presentations</a></li>
