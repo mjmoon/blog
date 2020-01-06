@@ -1,22 +1,39 @@
 <section id="teaching" class="resume">
     <h2><a href="#teaching">Teaching</a></h2>
     <div class="row">
-        {% for teaching in site.teachings reversed %}
-        <div class="title">
-            <h3>{{ teaching.position }}, {{ teaching.school }} | {{ teaching.location }}</h3>
-        </div>
         <div>
-            {% for period in teaching.periods %}
-            <div>
-                <h4>{{ period.start | date: "%b %Y" }} to {{ period.end | date: "%b %Y" }}</h4>
-                <ul class="alt">
-                {% for course in period.courses %}
-                    <li>{{ course.code }}: {{ course.name }}{% if course.desc %} - <i>{{ course.desc }}</i>{% endif %}</li>
-                {% endfor %}
-                </ul>
+            {% for teaching in site.teachings reversed %}
+            {% if forloop.first == true %}
+            <div class="teaching block active">
+            {% else %}
+            <div class="teaching block" style="display:none;">
+            {% endif %}
+                <div class="title">
+                    <h3>{{ teaching.position }}, {{ teaching.school }} | {{ teaching.location }}</h3>
+                </div>
+                <div>
+                    <h4>{{ teaching.start | date: "%b %Y" }} to {{ teaching.end | date: "%b %Y" }}</h4>
+                    <ul class="alt">
+                    {% for course in teaching.courses %}
+                        <li>{{ course.code }}: {{ course.name }}{% if course.desc %} - <i>{{ course.desc }}</i>{% endif %}</li>
+                    {% endfor %}
+                    </ul>
+                </div>
             </div>
             {% endfor %}
+            <ul class="paginate">
+                <li class="prev-teaching paginate disabled" onclick="prevSlide('teaching')">&#9668;</li>
+                {% for teaching in site.teachings reversed %}
+                {% if forloop.first == true %}
+                <li class="selected teaching dots">
+                {% else %}
+                <li class="teaching dots">
+                {% endif %}
+                  <span class="dot" onclick="controlSlide('teaching', {{ forloop.index0 }})"></span>
+                </li>
+                {% endfor %}
+                <li class="next-teaching paginate" onclick="nextSlide('teaching')">&#9658;</li>
+            </ul>
         </div>
-        {% endfor %}
     </div>
 </section>

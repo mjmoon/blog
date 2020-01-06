@@ -36,9 +36,26 @@ ul.paginate {
     margin: 0;
     padding: 0;
     li {
+        line-height: 22px;
+        vertical-align: middle;
         display: inline-block;
+        cursor: pointer;
         &.selected .dot{
+            cursor: default;
+            pointer-events: none;
             background-color: $comp-color;
+        }
+        &.paginate{
+            font-family:Comic Sans MS;
+            font-size: 12px;
+            padding: 0;
+            background-color: white;
+            border-style: none;
+            &.disabled {
+                color: $color_stack;
+                cursor: default;
+                pointer-events: none;
+            }
         }
     }
 }

@@ -30,4 +30,14 @@
             text-decoration: none;
         }
     }
+
+    .active {
+        min-height: 210px;
+        &.project {
+            min-height: 260px;
+        }
+        &.employment {
+            min-height: 250px;
+        }
+    }
 }

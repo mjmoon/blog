@@ -2,17 +2,11 @@
     <h2><a href="#employment">Employments</a></h2>
     <div class="row">
         <div>
-        <p>
-            <button class="prev-employment btn disabled" onclick="prevSlide('employment')" disabled>&#10094;</button>
-            <button class="next-employment btn" onclick="nextSlide('employment')">&#10095;</button>
-        </p>
-        </div>
-        <div>
             {% for employment in site.employments reversed %}
             {% if forloop.first == true %}
-            <div class="employment active">
+            <div class="employment block active">
             {% else %}
-            <div class="employment" style="display:none;">
+            <div class="employment block" style="display:none;">
             {% endif %}
                 <div class="title">
                     <h3>{{ employment.company }} | {{ employment.position }} | {{ employment.start | date: "%B %Y"}} to {% if employment.end %}{{ employment.end | date: "%B %Y" }}{% else %} Present{% endif %} | {{ employment.location }}</h3>
@@ -26,6 +20,19 @@
                 </div>
             </div>
             {% endfor %}
+            <ul class="paginate">
+                <li class="prev-employment paginate disabled" onclick="prevSlide('employment')">&#9668;</li>
+                {% for emp in site.employments reversed %}
+                {% if forloop.first == true %}
+                <li class="selected employment dots">
+                {% else %}
+                <li class="employment dots">
+                {% endif %}
+                  <span class="dot" onclick="controlSlide('employment', {{ forloop.index0 }})"></span>
+                </li>
+                {% endfor %}
+                <li class="next-employment paginate" onclick="nextSlide('employment')">&#9658;</li>
+            </ul>
         </div>
     </div>
 </section>

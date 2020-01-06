@@ -1,41 +1,35 @@
     <script type="text/javascript">
         function prevSlide(item) {
-            var $curr = $('.'+item+ '.active'),
-                ind = $curr.index();
-            $curr.removeClass('active');
-            $curr[0].style.display = 'none';
-            $curr.prev().addClass('active');
-            $curr.prev()[0].style.display = 'block';
-            controlSlide(item, ind - 1);
+            var $curr = $('.' + item + '.active');
+            controlSlide(item, $curr.index() - 1);
         };
 
         function nextSlide(item) {
-            var $curr = $('.'+item+ '.active'),
-                ind = $curr.index() + 1;
-            $curr.removeClass('active');
-            $curr[0].style.display = 'none';
-            $curr.next().addClass('active');
-            $curr.next()[0].style.display = 'block';
-            controlSlide(item, ind + 1);
+            var $curr = $('.' + item + '.active');
+            controlSlide(item, $curr.index() + 1);
         };
 
         function controlSlide(item, ind) {
-          var $items = $('.' + item),
-              $next = $('.next-' + item),
-              $prev = $('.prev-' + item);
-          if (ind == $items.length) {
-              $next.addClass('disabled');
-              $next.attr({'disabled': true})
-          } else if ($next.hasClass('disabled')) {
-              $next.removeClass('disabled');
-              $next.attr({'disabled': false});
-          }
-          if (ind == 0) {
-              $prev.addClass('disabled');
-              $prev.attr({'disabled': true});
-          } else if ($prev.hasClass('disabled')) {
-              $prev.removeClass('disabled');
-              $prev.attr({'disabled': false});
-          }
+            var $curr = $('.' + item + '.active'),
+                $items = $('.' + item + '.block'),
+                $next = $('.next-' + item),
+                $prev = $('.prev-' + item),
+                $dots = $('.' + item + '.dots');
+            $curr.removeClass('active');
+            $curr[0].style.display = 'none';
+            $items[ind].classList.add('active');
+            $items[ind].style.display = 'block';
+            $dots.removeClass('selected');
+            $dots[ind].classList.add('selected');
+            if (ind == $items.length - 1) {
+                  $next.addClass('disabled');
+              } else if ($next.hasClass('disabled')) {
+                  $next.removeClass('disabled');
+              }
+              if (ind == 0) {
+                  $prev.addClass('disabled');
+              } else if ($prev.hasClass('disabled')) {
+                  $prev.removeClass('disabled');
+              }
         };
     </script>

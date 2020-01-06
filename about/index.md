@@ -36,11 +36,11 @@ slides: true
 ---
 
 <!-- skills -->
-{% if site.skills.size > 0  %}
+<!-- {% if site.skills.size > 0  %}
 {% include resume/skills.html %}
 {% endif %}
 
----
+--- -->
 
 <!-- education -->
 {% if site.educations.size > 0  %}

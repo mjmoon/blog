@@ -1,18 +1,12 @@
 <section id="projects" class="resume">
     <h2><a href="#projects">Projects</a></h2>
     <div class="row">
-        <div>
-            <p>
-                <button class="prev-project btn disabled" onclick="prevSlide('project')" disabled>&#10094;</button>
-                <button class="next-project btn" onclick="nextSlide('project')">&#10095;</button>
-            </p>
-        </div>
         <div class="content">
             {% for project in site.projects reversed %}
             {% if forloop.first == true %}
-            <div class="project active">
+            <div class="project block active">
             {% else %}
-            <div class="project" style="display:none;">
+            <div class="project block" style="display:none;">
             {% endif %}
                 <div class="title"><h3>{{ project.title }}</h3></div>
                 <div class="row">
@@ -35,6 +29,19 @@
                 </div>
             </div>
             {% endfor %}
+            <ul class="paginate">
+                <li class="prev-project paginate disabled" onclick="prevSlide('project')">&#9668;</li>
+                {% for project in site.projects reversed %}
+                {% if forloop.first == true %}
+                <li class="selected project dots">
+                {% else %}
+                <li class="project dots">
+                {% endif %}
+                  <span class="dot" onclick="controlSlide('project', {{ forloop.index0 }})"></span>
+                </li>
+                {% endfor %}
+                <li class="next-project paginate" onclick="nextSlide('project')">&#9658;</li>
+            </ul>
         </div>
     </div>
 </section>
