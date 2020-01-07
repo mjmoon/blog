@@ -22,11 +22,11 @@
             {% endfor %}
             <ul class="paginate">
                 <li class="prev-employment paginate disabled" onclick="prevSlide('employment')">&#9668;</li>
-                {% for emp in site.employments reversed %}
+                {% for employment in site.employments reversed %}
                 {% if forloop.first == true %}
-                <li class="selected employment dots">
+                <li class="selected employment dots" title="{{ employment.company }} | {{ employment.position }} | {{ employment.start | date: '%B %Y'}} to {% if employment.end %}{{ employment.end | date: '%B %Y' }}{% else %} Present{% endif %} | {{ employment.location }}">
                 {% else %}
-                <li class="employment dots">
+                <li class="employment dots" title="{{ employment.company }} | {{ employment.position }} | {{ employment.start | date: '%B %Y'}} to {% if employment.end %}{{ employment.end | date: '%B %Y' }}{% else %} Present{% endif %} | {{ employment.location }}">
                 {% endif %}
                   <span class="dot" onclick="controlSlide('employment', {{ forloop.index0 }})"></span>
                 </li>

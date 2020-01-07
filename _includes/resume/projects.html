@@ -33,9 +33,9 @@
                 <li class="prev-project paginate disabled" onclick="prevSlide('project')">&#9668;</li>
                 {% for project in site.projects reversed %}
                 {% if forloop.first == true %}
-                <li class="selected project dots">
+                <li class="selected project dots" title="{{ project.title }}">
                 {% else %}
-                <li class="project dots">
+                <li class="project dots" title="{{ project.title }}">
                 {% endif %}
                   <span class="dot" onclick="controlSlide('project', {{ forloop.index0 }})"></span>
                 </li>

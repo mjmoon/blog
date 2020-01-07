@@ -25,9 +25,9 @@
                 <li class="prev-teaching paginate disabled" onclick="prevSlide('teaching')">&#9668;</li>
                 {% for teaching in site.teachings reversed %}
                 {% if forloop.first == true %}
-                <li class="selected teaching dots">
+                <li class="selected teaching dots" title="{{ teaching.position }}, {{ teaching.school }} | {{ teaching.location }} | {{ teaching.start | date: '%b %Y' }} to {{ teaching.end | date: '%b %Y' }}">
                 {% else %}
-                <li class="teaching dots">
+                <li class="teaching dots" title="{{ teaching.position }}, {{ teaching.school }} | {{ teaching.location }} | {{ teaching.start | date: '%b %Y' }} to {{ teaching.end | date: '%b %Y' }}">
                 {% endif %}
                   <span class="dot" onclick="controlSlide('teaching', {{ forloop.index0 }})"></span>
                 </li>
