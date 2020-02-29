@@ -1,7 +1,7 @@
 // lunr JS
 jQuery(function() {
     // Get the generated search_data.json file so lunr.js can search it locally.
-    window.data = $.getJSON('https://blog.micbon.com//search_data.json');
+    window.data = $.getJSON('https://blog.micbon.com/search_data.json');
 
     // Wait for the data to load and add it to lunr
     window.data.then(function(data){
