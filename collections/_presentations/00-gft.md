@@ -4,6 +4,8 @@ event: '2016 Annual Meeting of Statistical Society of Canada'
 location: 'St. Catharines, Ontario'
 date_: 'May 30, 2016'
 authors:
+  - name: Mohammad Khan
+  - name: Sangook Kim
   - name: 'Kuan Liu'
   - name: 'Michael J. Moon'
 affiliations:
