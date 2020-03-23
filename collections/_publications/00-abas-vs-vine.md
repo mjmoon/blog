@@ -1,4 +1,4 @@
----
+<!-- ---
 title: 'Concurrent validity of the ABAS II and the Vineland II in an ASD sample <i>(pending submission)</i>'
 authors:
   - name: 'Annie Duipuis'
@@ -22,4 +22,4 @@ affiliations:
     name: 'The Department of Psychiatry, the Hospital for Sick Children'
   - number: '5'
     name: 'The Department of Psychiatry, the University of Toronto'
----
+--- -->

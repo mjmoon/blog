@@ -20,7 +20,7 @@ slides: true
     <li><a href="#research">Research</a></li>
     <!-- <li><a href="#skills">Skills</a></li> -->
     <li><a href="#education">Education</a></li>
-    <li><a href="#publications">Publications</a></li>
+    <!-- <li><a href="#publications">Publications</a></li> -->
     <li><a href="#presentations">Presentations</a></li>
     <li><a href="#teaching">Teaching</a></li>
     <li><a href="#awards">Awards</a></li>
@@ -38,51 +38,44 @@ slides: true
 <!-- skills -->
 <!-- {% if site.skills.size > 0  %}
 {% include resume/skills.html %}
-{% endif %}
-
---- -->
+---
+{% endif %} -->
 
 <!-- education -->
 {% if site.educations.size > 0  %}
 {% include resume/education.html %}
-{% endif %}
-
 ---
+{% endif %}
 
 <!-- publications -->
 {% if site.publications.size > 0 %}
 {% include resume/publications.html %}
-{% endif %}
-
 ---
+{% endif %}
 
 <!-- presentations -->
 {% if site.presentations.size > 0 %}
 {% include resume/presentations.html %}
-{% endif %}
-
 ---
+{% endif %}
 
 <!-- teaching experience -->
 {% if site.teachings.size > 0  %}
 {% include resume/teachings.html %}
-{% endif %}
-
 ---
+{% endif %}
 
 <!-- awards and honours-->
 {% if site.awards.size > 0  %}
 {% include resume/awards.html %}
-{% endif %}
-
 ---
+{% endif %}
 
 <!-- projects -->
 {% if site.projects.size > 0 %}
 {% include resume/projects.html %}
-{% endif %}
-
 ---
+{% endif %}
 
 <!-- working experience -->
 {% if site.employments.size > 0  %}
