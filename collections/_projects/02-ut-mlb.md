@@ -1,5 +1,4 @@
 ---
-colsize: col-sm-6
 title:  'Predicting injuries of starting pitchers in Major League Baseball'
 start:  'October 2015'
 end:    'January 2016'

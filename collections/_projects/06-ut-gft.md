@@ -1,5 +1,4 @@
 ---
-colsize: col-sm-7
 title:  'Predicting flu cases using dynamic regression with Google Flu Trend'
 start:  'March 2016'
 end:    'May 2016'

@@ -1,5 +1,4 @@
 ---
-colsize: col-md-10
 title:  'Prevalence of rigid and ritualistic repetitive behaviour in children with ASD and high ADHD traits'
 start:  'January 2016'
 end:    'April 2016'

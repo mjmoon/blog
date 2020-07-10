@@ -1,5 +1,4 @@
 ---
-colsize: col-sm-5
 title:  'Training a deep neural network to evaluate board positions in a game of Go based on simulated games'
 start:  'May 2016'
 end:    'August 2016'

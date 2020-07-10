@@ -1,5 +1,4 @@
 ---
-colsize: col-sm-6
 title:  'Routing system for electric vehicles'
 start:  'September 2012'
 end:    'April 2013'

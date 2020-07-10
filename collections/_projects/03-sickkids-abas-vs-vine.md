@@ -1,5 +1,4 @@
 ---
-colsize: col-md-10
 title:  'Concurrent validity of the ABAS-II and the Vineland II in an ASD sample'
 start:  'October 2015'
 end:    'January 2016'

@@ -1,5 +1,4 @@
 ---
-colsize: col-md-10
 title:  'Breast cancer self-examination aid'
 start:  'January 2012'
 end:    'April 2012'
