@@ -8,7 +8,7 @@ date: 2020-08-02 00:00:00 -0500
 comments: true
 ---
 
-<a target="_blank" href="http://u.cubeupload.com/micbonmoon/19654027823fc84191c8.jpg"><img src="http://u.cubeupload.com/micbonmoon/19654027823fc84191c8.jpg" width="100%" alt="어느 석탑 꼭대기"/></a>
+<a target="_blank" href="https://imagizer.imageshack.com/v2/xq90/924/2MOfvb.jpg"><img src="https://imagizer.imageshack.com/v2/xq90/924/2MOfvb.jpg" width="100%" alt="어느 석탑 꼭대기"/></a>
 
 
 언제 찍었는지 기억이 가물가물한 사진이지만 내가 찍은 사진 중 가장 좋아하는 사진이다. 지금 하는 공부 외에도 사진찍기도 꽤 좋아했고 야구도 항상 너무 하고 싶었고 그 밖에 스치듯 하고 싶은 것들은 지금도 너무나 많다. 그 모든 것을 할 순 없어도 하나라도 더, 되는 만큼, 해봐야겠다.
