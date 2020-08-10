@@ -1,8 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="https://blog.micbon.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.micbon.com/" rel="alternate" type="text/html" /><updated>2020-08-04T17:56:18+00:00</updated><id>https://blog.micbon.com/feed.xml</id><title type="html">micbon blog</title><subtitle>this blog is my personal space for sharing my latest interests.</subtitle><author><name>Michael J. Moon</name></author><entry><title type="html">An old photo</title><link href="https://blog.micbon.com/post/an-old-photo/" rel="alternate" type="text/html" title="An old photo" /><published>2020-08-02T05:00:00+00:00</published><updated>2020-08-02T05:00:00+00:00</updated><id>https://blog.micbon.com/post/an-old-photo</id><content type="html" xml:base="https://blog.micbon.com/post/an-old-photo/">&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://imagizer.imageshack.com/v2/xq90/924/2MOfvb.jpg&quot;&gt;&lt;img src=&quot;https://imagizer.imageshack.com/v2/xq90/924/2MOfvb.jpg&quot; width=&quot;100%&quot; alt=&quot;어느 석탑 꼭대기&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://blog.micbon.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.micbon.com/" rel="alternate" type="text/html" /><updated>2020-08-10T05:38:54+00:00</updated><id>https://blog.micbon.com/feed.xml</id><title type="html">micbon blog</title><subtitle>this blog is my personal space for sharing my latest interests.</subtitle><author><name>Michael J. Moon</name></author><entry><title type="html">An old photo</title><link href="https://blog.micbon.com/post/an-old-photo/" rel="alternate" type="text/html" title="An old photo" /><published>2020-08-02T05:00:00+00:00</published><updated>2020-08-02T05:00:00+00:00</updated><id>https://blog.micbon.com/post/an-old-photo</id><content type="html" xml:base="https://blog.micbon.com/post/an-old-photo/">&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://imagizer.imageshack.com/v2/xq90/924/2MOfvb.jpg&quot;&gt;&lt;img src=&quot;https://imagizer.imageshack.com/v2/xq90/924/2MOfvb.jpg&quot; width=&quot;100%&quot; alt=&quot;어느 석탑 꼭대기&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;언제 찍었는지 기억이 가물가물한 사진이지만 내가 찍은 사진 중 가장 좋아하는 사진이다. 지금 하는 공부 외에도 사진찍기도 꽤 좋아했고 야구도 항상 너무 하고 싶었고 그 밖에 스치듯 하고 싶은 것들은 지금도 너무나 많다. 그 모든 것을 할 순 없어도 하나라도 더, 되는 만큼, 해봐야겠다.&lt;/p&gt;
 
-&lt;p&gt;사진은 2013년도 즈음에 공주 마곡사에 부모님과 함께 갔을 때 찍은 사진이라고 생각했었는데 마곡사 사진을 아무리 찾아봐도 꼭대기가 이렇게 생긴 석탑이 보이지 않는다. &lt;del&gt;개궁금&lt;/del&gt; 사진은 어머니가 쓰던 Cannon AE-1 Program이거나 작은 사이즈에 끌려 중고로 샀던 Canon Canonet QL17 GIII 둘 중 하나로 찍어서 필름을 스캔한 것이다. 덕분에 많이 Grainy하다.&lt;/p&gt;</content><author><name>Michael J. Moon</name></author><category term="post" /><category term="picture" /><category term="사진" /><summary type="html"></summary></entry><entry><title type="html">대한민국 법정구역 지도</title><link href="https://blog.micbon.com/post/kor-map/" rel="alternate" type="text/html" title="대한민국 법정구역 지도" /><published>2018-08-14T05:00:00+00:00</published><updated>2018-08-14T05:00:00+00:00</updated><id>https://blog.micbon.com/post/kor-map</id><content type="html" xml:base="https://blog.micbon.com/post/kor-map/">&lt;p&gt;최근 &lt;code class=&quot;highlighter-rouge&quot;&gt;d3js&lt;/code&gt;를 이용하여 지도 그리는 법을 익혀보는 중입니다. 지난 &lt;a href=&quot;https://blog.micbon.com/post/peace-map.html&quot; target=&quot;_blank&quot;&gt;글&lt;/a&gt;에서는 세계지도에 Global Peace Index를 표기해보았는데 이번에는 한국 지도를 한/영 지역명과 함께 아래와 같이 그려 보았습니다. 지도상에 색으로 표시된 지역을 클릭하면 세부지도를 3단계&lt;sub&gt;(시도»시군구»읍면동)&lt;/sub&gt;까지 볼 수 있습니다.&lt;/p&gt;
+&lt;p&gt;사진은 2013년도 즈음에 공주 마곡사에 부모님과 함께 갔을 때 찍은 사진이라고 생각했었는데 마곡사 사진을 아무리 찾아봐도 꼭대기가 이렇게 생긴 석탑이 보이지 않는다.&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; 사진은 어머니가 쓰던 Cannon AE-1 Program이거나 작은 사이즈에 끌려 중고로 샀던 Canon Canonet QL17 GIII 둘 중 하나로 찍어서 필름을 스캔한 것이다. 덕분에 많이 Grainy하다.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://mbr.vouloir.kro.kr/entry/%EC%B6%A9%EB%82%A8-%EC%98%88%EC%82%B0%EA%B0%80%EB%B3%BC%EB%A7%8C%ED%95%9C%EA%B3%B3-%EC%88%98%EB%8D%95%EC%82%AC-%EA%B8%88%EA%B0%95%EB%AC%B8%EC%97%90%EC%84%9C%EB%B6%80%ED%84%B0-%EB%8C%80%EC%9B%85%EC%A0%84%EA%B9%8C%EC%A7%80&quot;&gt;수덕사&lt;/a&gt; &lt;a href=&quot;https://m.blog.naver.com/PostView.nhn?blogId=deogjang&amp;amp;logNo=50045287225&amp;amp;proxyReferer=https:%2F%2Fwww.google.com%2F&amp;amp;view=img_20&quot;&gt;금강보탑인&lt;/a&gt;&lt;a href=&quot;http://tour.yesan.go.kr/prog/cultureAssets/tour/sub01_02_02_01/G7/view.do?pageIndex=1&amp;amp;asset_seq=32&quot;&gt;듯하다&lt;/a&gt;. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Michael J. Moon</name></author><category term="post" /><category term="picture" /><category term="사진" /><summary type="html"></summary></entry><entry><title type="html">A dog and a praying man</title><link href="https://blog.micbon.com/post/a-dog-at-a-temple/" rel="alternate" type="text/html" title="A dog and a praying man" /><published>2020-08-02T05:00:00+00:00</published><updated>2020-08-02T05:00:00+00:00</updated><id>https://blog.micbon.com/post/a-dog-at-a-temple</id><content type="html" xml:base="https://blog.micbon.com/post/a-dog-at-a-temple/">&lt;p&gt;&lt;a href=&quot;https://images2.imgbox.com/63/47/pU3OVDn1_o.jpg&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://images2.imgbox.com/63/47/pU3OVDn1_o.jpg&quot; width=&quot;100%&quot; alt=&quot;개팔자가 상팔자&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;지난주 사진과 마찬가지로 수덕사에서 찍은 사진인 것 같다. 사람은 반은 부서진 돌덩어리&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;에 열심히 기도하고 그 석탑 반대편에는 개가 세상 편하게 누워있다.&lt;/p&gt;
+
+&lt;p&gt;개는 기도할 걱정거리가 없었나 보다. &lt;del&gt;개부러.&lt;/del&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;물론, 그냥 돌덩어리는 아니고 &lt;a href=&quot;http://www.heritage.go.kr/heri/cul/culSelectDetail.do?ccbaCpno=2113401030000&amp;amp;pageNo=1_1_1_1&quot;&gt;충청남도 유형문화재&lt;/a&gt;. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Michael J. Moon</name></author><category term="post" /><category term="picture" /><category term="사진" /><category term="개팔자가상팔자" /><summary type="html"></summary></entry><entry><title type="html">대한민국 법정구역 지도</title><link href="https://blog.micbon.com/post/kor-map/" rel="alternate" type="text/html" title="대한민국 법정구역 지도" /><published>2018-08-14T05:00:00+00:00</published><updated>2018-08-14T05:00:00+00:00</updated><id>https://blog.micbon.com/post/kor-map</id><content type="html" xml:base="https://blog.micbon.com/post/kor-map/">&lt;p&gt;최근 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;d3js&lt;/code&gt;를 이용하여 지도 그리는 법을 익혀보는 중입니다. 지난 &lt;a href=&quot;https://blog.micbon.com/post/peace-map.html&quot; target=&quot;_blank&quot;&gt;글&lt;/a&gt;에서는 세계지도에 Global Peace Index를 표기해보았는데 이번에는 한국 지도를 한/영 지역명과 함께 아래와 같이 그려 보았습니다. 지도상에 색으로 표시된 지역을 클릭하면 세부지도를 3단계&lt;sub&gt;(시도»시군구»읍면동)&lt;/sub&gt;까지 볼 수 있습니다.&lt;/p&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/plot/2018-08-09-kor-map.css&quot; /&gt;
 
@@ -48,11 +68,11 @@
 
 &lt;h2 id=&quot;3-영문-정보-조합하기&quot;&gt;3. 영문 정보 조합하기&lt;/h2&gt;
 
-&lt;p&gt;2번 단계에서 구한 엑셀 파일은 &lt;em&gt;csv&lt;/em&gt; 유형으로 저장한 후에 &lt;code class=&quot;highlighter-rouge&quot;&gt;python&lt;/code&gt; 을 사용해서 시도 및 시군구 지역명 영문화 작업을 하였습니다. 1번 단계에서 구한 자료들에 영문명들도 포함되어 있었는데 &lt;em&gt;shapefile&lt;/em&gt;  에서 데이터를 뽑아내는데 익숙지 않아 결국 구글+위키피디아를 뒤져가며 노가다로 메꾸었습니다. 다시 찾아보니 &lt;a href=&quot;https://github.com/mbloch/mapshaper/wiki/Command-Reference&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;mapshaper&lt;/em&gt;&lt;/a&gt;에 &lt;code class=&quot;highlighter-rouge&quot;&gt;cut-table&lt;/code&gt;이라는 기능이 있는듯 합니다. &lt;del&gt;무식해서 몸이 고생한다는 말을 몸소 실현&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;2번 단계에서 구한 엑셀 파일은 &lt;em&gt;csv&lt;/em&gt; 유형으로 저장한 후에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;python&lt;/code&gt; 을 사용해서 시도 및 시군구 지역명 영문화 작업을 하였습니다. 1번 단계에서 구한 자료들에 영문명들도 포함되어 있었는데 &lt;em&gt;shapefile&lt;/em&gt;  에서 데이터를 뽑아내는데 익숙지 않아 결국 구글+위키피디아를 뒤져가며 노가다로 메꾸었습니다. 다시 찾아보니 &lt;a href=&quot;https://github.com/mbloch/mapshaper/wiki/Command-Reference&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;mapshaper&lt;/em&gt;&lt;/a&gt;에 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cut-table&lt;/code&gt;이라는 기능이 있는듯 합니다. &lt;del&gt;무식해서 몸이 고생한다는 말을 몸소 실현&lt;/del&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;3-웹-데이터-파일-준비하기&quot;&gt;3. 웹 데이터 파일 준비하기&lt;/h2&gt;
 
-&lt;p&gt;위에서 준비한 자료들을 &lt;code class=&quot;highlighter-rouge&quot;&gt;d3js&lt;/code&gt;로 읽기 위해 &lt;code class=&quot;highlighter-rouge&quot;&gt;mapshaper&lt;/code&gt;를 사용하여 &lt;em&gt;topojson&lt;/em&gt; 파일으로 준비하였습니다. 각 지역 단계별로 아래와 같이 콘솔에서 실행하였습니다.&lt;/p&gt;
+&lt;p&gt;위에서 준비한 자료들을 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;d3js&lt;/code&gt;로 읽기 위해 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mapshaper&lt;/code&gt;를 사용하여 &lt;em&gt;topojson&lt;/em&gt; 파일으로 준비하였습니다. 각 지역 단계별로 아래와 같이 콘솔에서 실행하였습니다.&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 읍면동 데이터 준비 코드&lt;/span&gt;
 mapshaper &lt;span class=&quot;nv&quot;&gt;encoding&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;euc-kr &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;.shp &lt;span class=&quot;se&quot;&gt;\ &lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# euc-kr로 인코딩된 shapefile을 읽어옵니다.&lt;/span&gt;
@@ -64,7 +84,7 @@ mapshaper &lt;span class=&quot;nv&quot;&gt;encoding&lt;/span&gt;&lt;span class=&
 
 &lt;h2 id=&quot;4-데이터-시각화하기&quot;&gt;4. 데이터 시각화하기&lt;/h2&gt;
 
-&lt;p&gt;위에서 준비한 데이터 파일들을 &lt;code class=&quot;highlighter-rouge&quot;&gt;d3js&lt;/code&gt;로 읽어 시각화 해주었습니다. 시각화 코드는 &lt;a href=&quot;https://github.com/mjmoon/kor-map/blob/master/js/kor-map.js&quot; target=&quot;_blank&quot;&gt;Github&lt;/a&gt;에섯 확인할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;위에서 준비한 데이터 파일들을 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;d3js&lt;/code&gt;로 읽어 시각화 해주었습니다. 시각화 코드는 &lt;a href=&quot;https://github.com/mjmoon/kor-map/blob/master/js/kor-map.js&quot; target=&quot;_blank&quot;&gt;Github&lt;/a&gt;에섯 확인할 수 있습니다.&lt;/p&gt;
 
 &lt;h2 id=&quot;느낀점-몇-가지&quot;&gt;느낀점 몇 가지&lt;/h2&gt;
 
@@ -163,12 +183,12 @@ We used Global Peace Index produced by IEP. The Global Peace Index is considered
 &lt;h3 id=&quot;afterthoughts&quot;&gt;Afterthoughts&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;I used &lt;a href=&quot;https://d3js.org/&quot; target=&quot;_blank&quot;&gt;D3.js&lt;/a&gt; a JavaScript library enabling data-driven web pages. I have been enjoying it as it allows more control over the visualization compared to others I used such as R’s &lt;code class=&quot;highlighter-rouge&quot;&gt;ggplot2&lt;/code&gt; and Python’s &lt;code class=&quot;highlighter-rouge&quot;&gt;bokeh&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;plotly&lt;/code&gt;. My code is probably quite sloppy since I am not an experienced JS developer but I was able to play with more complex and customized interactions.&lt;/li&gt;
+  &lt;li&gt;I used &lt;a href=&quot;https://d3js.org/&quot; target=&quot;_blank&quot;&gt;D3.js&lt;/a&gt; a JavaScript library enabling data-driven web pages. I have been enjoying it as it allows more control over the visualization compared to others I used such as R’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ggplot2&lt;/code&gt; and Python’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bokeh&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;plotly&lt;/code&gt;. My code is probably quite sloppy since I am not an experienced JS developer but I was able to play with more complex and customized interactions.&lt;/li&gt;
   &lt;li&gt;This is my first data-driven map I have ever created. I used geographic data from &lt;a href=&quot;http://www.naturalearthdata.com/downloads/&quot; target=&quot;_blank&quot;&gt;Natural Earth&lt;/a&gt;. Picking the colours to present the data on the map probably took the majority of the time. It was challenging to present the numeric values without a physical axis. Looking at other people’s visualizations (including the winners’) helped.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/mjmoon/peace-map&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fa fa-github&quot;&gt;&lt;/i&gt; Github Repository&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://peace-map.micbon.com/&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fa fa-file-o&quot;&gt;&lt;/i&gt; Open Visualization on a new Page&lt;/a&gt;&lt;/p&gt;</content><author><name>Michael J. Moon</name></author><category term="post" /><category term="d3js" /><category term="datavis" /><category term="map" /><summary type="html">The interactive map below shows data from a recent Data for a Cause Challenge. The Challenge requests participants to create data visualizations for non-profit organizations. This particular challenge was about presenting the global peace trends.</summary></entry><entry><title type="html">A bokeh server app for up-to-date stock prices</title><link href="https://blog.micbon.com/post/bokeh-server/" rel="alternate" type="text/html" title="A bokeh server app for up-to-date stock prices" /><published>2018-04-30T05:00:00+00:00</published><updated>2018-04-30T05:00:00+00:00</updated><id>https://blog.micbon.com/post/bokeh-server</id><content type="html" xml:base="https://blog.micbon.com/post/bokeh-server/">&lt;p&gt;The python &lt;code class=&quot;highlighter-rouge&quot;&gt;bokeh&lt;/code&gt; library lets you build data visualization applications on the web and run them on a server. Below is plot that uses &lt;a href=&quot;https://bokeh.pydata.org/en/latest/docs/user_guide/server.html&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bokeh.server&lt;/code&gt;&lt;/a&gt; along with other python libraries to display up-to-date (mostly U.S.) stock market closing prices.&lt;/p&gt;
+&lt;a href=&quot;https://peace-map.micbon.com/&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fa fa-file-o&quot;&gt;&lt;/i&gt; Open Visualization on a new Page&lt;/a&gt;&lt;/p&gt;</content><author><name>Michael J. Moon</name></author><category term="post" /><category term="d3js" /><category term="datavis" /><category term="map" /><summary type="html">The interactive map below shows data from a recent Data for a Cause Challenge. The Challenge requests participants to create data visualizations for non-profit organizations. This particular challenge was about presenting the global peace trends.</summary></entry><entry><title type="html">A bokeh server app for up-to-date stock prices</title><link href="https://blog.micbon.com/post/bokeh-server/" rel="alternate" type="text/html" title="A bokeh server app for up-to-date stock prices" /><published>2018-04-30T05:00:00+00:00</published><updated>2018-04-30T05:00:00+00:00</updated><id>https://blog.micbon.com/post/bokeh-server</id><content type="html" xml:base="https://blog.micbon.com/post/bokeh-server/">&lt;p&gt;The python &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bokeh&lt;/code&gt; library lets you build data visualization applications on the web and run them on a server. Below is plot that uses &lt;a href=&quot;https://bokeh.pydata.org/en/latest/docs/user_guide/server.html&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bokeh.server&lt;/code&gt;&lt;/a&gt; along with other python libraries to display up-to-date (mostly U.S.) stock market closing prices.&lt;/p&gt;
 
 &lt;!-- &lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/slides.css&quot; /&gt; --&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/plot/2018-04-30-plot-01.css&quot; /&gt;
@@ -193,28 +213,28 @@ We used Global Peace Index produced by IEP. The Global Peace Index is considered
 
 &lt;h2 id=&quot;data-sources&quot;&gt;Data sources&lt;/h2&gt;
 
-&lt;p&gt;I used &lt;a href=&quot;https://pandas-datareader.readthedocs.io/en/latest/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pandas-datareader&lt;/code&gt;&lt;/a&gt;
-and &lt;a href=&quot;https://github.com/RomelTorres/alpha_vantage&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;alpha_vantage&lt;/code&gt;&lt;/a&gt; python
+&lt;p&gt;I used &lt;a href=&quot;https://pandas-datareader.readthedocs.io/en/latest/&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pandas-datareader&lt;/code&gt;&lt;/a&gt;
+and &lt;a href=&quot;https://github.com/RomelTorres/alpha_vantage&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;alpha_vantage&lt;/code&gt;&lt;/a&gt; python
 libraries to access free data providers. The former library lets you access
 stock market data from &lt;em&gt;Morningstar&lt;/em&gt; among other providers. &lt;em&gt;Alpha Vantage&lt;/em&gt;
 provides similar data with minimal time delay (1 minute).&lt;/p&gt;
 
 &lt;h2 id=&quot;application&quot;&gt;Application&lt;/h2&gt;
 
-&lt;p&gt;Using &lt;code class=&quot;highlighter-rouge&quot;&gt;bokeh.server&lt;/code&gt;, I was able to plot, add widgets - a button group
+&lt;p&gt;Using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bokeh.server&lt;/code&gt;, I was able to plot, add widgets - a button group
 for period selection and an auto-complete text input box for ticker selection.
 You can find the source code for the plot here &lt;a href=&quot;https://github.com/mjmoon/plot-stocks-bokeh&quot; class=&quot;fa fa-github&quot;&gt;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;deployment&quot;&gt;Deployment&lt;/h2&gt;
 
-&lt;p&gt;I used &lt;a href=&quot;https://www.heroku.com&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;heroku&lt;/code&gt;&lt;/a&gt;’s free tier service to host
-the app online. It’s easy to use if you are used to using &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt;. The free-tier
+&lt;p&gt;I used &lt;a href=&quot;https://www.heroku.com&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;heroku&lt;/code&gt;&lt;/a&gt;’s free tier service to host
+the app online. It’s easy to use if you are used to using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git&lt;/code&gt;. The free-tier
 comes with usage limits, most of which are sufficient for my purpose.
 The only noticeable limit is the fact that the machine goes to sleep after
 30 minutes of inactivity. Hence, you likely waited a while until
 the plot showed up.&lt;/p&gt;
 
-&lt;p&gt;I also used &lt;a href=&quot;https://www.docker.com/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker&lt;/code&gt;&lt;/a&gt; to make the app portable
+&lt;p&gt;I also used &lt;a href=&quot;https://www.docker.com/&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker&lt;/code&gt;&lt;/a&gt; to make the app portable
 to other platforms if necessary (and to get myself familiarized with it).&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -228,7 +248,7 @@ to other platforms if necessary (and to get myself familiarized with it).&lt;/p&
       &lt;p&gt;By default, cross site connections to the Bokeh server websocket are not allowed. You can enable websocket connections originating from additional hosts by specifying them with the –allow-websocket-origin option.&lt;/p&gt;
     &lt;/blockquote&gt;
 
-    &lt;p&gt;Not really understanding how servers work, I fumbled with this for quite a bit. I added &lt;code class=&quot;highlighter-rouge&quot;&gt;--allow-websocket-origin=blog.micbon.com&lt;/code&gt; as well as &lt;code class=&quot;highlighter-rouge&quot;&gt;--allow-websocket-origin=mm-plot-stocks.herokuapp.com&lt;/code&gt; to allow access from this page and the &lt;code class=&quot;highlighter-rouge&quot;&gt;heroku&lt;/code&gt; page. I embedded the plots using both &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;iframe&amp;gt;&lt;/code&gt; tags to see the difference.&lt;/p&gt;
+    &lt;p&gt;Not really understanding how servers work, I fumbled with this for quite a bit. I added &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--allow-websocket-origin=blog.micbon.com&lt;/code&gt; as well as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--allow-websocket-origin=mm-plot-stocks.herokuapp.com&lt;/code&gt; to allow access from this page and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;heroku&lt;/code&gt; page. I embedded the plots using both &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;iframe&amp;gt;&lt;/code&gt; tags to see the difference.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;not so responsive&lt;/strong&gt;&lt;/p&gt;
@@ -238,7 +258,7 @@ to other platforms if necessary (and to get myself familiarized with it).&lt;/p&
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;another plotting library&lt;/strong&gt;&lt;/p&gt;
 
-    &lt;p&gt;I also created the same plot using &lt;code class=&quot;highlighter-rouge&quot;&gt;plotly&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;dash&lt;/code&gt; module. You can see the app &lt;a href=&quot;https://mm-plot-stock-dash.herokuapp.com/&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; and the source codes here &lt;a href=&quot;https://github.com/mjmoon/plot-stocks&quot; class=&quot;fa fa-github&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;. It was actually easier to use in my opinion. The only trouble I have is making it work with &lt;code class=&quot;highlighter-rouge&quot;&gt;Docker&lt;/code&gt;. I still have not figured out how… :(&lt;/p&gt;
+    &lt;p&gt;I also created the same plot using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;plotly&lt;/code&gt;’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dash&lt;/code&gt; module. You can see the app &lt;a href=&quot;https://mm-plot-stock-dash.herokuapp.com/&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; and the source codes here &lt;a href=&quot;https://github.com/mjmoon/plot-stocks&quot; class=&quot;fa fa-github&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;. It was actually easier to use in my opinion. The only trouble I have is making it work with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Docker&lt;/code&gt;. I still have not figured out how… :(&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Michael J. Moon</name></author><category term="post" /><category term="python" /><category term="datavis" /><summary type="html">The python bokeh library lets you build data visualization applications on the web and run them on a server. Below is plot that uses bokeh.server along with other python libraries to display up-to-date (mostly U.S.) stock market closing prices.</summary></entry><entry><title type="html">Hello Jekyll!</title><link href="https://blog.micbon.com/post/hello-jekyll/" rel="alternate" type="text/html" title="Hello Jekyll!" /><published>2018-02-15T05:00:00+00:00</published><updated>2018-02-15T05:00:00+00:00</updated><id>https://blog.micbon.com/post/hello-jekyll</id><content type="html" xml:base="https://blog.micbon.com/post/hello-jekyll/">&lt;p&gt;I had previously my blog hosted using &lt;strong&gt;Wordpress&lt;/strong&gt; on a shared hosting server. The hosted Wordpress worked out nicely for me especially with its &lt;a href=&quot;http://www.wpbeginner.com/glossary/multisite/&quot;&gt;multisite&lt;/a&gt; feature. I was able to host multiple sites including a single page responsive site for my wedding. There is a plenty of free themes and plugins available to configure and customize a Wordpress site with ease. However, I switched the hosting mechanism to &lt;strong&gt;Jekyll&lt;/strong&gt; on &lt;strong&gt;GitHub Pages&lt;/strong&gt; after finding about it recently. Below are 4 reasons why I switched to Jekyll.&lt;/p&gt;
 
@@ -252,7 +272,7 @@ to other platforms if necessary (and to get myself familiarized with it).&lt;/p&
 
 &lt;p&gt;While I did not pay for Wordpress or any of the plugins/themes I used, I had to pay for my domain and hosting services. I used the lower-tier plan from &lt;a href=&quot;https://www.siteground.com/&quot;&gt;SiteGround&lt;/a&gt; and paid approximately USD 160 per year. The plan included a free domain which I used for all my sites using subdomains.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;GitHub Pages&lt;/strong&gt; lets you to host static sites for free on &lt;strong&gt;GitHub&lt;/strong&gt; and &lt;strong&gt;Jekyll&lt;/strong&gt; is a free open source software that turns static files to a website. If you are comfortable using GitHub Pages’s default domain &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;username&amp;gt;.github.io/&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;username&amp;gt;.github.io/&amp;lt;projectname&amp;gt;&lt;/code&gt;, you can host a site with zero cost.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;GitHub Pages&lt;/strong&gt; lets you to host static sites for free on &lt;strong&gt;GitHub&lt;/strong&gt; and &lt;strong&gt;Jekyll&lt;/strong&gt; is a free open source software that turns static files to a website. If you are comfortable using GitHub Pages’s default domain &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;username&amp;gt;.github.io/&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;username&amp;gt;.github.io/&amp;lt;projectname&amp;gt;&lt;/code&gt;, you can host a site with zero cost.&lt;/p&gt;
 
 &lt;ol start=&quot;2&quot;&gt;
   &lt;li&gt;
@@ -262,7 +282,7 @@ to other platforms if necessary (and to get myself familiarized with it).&lt;/p&
 
 &lt;p&gt;As mentioned, GitHub Pages sites are hosted on GitHub. This means you can track any changes made to the site using &lt;strong&gt;git&lt;/strong&gt;. You can track new and modified pages as well as site configuration and aesthetic changes. The integration also means that I can write and push new articles directly from a text editor such as &lt;strong&gt;Atom&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;Also, Jekyll will automatically create &lt;code class=&quot;highlighter-rouge&quot;&gt;.html&lt;/code&gt; files from markdown(&lt;code class=&quot;highlighter-rouge&quot;&gt;.md&lt;/code&gt;) files. Writing and editing in markdown is much easier with its simple syntax. I had been already using git and markdown and this was a definite selling point for me.&lt;/p&gt;
+&lt;p&gt;Also, Jekyll will automatically create &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.html&lt;/code&gt; files from markdown(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.md&lt;/code&gt;) files. Writing and editing in markdown is much easier with its simple syntax. I had been already using git and markdown and this was a definite selling point for me.&lt;/p&gt;
 
 &lt;h5 id=&quot;html-vs-markdown&quot;&gt;HTML vs. markdown&lt;/h5&gt;
 &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- HTML --&amp;gt;&lt;/span&gt;
@@ -284,11 +304,11 @@ Writing in _markdown_ is very &lt;span class=&quot;gs&quot;&gt;**simple**&lt;/sp
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Jekyll uses &lt;a href=&quot;https://shopify.github.io/liquid/basics/introduction/&quot;&gt;Liquid&lt;/a&gt; template language to process templates. The template language has a simple syntax and I found it to be easier to use than editing &lt;code class=&quot;highlighter-rouge&quot;&gt;php&lt;/code&gt; files for Wordpress themes and parts.&lt;/p&gt;
+&lt;p&gt;Jekyll uses &lt;a href=&quot;https://shopify.github.io/liquid/basics/introduction/&quot;&gt;Liquid&lt;/a&gt; template language to process templates. The template language has a simple syntax and I found it to be easier to use than editing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;php&lt;/code&gt; files for Wordpress themes and parts.&lt;/p&gt;
 
-&lt;p&gt;As an example, in Wordpress, I wrote the About page in raw &lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt; of ~300 lines and editing the page every now and then was always tedious. I could have probably streamlined the work by creating a customer page template in Wordpress; however, the need just never seemed to justify the effort.&lt;/p&gt;
+&lt;p&gt;As an example, in Wordpress, I wrote the About page in raw &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;html&lt;/code&gt; of ~300 lines and editing the page every now and then was always tedious. I could have probably streamlined the work by creating a customer page template in Wordpress; however, the need just never seemed to justify the effort.&lt;/p&gt;
 
-&lt;p&gt;On the other hand, Liquid made templating much simpler and I was able to create the template for the &lt;a href=&quot;https://blog.micbon.com/about&quot;&gt;About&lt;/a&gt; page from scratch within a few hours of reading and typing. The template made it simple to add and edit items using &lt;code class=&quot;highlighter-rouge&quot;&gt;yaml front matter&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;On the other hand, Liquid made templating much simpler and I was able to create the template for the &lt;a href=&quot;https://blog.micbon.com/about&quot;&gt;About&lt;/a&gt; page from scratch within a few hours of reading and typing. The template made it simple to add and edit items using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yaml front matter&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h5 id=&quot;html-vs-liquid&quot;&gt;HTML vs. Liquid&lt;/h5&gt;
 &lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- HTML --&amp;gt;&lt;/span&gt;
@@ -357,13 +377,13 @@ courses:
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;The final and tipping point for the switch was the ability to render interactive plots. Lately, I started learning about interactive data visualizations using Python’s &lt;code class=&quot;highlighter-rouge&quot;&gt;bokeh&lt;/code&gt; library. I am planning to write blog posts with the visualizations.&lt;/p&gt;
+&lt;p&gt;The final and tipping point for the switch was the ability to render interactive plots. Lately, I started learning about interactive data visualizations using Python’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bokeh&lt;/code&gt; library. I am planning to write blog posts with the visualizations.&lt;/p&gt;
 
 &lt;p&gt;However, embedding theses javascript-based plots on Wordpress turned out to be much more of a hassle than expected. Wordpress has filters that which capture specific parts of post/page contents and create the final output in html from the online editor. This prevented from embedding bokeh plots directly using html in the editor.&lt;/p&gt;
 
-&lt;p&gt;I ended up using a plugin that enabled embedding raw html snippets; however, the online workflow was less than ideal and when the raw html was finally embedded, the rendered plot was not contained in the post container &lt;code class=&quot;highlighter-rouge&quot;&gt;div&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;I ended up using a plugin that enabled embedding raw html snippets; however, the online workflow was less than ideal and when the raw html was finally embedded, the rendered plot was not contained in the post container &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;div&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;This is when I started looking into alternatives and found about Jekyll on GitHub Pages. &lt;a href=&quot;https://briancaffey.github.io/2017/01/23/bokeh-plots-on-jekyll.html&quot;&gt;This post by Brian Caffey&lt;/a&gt; showed that it was possible to embed bokeh plots using &lt;code class=&quot;highlighter-rouge&quot;&gt;{%include ...%}&lt;/code&gt; tag. Having realized other pros of using Jekyll listed above, I tested by setting up this blog and manually migrating posts with bokeh plots. The whole process was took more less time and pain. It took me about two half days of effort including some reading and and the outcome was much more satisfying.&lt;/p&gt;
+&lt;p&gt;This is when I started looking into alternatives and found about Jekyll on GitHub Pages. &lt;a href=&quot;https://briancaffey.github.io/2017/01/23/bokeh-plots-on-jekyll.html&quot;&gt;This post by Brian Caffey&lt;/a&gt; showed that it was possible to embed bokeh plots using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{%include ...%}&lt;/code&gt; tag. Having realized other pros of using Jekyll listed above, I tested by setting up this blog and manually migrating posts with bokeh plots. The whole process was took more less time and pain. It took me about two half days of effort including some reading and and the outcome was much more satisfying.&lt;/p&gt;
 
 &lt;h2 id=&quot;is-jekyll-better-than-wordpress&quot;&gt;Is Jekyll better than Wordpress?&lt;/h2&gt;
 
@@ -390,7 +410,7 @@ courses:
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;conda create &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; titanic &lt;span class=&quot;nv&quot;&gt;python&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;3.6
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Here, &lt;code class=&quot;highlighter-rouge&quot;&gt;titanic&lt;/code&gt; is the environment name and the &lt;code class=&quot;highlighter-rouge&quot;&gt;python=3.6&lt;/code&gt; specifies the version for the environment. To activate the environment on macOS or Linux, use&lt;/p&gt;
+&lt;p&gt;Here, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;titanic&lt;/code&gt; is the environment name and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;python=3.6&lt;/code&gt; specifies the version for the environment. To activate the environment on macOS or Linux, use&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;source &lt;/span&gt;activate titanic
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -402,17 +422,17 @@ courses:
 
 &lt;p&gt;on Windows.&lt;/p&gt;
 
-&lt;p&gt;When activated, the environment’s name appears on the command-line interface. To deactivate, use &lt;code class=&quot;highlighter-rouge&quot;&gt;$ source dactivate&lt;/code&gt; on macOS and Linux or &lt;code class=&quot;highlighter-rouge&quot;&gt;$ deactivate&lt;/code&gt; on Windows.&lt;/p&gt;
+&lt;p&gt;When activated, the environment’s name appears on the command-line interface. To deactivate, use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ source dactivate&lt;/code&gt; on macOS and Linux or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ deactivate&lt;/code&gt; on Windows.&lt;/p&gt;
 
 &lt;h1 id=&quot;install-packages&quot;&gt;Install packages&lt;/h1&gt;
 
-&lt;p&gt;To install packages in a virtual environment, you can use &lt;code class=&quot;highlighter-rouge&quot;&gt;conda install &amp;lt;package-name&amp;gt;&lt;/code&gt; after activating the environment. Initially, we install the following scientific packages.&lt;/p&gt;
+&lt;p&gt;To install packages in a virtual environment, you can use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;conda install &amp;lt;package-name&amp;gt;&lt;/code&gt; after activating the environment. Initially, we install the following scientific packages.&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;titanic&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;conda &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;scikit-learn
 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;titanic&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;conda &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;pandas
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Conda also installs their dependencies such as &lt;code class=&quot;highlighter-rouge&quot;&gt;numpy&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;scipy&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Conda also installs their dependencies such as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;numpy&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scipy&lt;/code&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;titanic&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;conda &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;scikit-learn
 Fetching package metadata ...........
@@ -448,20 +468,20 @@ mkl-2017.0.3-0 100% |########################################################| T
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;cookiecutter https://github.com/drivendata/cookiecutter-data-science
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;The utility asks a few questions on the basic information about the project and creates a directory structure based on the template from &lt;code class=&quot;highlighter-rouge&quot;&gt;https://github.com/drivendata/cookiecutter-data-science&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The utility asks a few questions on the basic information about the project and creates a directory structure based on the template from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://github.com/drivendata/cookiecutter-data-science&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h1 id=&quot;upload-on-github&quot;&gt;Upload on GitHub&lt;/h1&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt; installer is available from &lt;a href=&quot;https://git-scm.com/downloads&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+  &lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git&lt;/code&gt; installer is available from &lt;a href=&quot;https://git-scm.com/downloads&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;We first initialize the project directory as a local &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt; repository using the following command in the directory.&lt;/p&gt;
+&lt;p&gt;We first initialize the project directory as a local &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git&lt;/code&gt; repository using the following command in the directory.&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git init
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Then add and commit all files and sub-directories within the project directory. Note a commit message is required for each commit when using &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Then add and commit all files and sub-directories within the project directory. Note a commit message is required for each commit when using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git&lt;/code&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git add &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
 &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Initial commit'&lt;/span&gt;
@@ -482,7 +502,7 @@ mkl-2017.0.3-0 100% |########################################################| T
 &lt;p&gt;We now have&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;a common project repository where we can all &lt;code class=&quot;highlighter-rouge&quot;&gt;pull&lt;/code&gt; from and &lt;code class=&quot;highlighter-rouge&quot;&gt;push&lt;/code&gt; to&lt;/li&gt;
+  &lt;li&gt;a common project repository where we can all &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pull&lt;/code&gt; from and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;push&lt;/code&gt; to&lt;/li&gt;
   &lt;li&gt;a &lt;em&gt;standard&lt;/em&gt; project structure so that we can merge our individual contributions while keeping the structure organized and clean&lt;/li&gt;
   &lt;li&gt;a Python environment isolated for the project so we can also share our environment specifications per project&lt;/li&gt;
 &lt;/ul&gt;
@@ -496,7 +516,7 @@ mkl-2017.0.3-0 100% |########################################################| T
 &lt;p&gt;I quite like its clean look and more than anything the interactive visualization capabilities. It also allows using javascript based web browser interactions without learning javascript. I have been picking on what it can do from its documentations and tutorials available on &lt;a href=&quot;http://nbviewer.jupyter.org/github/bokeh/bokeh-notebooks/blob/master/index.ipynb&quot; target=&quot;_blank&quot;&gt;Bokeh NBViewer Gallery&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;load-libraries&quot;&gt;Load libraries&lt;/h2&gt;
-&lt;p&gt;First, I am going to load the libraries I am going to use and run &lt;code class=&quot;highlighter-rouge&quot;&gt;output_notebook&lt;/code&gt; function from the &lt;code class=&quot;highlighter-rouge&quot;&gt;bokeh&lt;/code&gt; library. The function configures Bokeh plot objects to be displayed on the notebook.&lt;/p&gt;
+&lt;p&gt;First, I am going to load the libraries I am going to use and run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;output_notebook&lt;/code&gt; function from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bokeh&lt;/code&gt; library. The function configures Bokeh plot objects to be displayed on the notebook.&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;bokeh.io&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;output_notebook&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;output_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;
@@ -510,14 +530,14 @@ mkl-2017.0.3-0 100% |########################################################| T
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;load-data&quot;&gt;Load data&lt;/h2&gt;
-&lt;p&gt;To enable interlinking between plots, a common &lt;code class=&quot;highlighter-rouge&quot;&gt;ColumnDataSource&lt;/code&gt; needs to be used as the data source between plots. You can create one from a pandas &lt;code class=&quot;highlighter-rouge&quot;&gt;DataFrame&lt;/code&gt; or a &lt;code class=&quot;highlighter-rouge&quot;&gt;dictionary&lt;/code&gt;. I am going to use the &lt;strong&gt;diabetes&lt;/strong&gt; dataset originally from &lt;a href=&quot;http://www4.stat.ncsu.edu/~boos/var.select/diabetes.html&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; to demonstrate this. Below is a brief description of the dataset from the original source.&lt;/p&gt;
+&lt;p&gt;To enable interlinking between plots, a common &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ColumnDataSource&lt;/code&gt; needs to be used as the data source between plots. You can create one from a pandas &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DataFrame&lt;/code&gt; or a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dictionary&lt;/code&gt;. I am going to use the &lt;strong&gt;diabetes&lt;/strong&gt; dataset originally from &lt;a href=&quot;http://www4.stat.ncsu.edu/~boos/var.select/diabetes.html&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; to demonstrate this. Below is a brief description of the dataset from the original source.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Ten baseline variables, age, sex, body mass index, average blood pressure, and six blood serum measurements were obtained for each of n = 442 diabetes patients, as well as the response of interest, a quantitative measure of disease progression one year after baseline.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;I am going to plot each of the 9 numeric features against the response variable on individual scatter plots. I will
-In the code block below, the dataset is loaded as a pandas &lt;code class=&quot;highlighter-rouge&quot;&gt;DataFrame&lt;/code&gt; and a &lt;code class=&quot;highlighter-rouge&quot;&gt;ColumnDataSource&lt;/code&gt; is defined using the &lt;code class=&quot;highlighter-rouge&quot;&gt;DataFrame&lt;/code&gt;.&lt;/p&gt;
+In the code block below, the dataset is loaded as a pandas &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DataFrame&lt;/code&gt; and a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ColumnDataSource&lt;/code&gt; is defined using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DataFrame&lt;/code&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'../data/diabetes_tab.txt'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# assuming 1 is female and 2 is male
@@ -714,12 +734,12 @@ In the code block below, the dataset is loaded as a pandas &lt;code class=&quot;
 
 &lt;/script&gt;
 
-&lt;p&gt;You can now see an interactive scatter plot. A toolbar is placed beside the plot where you can switch on and off different tools we included. In particular, in this plot you can see the values for each data point when you hover over them. You can set the list of values you want to show by configuring &lt;code class=&quot;highlighter-rouge&quot;&gt;tooltips&lt;/code&gt; with a list of &lt;em&gt;(label, value)&lt;/em&gt; pairs in the &lt;code class=&quot;highlighter-rouge&quot;&gt;HoverTool&lt;/code&gt; object.&lt;/p&gt;
+&lt;p&gt;You can now see an interactive scatter plot. A toolbar is placed beside the plot where you can switch on and off different tools we included. In particular, in this plot you can see the values for each data point when you hover over them. You can set the list of values you want to show by configuring &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tooltips&lt;/code&gt; with a list of &lt;em&gt;(label, value)&lt;/em&gt; pairs in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HoverTool&lt;/code&gt; object.&lt;/p&gt;
 
-&lt;p&gt;You can refer to different variables in the source dataset by prefixing &lt;code class=&quot;highlighter-rouge&quot;&gt;@&lt;/code&gt;. Fields starting with &lt;code class=&quot;highlighter-rouge&quot;&gt;$&lt;/code&gt; will are used for &lt;em&gt;“special fields”&lt;/em&gt; such as the coordinates &lt;s&gt;and the color&lt;/s&gt; &lt;sup&gt;&lt;sub&gt;&lt;a href=&quot;https://stackoverflow.com/questions/41708509/bokeh-color-not-appearing-on-hover-tooltip&quot; target=&quot;_blank&quot;&gt;apparently&lt;/a&gt; the color values are pulled from the data source, not the figure’s &lt;code class=&quot;highlighter-rouge&quot;&gt;fill_color&lt;/code&gt;&lt;/sub&gt;&lt;/sup&gt; as used above.&lt;/p&gt;
+&lt;p&gt;You can refer to different variables in the source dataset by prefixing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@&lt;/code&gt;. Fields starting with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$&lt;/code&gt; will are used for &lt;em&gt;“special fields”&lt;/em&gt; such as the coordinates &lt;s&gt;and the color&lt;/s&gt; &lt;sup&gt;&lt;sub&gt;&lt;a href=&quot;https://stackoverflow.com/questions/41708509/bokeh-color-not-appearing-on-hover-tooltip&quot; target=&quot;_blank&quot;&gt;apparently&lt;/a&gt; the color values are pulled from the data source, not the figure’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fill_color&lt;/code&gt;&lt;/sub&gt;&lt;/sup&gt; as used above.&lt;/p&gt;
 
 &lt;h2 id=&quot;create-multiple-linked-plots&quot;&gt;Create multiple linked plots&lt;/h2&gt;
-&lt;p&gt;Now, I am going to create multiple plots and place them in a single grid using bokeh library’s &lt;code class=&quot;highlighter-rouge&quot;&gt;gridplot&lt;/code&gt;. The plots are linked by a single data source. Selecting data points in one plot will highlight the same data points in all.&lt;/p&gt;
+&lt;p&gt;Now, I am going to create multiple plots and place them in a single grid using bokeh library’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gridplot&lt;/code&gt;. The plots are linked by a single data source. Selecting data points in one plot will highlight the same data points in all.&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;plots&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot_diabetes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;240&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;180&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
          &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt;
