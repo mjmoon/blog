@@ -1,4 +1,5 @@
 source "https://rubygems.org"
+gem "kramdown"
 gem "rake", "~> 12"
 gem "jekyll", "~> 3.7"
 gem "bundler"
